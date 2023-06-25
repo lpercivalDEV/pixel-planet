@@ -1,0 +1,147 @@
+/* stylelint-disable color-function-notation */
+/* stylelint-disable selector-class-pattern */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SITE WIDE HEADINGS and TEXT */
+
+/* @font-face {
+    font-family: 'Slot-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Slot-Regular'), url('../fonts/Slot_Font/Slot-Regular.otf') format('opentype');
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Slot-Regular', sans-serif;
+    font-size: 48px;
+    color: #00eeff;
+} */
+
+
+h1 {
+    @apply text-6xl font-black ;
+}
+
+h2 {
+    @apply text-5xl font-bold;
+}
+
+h3 {
+    @apply text-3xl font-semibold;
+}
+
+h4 {
+    @apply text-xl font-medium;
+}
+
+h5 {
+    @apply text-lg font-medium;
+}
+
+p {
+    @apply p-2 m-6;
+}
+
+/* SITE WIDE BUTTONS/LINKS STYLES */
+button, .btn {
+    @apply bg-cy text-space py-2 px-2 rounded border-0 py-2 px-8 focus:outline-none text-lg inline-flex items-center;
+}
+
+button:hover, .btn:hover {
+    @apply bg-ultra text-light cursor-pointer;
+}
+
+a{
+    @apply text-cy cursor-pointer
+}
+
+a:hover{
+    @apply text-rose
+}
+
+
+/* SPECIFIC ELEMENT STYLES */
+
+body{
+    background-color: #000;
+    font-size: 24px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    z-index: 1000;
+}
+
+.navbar span {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background: linear-gradient(90deg, transparent, #FFF8E7);
+    animation: animate 10s infinite linear;
+}
+
+
+@keyframes animate {
+    0% {
+        left: 0;
+        transform: translate(-100%);
+    }
+
+    100% {
+        left: 100%;
+        transform: translate(0%);
+        /* opacity: 0; */
+    }
+}
+
+.logo {
+    text-transform: capitalize;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: w;
+}
+
+li {
+    list-style: none;
+}
+
+
+.menu {
+    display: flex;
+    gap: 5rem;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+
+
+/* BACKGROUND VIDEO - EARF  */
+#earf-block {
+    position: absolute;
+    top: 0;
+    z-index: -100px;
+}
+
+#earf {
+    filter: hue-rotate(2.8rad);
+}
+
+
+/* HERO  */
+
+.hero h1 {
+    max-width: 50vw;
+    border-bottom: 2px solid #FFF8E7;
+    padding: 2rem;
+}
