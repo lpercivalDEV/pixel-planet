@@ -431,6 +431,12 @@ video {
 .mt-96 {
   margin-top: 24rem;
 }
+.-mt-24 {
+  margin-top: -6rem;
+}
+.-mt-64 {
+  margin-top: -16rem;
+}
 .flex {
   display: flex;
 }
@@ -446,6 +452,10 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .flex-row {
   flex-direction: row;
@@ -717,11 +727,11 @@ li {
     
 }
 /* HERO  */
-/* .hero h1 {
+.hero h1 {
     max-width: 50vw;
     border-bottom: 2px solid #FFF8E7;
     padding: 2rem;
-} */
+}
 /* BG Starfield  */
 /* #space, .stars {
   overflow: hidden;
@@ -768,8 +778,26 @@ li {
   }
 }
 @media (min-width: 1024px) {
+  .lg\:-mt-64 {
+    margin-top: -16rem;
+  }
+  .lg\:mb-96 {
+    margin-bottom: 24rem;
+  }
   .lg\:w-2\/3 {
     width: 66.666667%;
+  }
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+  .lg\:w-full {
+    width: 100%;
+  }
+  .lg\:w-screen {
+    width: 100vw;
+  }
+  .lg\:w-11\/12 {
+    width: 91.666667%;
   }
   .lg\:text-8xl {
     font-size: 6rem;
