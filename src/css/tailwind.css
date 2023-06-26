@@ -60,7 +60,7 @@ a{
 }
 
 a:hover{
-    @apply text-ultra
+    @apply text-flame
 }
 
 
@@ -91,12 +91,12 @@ a:hover{
 }
 
 /* SPAN ANIMATIONS  */
-span {
+span, .menu li a {
     position: relative;
 }
 
 span::before,
-span::after {
+span::after, .menu li a::before, .menu li a::after{
     content: '';
     position: absolute;
     top: 0;
@@ -107,22 +107,22 @@ span::after {
     transition: transform 0.5s ease;
 }
 
-span::before {
+span::before, .menu li a::before {
     left: -8px;
     transform-origin: center top;
 }
 
-span:hover::before {
+span:hover::before, .menu li a:hover::before {
     transform-origin: center bottom;
     transform: scaleY(1);
 }
 
-span::after {
+span::after, .menu li a::after{
     right: -8px;
     transform-origin: center bottom;
 }
 
-span:hover::after {
+span:hover::after, .menu li a:hover::after {
     transform-origin: center top;
     transform: scaleY(1);
 }

@@ -419,9 +419,6 @@ video {
 .mb-4 {
   margin-bottom: 1rem;
 }
-.mb-52 {
-  margin-bottom: 13rem;
-}
 .mb-96 {
   margin-bottom: 24rem;
 }
@@ -430,12 +427,6 @@ video {
 }
 .mt-96 {
   margin-top: 24rem;
-}
-.-mt-24 {
-  margin-top: -6rem;
-}
-.-mt-64 {
-  margin-top: -16rem;
 }
 .flex {
   display: flex;
@@ -453,10 +444,6 @@ video {
 .w-full {
   width: 100%;
 }
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
 .flex-row {
   flex-direction: row;
 }
@@ -471,13 +458,6 @@ video {
 }
 .rounded-full {
   border-radius: 9999px;
-}
-.border-4 {
-  border-width: 4px;
-}
-.border-lime-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(190 242 100 / var(--tw-border-opacity));
 }
 .bg-light {
   --tw-bg-opacity: 1;
@@ -606,7 +586,7 @@ a {
 }
 a:hover {
   --tw-text-opacity: 1;
-  color: rgb(82 72 156 / var(--tw-text-opacity));
+  color: rgb(255 156 14 / var(--tw-text-opacity));
 }
 /* Button Animations  */
 .btn:hover, a:hover {
@@ -633,11 +613,11 @@ a:hover {
     }
 }
 /* SPAN ANIMATIONS  */
-span {
+span, .menu li a {
     position: relative;
 }
 span::before,
-span::after {
+span::after, .menu li a::before, .menu li a::after{
     content: '';
     position: absolute;
     top: 0;
@@ -647,19 +627,19 @@ span::after {
     transform: scaleY(0);
     transition: transform 0.5s ease;
 }
-span::before {
+span::before, .menu li a::before {
     left: -8px;
     transform-origin: center top;
 }
-span:hover::before {
+span:hover::before, .menu li a:hover::before {
     transform-origin: center bottom;
     transform: scaleY(1);
 }
-span::after {
+span::after, .menu li a::after{
     right: -8px;
     transform-origin: center bottom;
 }
-span:hover::after {
+span:hover::after, .menu li a:hover::after {
     transform-origin: center top;
     transform: scaleY(1);
 }
@@ -783,18 +763,6 @@ li {
   }
   .lg\:mb-96 {
     margin-bottom: 24rem;
-  }
-  .lg\:w-2\/3 {
-    width: 66.666667%;
-  }
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
-  .lg\:w-full {
-    width: 100%;
-  }
-  .lg\:w-screen {
-    width: 100vw;
   }
   .lg\:w-11\/12 {
     width: 91.666667%;
