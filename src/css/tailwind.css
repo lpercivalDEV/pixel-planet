@@ -141,7 +141,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100vw;
     border-bottom: 1px solid rgba(255, 255, 255, .1);
@@ -154,7 +154,7 @@ body{
     height: 2px;
     width: 50px;
     background: linear-gradient(90deg, transparent, #00eeff);
-    animation: animate 8s infinite linear;
+    animation: animate 8s infinite ease;
 }
 
 
@@ -197,9 +197,9 @@ li {
 
 /* BACKGROUND VIDEO - EARF  */
 #earf-block {
-    position: absolute;
-    top: 0;
-    z-index: -100;
+    /* position: absolute;
+    bottom: 0; */
+    /* z-index: -20; */
 }
 
 #earf {
@@ -209,25 +209,45 @@ li {
 }
 
 
+
 /* HERO  */
 .hero h1 {
     max-width: 50vw;
     border-bottom: 2px solid #FFF8E7;
     padding: 2rem;
+    background-color: #000;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
 }
 
+.hero {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#stats {
+    background-color: #FFF8E7;
+    position: relative;
+    z-index: 10;
+    clear: both;
+}
 
 /* BG Starfield  */
 
 /* #space, .stars {
   overflow: hidden;
-  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   opacity: 0.3;
-  z-index: 20;
+z-index: -200;
+border: 3px solid lime;
+height: 100vh;
+clear: both;
+position: fixed;
+width: 100vw;
+background: #000
 }
 
 .stars {
@@ -240,7 +260,32 @@ li {
     radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
   background-repeat: repeat;
   background-size: 200px 200px;
-  z-index: 10;
+  z-index: -120;
 } */
 
+#meta {
+    /* margin-bottom: 20rem;
+    position: relative;
+    z-index: 20;
+    clear: both; */
+}
+/* 
+#cta {
+    position: relative;
+    z-index: 20;
+    clear: both;
+}
 
+#about {
+    position: relative;
+    z-index: 20;
+    clear: both;
+}
+
+#contact {
+    position: relative;
+    z-index: 20;
+    clear: both;
+}
+
+ */
