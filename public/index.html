@@ -38,22 +38,29 @@
             <div class="btn">Launch</div>
         </nav>
     </header>
-    <main>
+    <main class="">
         <!-- BG Earf Video -->
-        <section id="earf-block" class="flex justify-center mt-96 border-lime-200">
-            <video autoplay muted loop id="earf" class="rounded-full mx-auto w-2/3 h-fit ">
+        <section id="earf-block" class="flex justify-center mt-96">
+            <video autoplay muted loop id="earf" class="rounded-full mx-auto sm:w-screen lg:w-2/3 h-fit ">
                 <source src="./assets/earf_loop_bg.mp4" type="video/mp4">
             </video>
         </section>
 
         <!-- HERO  -->
-        <section class="hero flex-row justify-center text-center text-light py-32 mb-96">
+    <section class="w-full h-screen border-4 border-lime-300 w-full h-screen flex mb-52">
+        <div class="sm:mt-64 mx-auto justify-center text-center text-light py-2 flex flex-col">
+            <h1 class="sm:text-xl mb-12 sm:pt-6 md:text-6xl lg:text-8xl font-medium title-font  text-light">Pixel Planet
+            </h1>
+            <span class="text-lg w-1/2 mx-auto">technology serving humanity</span>
+        </div>
+    </section>
+
+        <!-- <section class="hero flex-row justify-center text-center text-light py-32 mb-96">
             <h1 class="text-8xl mx-auto mb-4">Pixel Planet</h1>
-            <span>Technology that serves humanity</span>
-        </section>
+        </section> -->
 
         <!-- DIVIDER STATS -->
-        <section class="h-fit bg-light">
+        <section class="w-full h-fit bg-light">
             <ul class="flex justify-around text-space p-12 px-12">
                 <div class="p-4 flex-col text-center">
                     <span class="text-5xl">100%</span>
@@ -76,7 +83,7 @@
 
         <!-- METAPXLS SECTION -->
         <!-- SUMMARY OF SKILLS/SERVICES and OUR VALUES/LAWS  -->
-        <section class="container py-32">
+        <section class="py-32">
             <!-- BG STAR FIELD  -->
             <div id="space">
                 <div class="stars"></div>
@@ -93,7 +100,7 @@
         </section>
 
         <!-- CTA FOR CONTACT SECTION AND A LINK TO PXL ACADEMY -->
-        <section class="container py-32">
+        <section class="py-32">
             <h2>Lorem ipsum dolor sit amet.</h2>
             <a class="btn" href="">CONTACT</a>
             <span>
@@ -102,7 +109,7 @@
         </section>
 
         <!-- ABOUT US SECTION  -->
-        <section class="container py-32">
+        <section class="py-32">
             <!-- BG STAR FIELD  -->
             <div id="space">
                 <div class="stars"></div>
@@ -119,7 +126,7 @@
         </section>
 
         <!-- CONTACT  -->
-        <section class="container py-32">
+        <section class="py-32">
             <h2>Contact Us</h2>
             <form id="contact" action="">
                     <label for="">Name</label>

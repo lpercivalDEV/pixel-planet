@@ -409,40 +409,18 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.container {
-  width: 100%;
-}
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
+.mb-12 {
+  margin-bottom: 3rem;
+}
 .mb-4 {
   margin-bottom: 1rem;
+}
+.mb-52 {
+  margin-bottom: 13rem;
 }
 .mb-96 {
   margin-bottom: 24rem;
@@ -460,8 +438,14 @@ video {
   height: -moz-fit-content;
   height: fit-content;
 }
-.w-2\/3 {
-  width: 66.666667%;
+.h-screen {
+  height: 100vh;
+}
+.w-1\/2 {
+  width: 50%;
+}
+.w-full {
+  width: 100%;
 }
 .flex-row {
   flex-direction: row;
@@ -478,9 +462,12 @@ video {
 .rounded-full {
   border-radius: 9999px;
 }
-.border-lime-200 {
+.border-4 {
+  border-width: 4px;
+}
+.border-lime-300 {
   --tw-border-opacity: 1;
-  border-color: rgb(217 249 157 / var(--tw-border-opacity));
+  border-color: rgb(190 242 100 / var(--tw-border-opacity));
 }
 .bg-light {
   --tw-bg-opacity: 1;
@@ -518,6 +505,13 @@ video {
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.font-medium {
+  font-weight: 500;
 }
 .text-light {
   --tw-text-opacity: 1;
@@ -723,21 +717,23 @@ li {
     
 }
 /* HERO  */
-.hero h1 {
+/* .hero h1 {
     max-width: 50vw;
     border-bottom: 2px solid #FFF8E7;
     padding: 2rem;
-}
+} */
 /* BG Starfield  */
-#space, .stars {
+/* #space, .stars {
   overflow: hidden;
   position: relative;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  /* opacity: 0.3; */
+  opacity: 0.3;
+  z-index: 20;
 }
+
 .stars {
   background-image: 
     radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
@@ -748,6 +744,37 @@ li {
     radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
   background-repeat: repeat;
   background-size: 200px 200px;
+  z-index: 10;
+} */
+@media (min-width: 640px) {
+  .sm\:mt-64 {
+    margin-top: 16rem;
+  }
+  .sm\:w-screen {
+    width: 100vw;
+  }
+  .sm\:pt-6 {
+    padding-top: 1.5rem;
+  }
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+@media (min-width: 768px) {
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:w-2\/3 {
+    width: 66.666667%;
+  }
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
 }
 
 

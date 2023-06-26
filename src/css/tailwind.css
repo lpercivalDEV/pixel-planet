@@ -210,23 +210,24 @@ li {
 
 
 /* HERO  */
-.hero h1 {
+/* .hero h1 {
     max-width: 50vw;
     border-bottom: 2px solid #FFF8E7;
     padding: 2rem;
-}
+} */
 
 
 /* BG Starfield  */
 
-#space, .stars {
+/* #space, .stars {
   overflow: hidden;
   position: relative;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  /* opacity: 0.3; */
+  opacity: 0.3;
+  z-index: 20;
 }
 
 .stars {
@@ -239,6 +240,7 @@ li {
     radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
   background-repeat: repeat;
   background-size: 200px 200px;
-}
+  z-index: 10;
+} */
 
 
