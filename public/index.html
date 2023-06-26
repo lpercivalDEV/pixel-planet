@@ -21,33 +21,136 @@
     <title>pixel planet</title>
 </head>
 <body>
-    <!-- BG Earf Video -->
-    <section id="earf-block" class="w-11/12 h-fit flex justify-center mt-96">
-        <video autoplay muted loop id="earf" class="mx-auto">
-            <source src="./assets/earf_loop_mini.mp4" type="video/mp4">
-        </video>
-    </section>
-
     <!-- NAV  -->
     <header>
-        <nav class="navbar">
+        <nav onscroll="bg-light" class="navbar px-6 py-2">
             <span></span>
-            <div class="logo">PP</div>
+            <a href="/">
+                <div class="logo">
+                    <img src="./assets/logo2.png" alt="pixel planet logo">
+                </div>
+            </a>
             <ul class="menu">
-                <li><a href="#">about</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">pixel academy</a></li>
+                <li><a href="#about">about pxlplnt</a></li>
+                <li><a href="#services">metapxls</a></li>
+                <li><a href="pixelacademy.html">pxl academy</a></li>
             </ul>
-            <div class="btn">Contact</div>
+            <div class="btn">Launch</div>
         </nav>
     </header>
-
     <main>
-        <section class="hero flex-row justify-center text-center text-light py-32">
+        <!-- BG Earf Video -->
+        <section id="earf-block" class="flex justify-center mt-96 border-lime-200">
+            <video autoplay muted loop id="earf" class="rounded-full mx-auto w-2/3 h-fit ">
+                <source src="./assets/earf_loop_bg.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- HERO  -->
+        <section class="hero flex-row justify-center text-center text-light py-32 mb-96">
             <h1 class="text-8xl mx-auto mb-4">Pixel Planet</h1>
             <span>Technology that serves humanity</span>
         </section>
+
+        <!-- DIVIDER STATS -->
+        <section class="h-fit bg-light">
+            <ul class="flex justify-around text-space p-12 px-12">
+                <div class="p-4 flex-col text-center">
+                    <span class="text-5xl">100%</span>
+                    <li class="">Minority Owned</li>
+                </div>
+                <div class="p-4 flex-col text-center">
+                    <span class="text-5xl">10</span>
+                    <li class="">Years of Experience</li>
+                </div>
+                <div class="p-4 flex-col text-center">
+                    <span class="text-5xl">#</span>
+                    <li class="">People Pixellated</li>
+                </div>
+                <div class="p-4 flex-col text-center">
+                    <span class="text-5xl">10</span>
+                    <li class="">Trees Planted</li>
+                </div>
+            </ul>
+        </section>
+
+        <!-- METAPXLS SECTION -->
+        <!-- SUMMARY OF SKILLS/SERVICES and OUR VALUES/LAWS  -->
+        <section class="container py-32">
+            <!-- BG STAR FIELD  -->
+            <div id="space">
+                <div class="stars"></div>
+                <div class="stars"></div>
+                <div class="stars"></div>
+                <div class="stars"></div>
+                <div class="stars"></div>
+            </div>
+        
+            <h2>Metapixels</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure voluptas, recusandae voluptatum omnis expedita
+                quaerat at ullam saepe cum quia quas, qui laboriosam, aspernatur eos. Dolorem suscipit consequuntur veniam
+                dolor.</p>
+        </section>
+
+        <!-- CTA FOR CONTACT SECTION AND A LINK TO PXL ACADEMY -->
+        <section class="container py-32">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <a class="btn" href="">CONTACT</a>
+            <span>
+                <a href="#">PXL ACADEMY</a>
+            </span>
+        </section>
+
+        <!-- ABOUT US SECTION  -->
+        <section class="container py-32">
+            <!-- BG STAR FIELD  -->
+            <div id="space">
+                <div class="stars"></div>
+                <div class="stars"></div>
+                <div class="stars"></div>
+                <div class="stars"></div>
+                <div class="stars"></div>
+            </div>
+        
+            <h2>About Pixel Planet</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure voluptas, recusandae voluptatum omnis expedita
+                quaerat at ullam saepe cum quia quas, qui laboriosam, aspernatur eos. Dolorem suscipit consequuntur veniam
+                dolor.</p>
+        </section>
+
+        <!-- CONTACT  -->
+        <section class="container py-32">
+            <h2>Contact Us</h2>
+            <form id="contact" action="">
+                    <label for="">Name</label>
+                    <span class="bottom"></span>
+                    <span class="right"></span>
+                    <span class="top"></span>
+                    <span class="left"></span>
+                    <input type="text">
+                <!-- <fieldset>
+                    <label for="">Email</label>
+                    <span class="bottom"></span>
+                    <span class="right"></span>
+                    <span class="top"></span>
+                    <span class="left"></span>
+                    <input type="email">
+                </fieldset>
+                <fieldset>
+                    <label for="">Phone</label>
+                    <span class="bottom"></span>
+                    <span class="right"></span>
+                    <span class="top"></span>
+                    <span class="left"></span>
+                    <input type="tel">
+                </fieldset> -->
+
+                <button class="btn">Submit</button>
+            </form>
+        </section>
+
+       
+
     </main>
     
     

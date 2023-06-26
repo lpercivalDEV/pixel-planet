@@ -48,11 +48,11 @@ p {
 
 /* SITE WIDE BUTTONS/LINKS STYLES */
 button, .btn {
-    @apply bg-cy text-space py-2 px-2 rounded border-0 py-2 px-8 focus:outline-none text-lg inline-flex items-center;
+    @apply outline-double outline-offset-2 outline-cy text-light py-2 px-2 rounded border-0 py-2 px-8 text-lg inline-flex items-center;
 }
 
 button:hover, .btn:hover {
-    @apply bg-ultra text-light cursor-pointer;
+    @apply bg-cy text-space cursor-pointer;
 }
 
 a{
@@ -60,17 +60,45 @@ a{
 }
 
 a:hover{
-    @apply text-rose
+    @apply text-ultra
+}
+
+
+/* Button Animations  */
+.btn:hover, a:hover {
+    cursor: pointer;
+    animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+
+    0%,
+    100% {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+
+    75% {
+        transform: scale(0.95, 1.05);
+    }
 }
 
 
 /* SPECIFIC ELEMENT STYLES */
-
 body{
     background-color: #000;
     font-size: 24px;
+    color: #FFF8E7;
 }
 
+/* Navbar  */
 .navbar {
     display: flex;
     align-items: center;
@@ -87,8 +115,8 @@ body{
     bottom: 0;
     height: 2px;
     width: 50px;
-    background: linear-gradient(90deg, transparent, #FFF8E7);
-    animation: animate 10s infinite linear;
+    background: linear-gradient(90deg, transparent, #00eeff);
+    animation: animate 8s infinite linear;
 }
 
 
@@ -101,7 +129,7 @@ body{
     100% {
         left: 100%;
         transform: translate(0%);
-        /* opacity: 0; */
+        /* opacity: 0.5; */
     }
 }
 
@@ -126,22 +154,53 @@ li {
 
 
 
+
+
+
 /* BACKGROUND VIDEO - EARF  */
 #earf-block {
     position: absolute;
     top: 0;
-    z-index: -100px;
+    z-index: -100;
 }
 
 #earf {
+    /* filter: hue-rotate(2.8rad) drop-shadow(6px 6px 20px #00eeff); */
     filter: hue-rotate(2.8rad);
+    
 }
 
 
 /* HERO  */
-
 .hero h1 {
     max-width: 50vw;
     border-bottom: 2px solid #FFF8E7;
     padding: 2rem;
 }
+
+
+/* BG Starfield  */
+
+#space, .stars {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* opacity: 0.3; */
+}
+
+.stars {
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+
