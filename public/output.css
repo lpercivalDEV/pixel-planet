@@ -628,6 +628,37 @@ a:hover {
         transform: scale(0.95, 1.05);
     }
 }
+/* SPAN ANIMATIONS  */
+span {
+    position: relative;
+}
+span::before,
+span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #00eeff;
+    transform: scaleY(0);
+    transition: transform 0.5s ease;
+}
+span::before {
+    left: -8px;
+    transform-origin: center top;
+}
+span:hover::before {
+    transform-origin: center bottom;
+    transform: scaleY(1);
+}
+span::after {
+    right: -8px;
+    transform-origin: center bottom;
+}
+span:hover::after {
+    transform-origin: center top;
+    transform: scaleY(1);
+}
 /* SPECIFIC ELEMENT STYLES */
 body{
     background-color: #000;
