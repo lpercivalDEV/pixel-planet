@@ -7,7 +7,7 @@
 
 /* SITE WIDE HEADINGS and TEXT */
 
-/* @font-face {
+@font-face {
     font-family: 'Slot-Regular';
     font-style: normal;
     font-weight: normal;
@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Slot-Regular', sans-serif;
     font-size: 48px;
     color: #00eeff;
-} */
+}
 
 
 h1 {
@@ -130,53 +130,43 @@ span:hover::after, .menu li a:hover::after {
 
 
 /* SPECIFIC ELEMENT STYLES */
+
 body{
-    background-color: #000;
     font-size: 24px;
     color: #FFF8E7;
+    background: url("../../public/assets/star_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    box-shadow: inset 0 0 0 100vh rgba(0, 0, 0, 0.7);
 }
 
 /* Navbar  */
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: absolute;
     top: 0;
     width: 100vw;
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
-    z-index: 1000;
+    max-width: 100vw;
+    overflow-x: hidden;
+    z-index: 100;
 }
 
-.navbar span {
+/* .navbar span,  {
     position: absolute;
     bottom: 0;
     height: 2px;
     width: 50px;
     background: linear-gradient(90deg, transparent, #00eeff);
     animation: animate 8s infinite ease;
-}
-
-
-@keyframes animate {
-    0% {
-        left: 0;
-        transform: translate(-100%);
-    }
-
-    100% {
-        left: 100%;
-        transform: translate(0%);
-        /* opacity: 0.5; */
-    }
-}
+} */
 
 .logo {
-    text-transform: capitalize;
-    font-size: 30px;
     cursor: pointer;
-    font-family: w;
 }
+
 
 li {
     list-style: none;
@@ -188,10 +178,23 @@ li {
     gap: 5rem;
     text-transform: uppercase;
     font-weight: 100;
+    background-color: #000;
 }
 
 
+/* MOBILE NAV  */
 
+.mobmenu {
+    display: flex;
+    gap: 5rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    background-color: #000;
+}
+
+.menu ul li {
+    animation: rotate;
+}
 
 
 
@@ -205,26 +208,50 @@ li {
 #earf {
     /* filter: hue-rotate(2.8rad) drop-shadow(6px 6px 20px #00eeff); */
     filter: hue-rotate(2.8rad);
-    
 }
 
 
 
 /* HERO  */
-.hero h1 {
-    max-width: 50vw;
-    border-bottom: 2px solid #FFF8E7;
-    padding: 2rem;
+.hero-text h1 {
+    /* max-width: 50vw; */
+    /* border-bottom: 2px solid #FFF8E7;
+    padding: 2rem; */
+    color: #00eeff;
     background-color: #000;
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
 }
 
-.hero {
+.hero-text {
     position: relative;
     top: 0;
     left: 0;
 }
 
+.hero-text #light-glide {
+    position: absolute;
+        top: 130px;
+        height: 2px;
+        width: 70px;
+        background: linear-gradient(90deg, transparent, #00eeff);
+        animation: animate 8s infinite ease;
+}
+
+@keyframes animate {
+    0% {
+        left: 0;
+        transform: translate(-100%);
+    }
+
+    100% {
+        left: 100%;
+        transform: translate(0%);
+        opacity: 0.5;
+    }
+} 
+
+
+/* DIVIDER STATISTICS  */
 #stats {
     background-color: #FFF8E7;
     position: relative;
@@ -232,43 +259,213 @@ li {
     clear: both;
 }
 
-/* BG Starfield  */
 
-/* #space, .stars {
-  overflow: hidden;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.3;
-z-index: -200;
-border: 3px solid lime;
-height: 100vh;
-clear: both;
-position: fixed;
-width: 100vw;
-background: #000
+#meta img{
+    filter: hue-rotate(3.5123rad);
 }
 
-.stars {
-  background-image: 
-    radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
-  background-repeat: repeat;
-  background-size: 200px 200px;
-  z-index: -120;
-} */
-
-#meta {
-    /* margin-bottom: 20rem;
-    position: relative;
+#about {
+    /* position: relative;
     z-index: 20;
     clear: both; */
+    background-color: rgba(255, 248, 231);
+    /* background: linear-gradient(0deg, #fff, #F2F2E3, #FFF8E7,#454545); */
 }
+
+.blob-box {
+    min-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    filter: blur(40px);
+}
+
+/* 
+.blob-box-two {
+    min-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    filter: blur(40px);
+    display: grid;
+    grid-auto-flow: column;
+
+} */
+
+.shape-blob, .blobby {
+    background: #00eeff;
+    height: 60px;
+    width: 80px;
+    border-radius: 40% 50% 30% 40%;
+    animation:
+        transform 18s ease-in-out infinite both alternate,
+        movement_one 12s ease-in-out infinite both;
+    opacity: .7;
+    position: relative;
+    left: 75%;
+    top: 40%;
+}
+
+.shape-blob.one, .blobby1 {
+    background: #ff9c0e;
+    height: 150px;
+    width: 200px;
+    left: 10px;
+    top: 10px;
+    transform: rotate(-180deg);
+    animation: transform 8s ease-in-out infinite both alternate, movement_two 20s ease-in-out infinite both;
+}
+
+.shape-blob.two, .blobby2 {
+    background: #52489c;
+    height: 70px;
+    width: 100px;
+    left: 160px;
+    top: 200px;
+    transform: rotate(-180deg);
+    animation: transform 5s ease-in-out infinite both alternate, movement_two 5s ease-in-out infinite both;
+}
+
+
+.shape-blob.three, .blobby3 {
+    background: #ff0e71;
+    height: 100px;
+    width: 80px;
+    left: 350px;
+    top: 60px;
+    transform: rotate(-180deg);
+    animation: transform 17s ease-in-out infinite both alternate, movement_two 13s ease-in-out infinite both;
+}
+
+.shape-blob.four, .blobby4 {
+    background: #00eeff;
+    height: 150px;
+    width: 200px;
+    left: 510px;
+    top: 400px;
+    transform: rotate(-180deg);
+    animation: transform 8s ease-in-out infinite both alternate, movement_two 20s ease-in-out infinite both;
+}
+
+.shape-blob.five, .blobby5 {
+    background: #52489c;
+    height: 70px;
+    width: 100px;
+    left: 460px;
+    top: 20px;
+    transform: rotate(-180deg);
+    animation: transform 5s ease-in-out infinite both alternate, movement_two 5s ease-in-out infinite both;
+}
+
+.shape-blob.six, .blobby6 {
+    background: #ff0e71;
+    height: 100px;
+    width: 80px;
+    left: 450px;
+    top: 20px;
+    transform: rotate(-180deg);
+    animation: transform 17s ease-in-out infinite both alternate, movement_two 13s ease-in-out infinite both;
+}
+
+@keyframes transform {
+
+    0%,
+    100% {
+        border-radius: 33% 67% 70% 30% / 30% 40% 70% 70%;
+    }
+
+    20% {
+        border-radius: 37% 63% 51% 49% / 37% 35% 35% 63%;
+    }
+
+    40% {
+        border-radius: 36% 64% 64% 36% / 64% 48% 52% 26%;
+    }
+
+    60% {
+        border-radius: 37% 63% 51% 49% / 30% 30% 70% 73%;
+    }
+
+    80% {
+        border-radius: 40% 60% 42% 58% / 51% 51% 49% 59%;
+    }
+}
+
+
+@keyframes movement_one {
+
+    0%,
+    100% {
+        transform: none;
+    }
+
+    50% {
+        transform: translate(50%, 20%) rotateY(10deg) scale(1);
+    }
+}
+
+@keyframes movement_two {
+
+    0%,
+    500% {
+        transform: none;
+    }
+
+    50% {
+        transform: translate(50%, 20%) rotate(-200deg) scale(1.3);
+    }
+}
+
+
+
+#earf-mini {
+    filter: hue-rotate(6.7rad) saturate(1) invert(0.2) drop-shadow(0 0 0.75rem #00eeff);
+}
+
+#contact img {
+    filter: hue-rotate(8.9rad) invert(100%) saturate(52) opacity(0.5);
+}
+
+/* 
+#orbit-lines, #orbit-lines2, #orbit-lines3, #orbit-lines4 {
+   position: absolute;
+   margin-top: -4rem;
+   overflow: hidden;
+   width: 100vw;
+}
+
+
+.lines {
+    animation: 3.6s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate orbit;
+    margin-top: 2rem;
+}
+
+.lines2 {
+    animation: 3.4s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate orbit;
+    margin-top: 2rem;
+}
+
+.lines3 {
+    animation: 3.2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate orbit;
+    margin-top: 2rem;
+}
+
+.lines4 {
+    animation: 3s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate orbit;
+    margin-top: 2rem;
+}
+
+@keyframes orbit {
+    from {
+        transform: translateY(10vh);
+    }
+
+    to {
+        transform: translateY(-100);
+    }
+} */
+
+
 /* 
 #cta {
     position: relative;
@@ -276,16 +473,5 @@ background: #000
     clear: both;
 }
 
-#about {
-    position: relative;
-    z-index: 20;
-    clear: both;
-}
-
-#contact {
-    position: relative;
-    z-index: 20;
-    clear: both;
-}
 
  */
