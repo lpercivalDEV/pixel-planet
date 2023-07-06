@@ -197,6 +197,11 @@ li {
 }
 
 
+/* MAIN CONTENT  */
+main {
+    overflow-x: hidden !important;
+}
+
 
 /* BACKGROUND VIDEO - EARF  */
 #earf-block {
@@ -226,15 +231,17 @@ li {
     position: relative;
     top: 0;
     left: 0;
+    max-width: 100vw;
 }
 
 .hero-text #light-glide {
     position: absolute;
-        top: 130px;
-        height: 2px;
-        width: 70px;
-        background: linear-gradient(90deg, transparent, #00eeff);
-        animation: animate 8s infinite ease;
+    top: 150px;
+    height: 2px;
+    width: 70px;
+    background: linear-gradient(90deg, transparent, #00eeff);
+    animation: animate 8s infinite ease;
+    overflow: hidden !important;
 }
 
 @keyframes animate {
@@ -423,7 +430,7 @@ li {
 }
 
 #contact img {
-    filter: hue-rotate(8.9rad) invert(100%) saturate(52) opacity(0.5);
+    filter: hue-rotate(8.9rad) invert(100%) saturate(98) opacity(0.7);
 }
 
 /* 
