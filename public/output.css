@@ -1088,7 +1088,7 @@ span:hover::after, .menu li a:hover::after {
 body{
     font-size: 24px;
     color: #FFF8E7;
-    background: url("../../public/assets/icons/star_bg.jpg");
+    background: url("../../public/assets/icons/star_bg_min.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #000;
