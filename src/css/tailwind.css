@@ -442,9 +442,11 @@ main {
     filter: hue-rotate(6.7rad) saturate(1) invert(0.2) drop-shadow(0 0 0.75rem #00eeff);
 }
 
-#contact img {
+#contact .icon {
     /* filter: hue-rotate(8.9rad) invert(100%) saturate(98) opacity(0.7); */
+    filter: invert(1);
 }
+
 
 /* 
 #orbit-lines, #orbit-lines2, #orbit-lines3, #orbit-lines4 {
