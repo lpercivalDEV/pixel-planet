@@ -259,60 +259,66 @@
                 <h1 class="text-center mt-24">Contact Us</h1>
                 <div class="container px-5 py-24 mx-auto lg:flex">
                     <div class="flex flex-col text-center mb-12">
-                        <!-- <img class="w-80 mx-auto" src="./assets/icons/contact.svg" alt="contact map icon"> -->
                         <img id="earf-mini" alt="rotating earth gif"
                             class="w-60 h-60 mb-8 object-cover object-center rounded-full inline-block outline-double outline-offset-2 outline-cy mx-auto"
                             src="./assets/earf.gif" alt="mini rotating earth gif">
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Have a project, need a website, or design? Send us a message and we'll get back to you asap.</p>
                     </div>
-                    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                    <form class="lg:w-1/2 md:w-2/3 mx-auto" name="pxl_contact" method="POST" data-netlify="true"
+                        netlify-honeypot="bot-field" data-netlify-recaptcha="true">
                         <div class="flex flex-wrap -m-2">
+                            <p class="hidden">
+                                <label>
+                                    Don’t fill this out if you’re human: <input name="bot-field" />
+                                </label>
+                            </p>
                             <div class="p-2 w-1/2">
                                 <div class="relative">
                                     <label for="name" class="leading-7 text-sm text-light">Name</label>
                                     <input type="text" id="name" name="name"
-                                        class="w-full outline-double outline-offset-2 outline-cy bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-light py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                        class="w-full outline-double outline-offset-2 outline-cy bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-space py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                                 </div>
                             </div>
                             <div class="p-2 w-1/2">
                                 <div class="relative">
                                     <label for="email" class="leading-7 text-sm text-light">Email</label>
                                     <input type="email" id="email" name="email"
-                                        class="w-full outline-double outline-offset-2 outline-cy bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-light py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                        class="w-full outline-double outline-offset-2 outline-cy bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-space py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                                 </div>
                             </div>
                             <div class="p-2 w-full">
                                 <div class="relative">
                                     <label for="message" class="leading-7 text-sm text-light">Message</label>
                                     <textarea id="message" name="message"
-                                        class="w-full outline-double outline-offset-2 outline-cy bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-light py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out cursor-text"></textarea>
+                                        class="w-full outline-double outline-offset-2 outline-cy bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-space py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out cursor-text"></textarea>
                                 </div>
                             </div>
+                            <div data-netlify-recaptcha="true"></div>
                             <div class="p-2 w-full">
-                                <button
+                                <button type="submit"
                                     class="btn flex mx-auto text-white  border-0 py-2 px-8 focus:outline-none  rounded text-lg">Launch</button>
                             </div>
                             <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
                                 <span class="inline-flex">
-                                    <a href="#" class="ml-4 text-light">
-                                        <img class="icon w-6 h-6" src="./assets/icons/utube.png" alt="youtube icon">
+                                    <a href="#" class="ml-4 text-light invert">
+                                        <img class="w-6 h-6" src="./public/assets/icons/utube.png" alt="youtube icon">
                                         </svg>
                                     </a>
-                                    <a class="ml-4 text-white hover:text-white" href="#">
+                                    <a class="ml-4 text-white" href="#">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="0.7" class="w-6 h-6" viewBox="0 0 24 24" alt="instagram icon">
                                             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                                             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                                         </svg>
                                     </a>
-                                    <a href="mailto:pxlplanet@proton.me" class="icon ml-4 text-light">
-                                        <img class="w-6 h-6" src="./assets/icons/email.png" alt="email icon">
+                                    <a href="mailto:pxlplanet@proton.me" class="ml-4 text-light invert">
+                                        <img class="w-6 h-6" src="./public/assets/icons/email.png" alt="email icon">
                                         </svg>
                                     </a>
                                 </span>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </section>
         </section>
