@@ -158,15 +158,6 @@ body{
     z-index: 100;
 }
 
-/* .navbar span,  {
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    width: 50px;
-    background: linear-gradient(90deg, transparent, #00eeff);
-    animation: animate 8s infinite ease;
-} */
-
 .logo {
     cursor: pointer;
 }
@@ -188,19 +179,6 @@ li {
 
 /* MOBILE NAV  */
 
-/* .mobmenu {
-    display: flex;
-    gap: 5rem;
-    text-transform: uppercase;
-    font-weight: 100;
-    background-color: #000;
-} */
-/* 
-.menu ul li {
-    animation: rotate;
-} */
-
-
 /* MAIN CONTENT  */
 main {
     overflow-x: hidden !important;
@@ -208,24 +186,14 @@ main {
 
 
 /* BACKGROUND VIDEO - EARF  */
-#earf-block {
-    /* position: absolute;
-    bottom: 0; */
-    /* z-index: -20; */
-}
 
 #earf {
-    /* filter: hue-rotate(2.8rad) drop-shadow(6px 6px 20px #00eeff); */
     filter: hue-rotate(2.8rad);
 }
 
 
-
-/* HERO  */
+/* HERO SECTION */
 .hero-text h1 {
-    /* max-width: 50vw; */
-    /* border-bottom: 2px solid #FFF8E7;
-    padding: 2rem; */
     color: #00eeff;
     background-color: #000;
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));

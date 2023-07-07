@@ -608,9 +608,6 @@ video {
 .w-8 {
   width: 2rem;
 }
-.w-80 {
-  width: 20rem;
-}
 .w-full {
   width: 100%;
 }
@@ -942,10 +939,6 @@ video {
 .outline-cy {
   outline-color: #00eeff;
 }
-.invert {
-  --tw-invert: invert(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
 .transition-colors {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1095,7 +1088,7 @@ span:hover::after, .menu li a:hover::after {
 body{
     font-size: 24px;
     color: #FFF8E7;
-    background: url("../../public/assets/star_bg.jpg");
+    background: url("../../public/assets/icons/star_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #000;
@@ -1113,14 +1106,6 @@ body{
     overflow-x: hidden;
     z-index: 100;
 }
-/* .navbar span,  {
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    width: 50px;
-    background: linear-gradient(90deg, transparent, #00eeff);
-    animation: animate 8s infinite ease;
-} */
 .logo {
     cursor: pointer;
 }
@@ -1135,36 +1120,16 @@ li {
     background-color: #000;
 }
 /* MOBILE NAV  */
-/* .mobmenu {
-    display: flex;
-    gap: 5rem;
-    text-transform: uppercase;
-    font-weight: 100;
-    background-color: #000;
-} */
-/* 
-.menu ul li {
-    animation: rotate;
-} */
 /* MAIN CONTENT  */
 main {
     overflow-x: hidden !important;
 }
 /* BACKGROUND VIDEO - EARF  */
-#earf-block {
-    /* position: absolute;
-    bottom: 0; */
-    /* z-index: -20; */
-}
 #earf {
-    /* filter: hue-rotate(2.8rad) drop-shadow(6px 6px 20px #00eeff); */
     filter: hue-rotate(2.8rad);
 }
-/* HERO  */
+/* HERO SECTION */
 .hero-text h1 {
-    /* max-width: 50vw; */
-    /* border-bottom: 2px solid #FFF8E7;
-    padding: 2rem; */
     color: #00eeff;
     background-color: #000;
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
@@ -1435,17 +1400,9 @@ main {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
-.hover\:bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
 .hover\:text-flame:hover {
   --tw-text-opacity: 1;
   color: rgb(255 156 14 / var(--tw-text-opacity));
-}
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .focus\:border-blue-500:focus {
   --tw-border-opacity: 1;
