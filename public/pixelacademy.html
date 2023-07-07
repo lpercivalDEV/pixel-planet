@@ -19,24 +19,54 @@
 </head>
 <body>
     <!-- NAV  -->
-    <header>
-        <nav class="navbar">
-            <span></span>
-            <a href="/">
-                <div class="logo">PP</div>
+    <header class="hidden lg:block bg-black">
+        <nav class="navbar px-6 py-2">
+            <a href="index.html">
+                <div class="logo">
+                    <img class="logo_img w-6" src="./assets/icons/temp_logo.png" alt="pixel planet logo">
+                </div>
             </a>
             <ul class="menu">
-                <li><a href="#about">about</a></li>
-                <li><a href="#services">services</a></li>
-                <li><a href="pixelacademy.html">pixel academy</a></li>
+                <li><a href="index.html#about">about pxlplnt</a></li>
+                <li><a href="index.html#meta">metapxls</a></li>
+                <li><a class="current-page" href="pixelacademy.html">pxl academy</a></li>
             </ul>
-            <div class="btn">Contact</div>
+            <a class="btn" href="#contact">Launch</a>
         </nav>
     </header>
+    
+    <!-- //MOBILE NAV -->
+    <header class="lg:hidden block mb-12">
+        <a href="index.html" class="w-full flex items-center mb-4">
+            <img class="w-4 mx-auto m-2" src="./assets/icons/temp_logo.png" alt="pixel planet logo">
+        </a>
+        <nav>
+            <!-- <input class="border border-cy" type="checkbox" id="active"> -->
+            <!-- <label for="active" class="menu-btn bg-cy"><i class="fas fa-bars"></i></label> -->
+            <div class="wrapper">
+                <ul class="flex px-2 text-center justify-around text-sm">
+                    <li><a href="index.html#about">about pxlplnt</a></li>
+                    <li><a href="index.html#meta">metapxls</a></li>
+                    <li><a class="current-page" href="pixelacademy.html">pxl academy</a></li>
+                    <a class="" href="#contact">Launch</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
     <main>
-        <section class="hero flex justify-center">
+        <section class="block">
             <h1 class="mx-auto text-center py-32 mt-24">pixel academy</h1>
+            <p>Expand your horizons by exploring tech!</p>
+            <ul class="flex justify-around">
+                <a href="blog.html">Blog</a>
+                <a href="#glossary">Glossary</a>
+                <a href="#">Learn even more on our youtube channel</a>
+            </ul>
         </section>
+
+
+        
     </main>
 </body>
 </html>

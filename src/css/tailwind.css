@@ -63,6 +63,10 @@ a:hover{
     @apply text-flame
 }
 
+.current-page {
+    @apply text-flame
+}
+
 
 /* Button Animations  */
 .btn:hover, a:hover {
@@ -184,17 +188,17 @@ li {
 
 /* MOBILE NAV  */
 
-.mobmenu {
+/* .mobmenu {
     display: flex;
     gap: 5rem;
     text-transform: uppercase;
     font-weight: 100;
     background-color: #000;
-}
-
+} */
+/* 
 .menu ul li {
     animation: rotate;
-}
+} */
 
 
 /* MAIN CONTENT  */
@@ -266,19 +270,12 @@ main {
     clear: both;
 }
 
-
+/* METAPXLS SECTION  */
 #meta img{
     filter: hue-rotate(3.5123rad);
 }
 
-#about {
-    /* position: relative;
-    z-index: 20;
-    clear: both; */
-    background-color: rgba(255, 248, 231);
-    /* background: linear-gradient(0deg, #fff, #F2F2E3, #FFF8E7,#454545); */
-}
-
+/* BACKGROUND BLOBS OF COLOR  */
 .blob-box {
     min-height: 100vh;
     overflow: hidden;
@@ -299,7 +296,8 @@ main {
 
 } */
 
-.shape-blob, .blobby {
+.shape-blob,
+.blobby {
     background: #00eeff;
     height: 60px;
     width: 80px;
@@ -313,7 +311,8 @@ main {
     top: 40%;
 }
 
-.shape-blob.one, .blobby1 {
+.shape-blob.one,
+.blobby1 {
     background: #ff9c0e;
     height: 150px;
     width: 200px;
@@ -323,7 +322,8 @@ main {
     animation: transform 8s ease-in-out infinite both alternate, movement_two 20s ease-in-out infinite both;
 }
 
-.shape-blob.two, .blobby2 {
+.shape-blob.two,
+.blobby2 {
     background: #52489c;
     height: 70px;
     width: 100px;
@@ -334,7 +334,8 @@ main {
 }
 
 
-.shape-blob.three, .blobby3 {
+.shape-blob.three,
+.blobby3 {
     background: #ff0e71;
     height: 100px;
     width: 80px;
@@ -344,7 +345,8 @@ main {
     animation: transform 17s ease-in-out infinite both alternate, movement_two 13s ease-in-out infinite both;
 }
 
-.shape-blob.four, .blobby4 {
+.shape-blob.four,
+.blobby4 {
     background: #00eeff;
     height: 150px;
     width: 200px;
@@ -354,7 +356,8 @@ main {
     animation: transform 8s ease-in-out infinite both alternate, movement_two 20s ease-in-out infinite both;
 }
 
-.shape-blob.five, .blobby5 {
+.shape-blob.five,
+.blobby5 {
     background: #52489c;
     height: 70px;
     width: 100px;
@@ -364,7 +367,8 @@ main {
     animation: transform 5s ease-in-out infinite both alternate, movement_two 5s ease-in-out infinite both;
 }
 
-.shape-blob.six, .blobby6 {
+.shape-blob.six,
+.blobby6 {
     background: #ff0e71;
     height: 100px;
     width: 80px;
@@ -424,6 +428,15 @@ main {
 }
 
 
+/* ABOUT SECTION  */
+
+#about {
+    /* position: relative;
+    z-index: 20;
+    clear: both; */
+    background-color: rgba(255, 248, 231);
+    /* background: linear-gradient(0deg, #fff, #F2F2E3, #FFF8E7,#454545); */
+}
 
 #earf-mini {
     filter: hue-rotate(6.7rad) saturate(1) invert(0.2) drop-shadow(0 0 0.75rem #00eeff);
