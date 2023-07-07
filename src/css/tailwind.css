@@ -106,7 +106,7 @@ span::after, .menu li a::before, .menu li a::after{
     top: 0;
     bottom: 0;
     width: 2px;
-    background-color: #00eeff;
+    background-color: #fff;
     transform: scaleY(0);
     transition: transform 0.5s ease;
 }
@@ -183,6 +183,7 @@ li {
     text-transform: uppercase;
     font-weight: 100;
     background-color: #000;
+    color: #fff;
 }
 
 

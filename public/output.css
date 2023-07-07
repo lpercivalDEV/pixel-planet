@@ -748,10 +748,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
-.bg-cy {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 238 255 / var(--tw-bg-opacity));
-}
 .bg-flame {
   --tw-bg-opacity: 1;
   background-color: rgb(255 156 14 / var(--tw-bg-opacity));
@@ -970,10 +966,6 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 14 113 / var(--tw-text-opacity));
 }
-.text-slate-300 {
-  --tw-text-opacity: 1;
-  color: rgb(203 213 225 / var(--tw-text-opacity));
-}
 .text-space {
   --tw-text-opacity: 1;
   color: rgb(46 64 82 / var(--tw-text-opacity));
@@ -1124,7 +1116,7 @@ span::after, .menu li a::before, .menu li a::after{
     top: 0;
     bottom: 0;
     width: 2px;
-    background-color: #00eeff;
+    background-color: #fff;
     transform: scaleY(0);
     transition: transform 0.5s ease;
 }
@@ -1186,6 +1178,7 @@ li {
     text-transform: uppercase;
     font-weight: 100;
     background-color: #000;
+    color: #fff;
 }
 /* MOBILE NAV  */
 /* .mobmenu {
@@ -1564,6 +1557,9 @@ main {
   }
 }
 @media (min-width: 768px) {
+  .md\:-mt-24 {
+    margin-top: -6rem;
+  }
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1572,18 +1568,6 @@ main {
   }
   .md\:ml-0 {
     margin-left: 0px;
-  }
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
-  .md\:-mt-6 {
-    margin-top: -1.5rem;
-  }
-  .md\:-mt-12 {
-    margin-top: -3rem;
-  }
-  .md\:-mt-24 {
-    margin-top: -6rem;
   }
   .md\:h-36 {
     height: 9rem;
@@ -1643,9 +1627,6 @@ main {
   .lg\:mt-44 {
     margin-top: 11rem;
   }
-  .lg\:-mt-6 {
-    margin-top: -1.5rem;
-  }
   .lg\:block {
     display: block;
   }
@@ -1687,9 +1668,6 @@ main {
   }
   .lg\:items-start {
     align-items: flex-start;
-  }
-  .lg\:p-12 {
-    padding: 3rem;
   }
   .lg\:p-2 {
     padding: 0.5rem;
