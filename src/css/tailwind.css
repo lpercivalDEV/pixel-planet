@@ -141,7 +141,7 @@ span:hover::after, .menu li a:hover::after {
 
 .launching-soon {
     background-color: #000;
-    background-image: url("../../public/assets/black_hole_gifs/bh_flip_cyan.gif");
+    background-image: url("./assets/black_hole_gifs/bh_flip_cyan.gif");
     background-size: cover;
     background-repeat: no-repeat;
 }
