@@ -455,6 +455,18 @@ video {
 .right-2 {
   right: 0.5rem;
 }
+.bottom-4 {
+  bottom: 1rem;
+}
+.right-4 {
+  right: 1rem;
+}
+.bottom-6 {
+  bottom: 1.5rem;
+}
+.right-6 {
+  right: 1.5rem;
+}
 .z-50 {
   z-index: 50;
 }
