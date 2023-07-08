@@ -25,6 +25,7 @@
     
     <!-- STYLES -->
     <link rel="stylesheet" href="./output.css">
+    <!-- <link rel="stylesheet" href="../src/css/blog.css"> -->
     
     <title>pixel planet</title>
 </head>
@@ -39,13 +40,14 @@
         <nav class="navbar px-6 py-2">
             <a href="index.html">
                 <div class="logo">
-                    <img class="logo_img w-6" src="./assets/icons/temp_logo.png" alt="pixel planet logo">
+                    <img class="logo_img w-8" src="./assets/icons/pp-logo.png" alt="pixel planet logo">
                 </div>
             </a>
             <ul class="menu">
                 <li><a href="index.html#about">about pxlplnt</a></li>
                 <li><a href="index.html#meta">metapxls</a></li>
                 <li><a href="pixelacademy.html">pxl academy</a></li>
+                <li><a href="blog.html" class="text-flame">blog</a></li>
             </ul>
             <a class="btn" href="index.html#contact">Launch</a>
         </nav>
@@ -54,7 +56,7 @@
     <!-- //MOBILE NAV -->
     <header class="lg:hidden block mb-12">
         <a href="index.html" class="w-full flex items-center mb-4">
-            <img class="w-4 mx-auto m-2" src="./assets/icons/temp_logo.png" alt="pixel planet logo">
+            <img class="w-4 mx-auto m-2" src="./assets/icons/pp-logo.png" alt="pixel planet logo">
         </a>
         <nav>
             <!-- <input class="border border-cy" type="checkbox" id="active"> -->
@@ -64,6 +66,7 @@
                     <li><a href="index.html#about">about pxlplnt</a></li>
                     <li><a href="index.html#meta">metapxls</a></li>
                     <li><a href="pixelacademy.html">pxl academy</a></li>
+                    <li><a href="blog.html" class="text-flame">blog</a></li>
                     <a class="" href="index.html#contact">Launch</a>
                 </ul>
             </div>
@@ -71,12 +74,27 @@
     </header>
 
     <main>
-        <section class="hero flex justify-center">
+        <!-- <section class="hero flex justify-center">
             <h1 class="mx-auto text-center py-12 mt-24">blog</h1>
-        </section>
+        </section> -->
+        
+        <!-- COMING SOON PLACEHOLDER  -->
+        <section class="launching-soon block bg-black h-screen w-screen py-32">
+            <h1 class="text-center bg-black p-4">LAUNCHING SOON - Stay tuned <span>
+                    <img class="anim-logo inline-block m-2 w-10" src="./assets/icons/pp-logo.png" alt="">
+                </span></h1>
+
+
+
+
+
+        <!-- <dialog id="popupvideo" class="bg-space p-12 rounded-lg text-light">
+            <h1 class="p-6">I'm a pop up modal! Weeeeeeee1</h1>
+            <button onclick="popupvideo.close()">Close Pop Up</button>
+        </dialog> -->
 
         <!-- BLOG ITEMS  -->
-        <section class="text-light body-font">
+        <!-- <section class="text-light body-font">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-wrap -m-4">
                     <div class="p-4 md:w-1/3">
@@ -89,14 +107,17 @@
                                 <h3 class="leading-relaxed mb-3">Why Pixel Planet?</h3>
                                 <p class="leading-relaxed mb-3">Learn more about why we started pixel planet and what we are about.</p>
                                 <div class="flex items-center flex-wrap ">
+                                    <button onclick="popupvideo.showModal()"
+                                        class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Pop
+                                        Up Video</button>
                                     <a href="blog_why_pp.html" class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Read More
                                         <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                             fill="none" stroke-linecap="round" stroke-linejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>
                                         </svg>
-                                    </a>
-                                    <!-- <span
+                                    </a> 
+                                     <span
                                         class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                                         <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
@@ -111,12 +132,12 @@
                                                 d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
                                             </path>
                                         </svg>6
-                                    </span> -->
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="p-4 md:w-1/3">
+                    <div class="p-4 md:w-1/3">
                         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                             <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401"
                                 alt="blog">
@@ -189,10 +210,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section> -->
     </main>
 </body>
 </html>

@@ -48,7 +48,7 @@ p {
 
 /* SITE WIDE BUTTONS/LINKS STYLES */
 button, .btn {
-    @apply outline-double outline-offset-2 outline-cy text-light py-2 px-2 rounded border-0 py-2 px-8 text-lg inline-flex items-center;
+    @apply outline-double outline-offset-2 outline-cy  py-2 px-2 rounded border-0 py-2 px-8 text-lg inline-flex items-center;
 }
 
 button:hover, .btn:hover {
@@ -129,6 +129,33 @@ span::after, .menu li a::after{
 span:hover::after, .menu li a:hover::after {
     transform-origin: center top;
     transform: scaleY(1);
+}
+
+
+.anim-logo {
+    /* rotate: 30deg; */
+    animation: 4.5s orbit infinite linear;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.launching-soon {
+    background-color: #000;
+    background-image: url("../../public/assets/black_hole_gifs/bh_flip_cyan.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes orbit {
+    from {
+        rotate:0deg;
+        filter: hue-rotate(0rad);
+    }
+
+    to {
+        rotate:360deg;
+        filter: hue-rotate(16rad);
+    }
 }
 
 
@@ -472,11 +499,13 @@ main {
  #academy {
     font-size: 24px;
         color: #FFF8E7;
-        background: url("./assets/black_hole_gifs/bh_cyan_galaxy.gif");
-        background-size: contain;
-        background-repeat: no-repeat;
+        background-color: #000;
+        background-image: none;
+        /* background: url("./assets/black_hole_gifs/bh_cyan_galaxy.gif"); */
+        /* background-size: contain;
+        background-repeat: no-repeat; */
         /* background-color: #000; */
-        box-shadow: inset 0 0 0 100vh rgba(0, 0, 0, 0);
+        /* box-shadow: inset 0 0 0 100vh rgba(0, 0, 0, 0); */
  }
 
  #academy-hero {
