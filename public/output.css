@@ -1059,11 +1059,11 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(255 156 14 / var(--tw-text-opacity));
 }
-button:active, button:focus, .btn:active, .btn:focus, a:active, a:focus, input:active, input:focus, textarea:active, textarea:focus {
+button:active, button:focus, .btn:active, .btn:focus, a:active, a:focus, input:active, input:focus, textarea:active, textarea:focus, button::-moz-focus-outer, .btn::-moz-focus-outer, a::-moz-focus-outer, input::-moz-focus-outer, textarea::-moz-focus-outer {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-button:active:focus, button:focus:focus, .btn:active:focus, .btn:focus:focus, a:active:focus, a:focus:focus, input:active:focus, input:focus:focus, textarea:active:focus, textarea:focus:focus {
+button:active:focus, button:focus:focus, .btn:active:focus, .btn:focus:focus, a:active:focus, a:focus:focus, input:active:focus, input:focus:focus, textarea:active:focus, textarea:focus:focus, button::-moz-focus-outer:focus, .btn::-moz-focus-outer:focus, a::-moz-focus-outer:focus, input::-moz-focus-outer:focus, textarea::-moz-focus-outer:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
