@@ -29,47 +29,45 @@
     <title>pixel planet</title>
 </head>
 <body id="academy">
+    <!-- TOP OF PAGE - SCROLL TO TOP ARRIVES HERE  -->
     <span id="top" aria-disabled="true" aria-label="top of page"></span>
-    <a class="z-50 fixed right-6 bottom-6" href="#top" aria-label="scroll to top">
-        <img class="w-8 bg-white rounded-full" src="./assets/icons/up.png" alt="scroll to top">
-    </a>
-
+    
     <!-- NAV  -->
-    <header class="hidden lg:block bg-black">
-        <nav class="navbar px-6 py-2">
-            <a href="index.html">
-                <div class="logo">
-                    <img class="logo_img w-8" src="./assets/icons/pp-logo.png" alt="pixel planet logo">
-                </div>
-            </a>
-            <ul class="menu">
-                <li><a href="index.html#about">about pxlplnt</a></li>
-                <li><a href="index.html#meta">metapxls</a></li>
-                <li><a class="current-page" href="pixelacademy.html">pxl academy</a></li>
-            </ul>
-            <a class="btn" href="index.html#contact">Launch</a>
-        </nav>
-    </header>
-    
-    <!-- //MOBILE NAV -->
-    <header class="lg:hidden block mb-12">
-        <a href="index.html" class="w-full flex items-center mb-4">
-            <img class="w-4 mx-auto m-2" src="./assets/icons/pp-logo.png" alt="pixel planet logo">
-        </a>
-        <nav>
-            <!-- <input class="border border-cy" type="checkbox" id="active"> -->
-            <!-- <label for="active" class="menu-btn bg-cy"><i class="fas fa-bars"></i></label> -->
-            <div class="wrapper">
-                <ul class="flex px-2 text-center justify-around text-sm">
-                    <li><a href="index.html#about">about pxlplnt</a></li>
-                    <li><a href="index.html#meta">metapxls</a></li>
-                    <li><a class="current-page" href="pixelacademy.html">pxl academy</a></li>
-                    <a class="" href="index.html#contact">Launch</a>
+    <header>
+        <section class="hidden lg:block bg-black">
+            <nav class="navbar px-6 py-2" aria-label="navigation">
+                <ul class="menu">
+                    <a href="index.html" name="home" aria-label="home" tabindex="0">
+                        <div class="logo">
+                            <img class="logo_img w-8" src="./assets/icons/pp-logo.png" alt="pixel planet logo"
+                                aria-label="Pixel Planet logo">
+                        </div>
+                    </a>
+                    <a href="#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
+                    <a href="#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
+                    <a href="pixelacademy.html" aria-label="pixel academy" tabindex="0">pxl academy</a>
                 </ul>
-            </div>
-        </nav>
-    </header>
+                <a class="btn" href="#contact" aria-label="go to contact section" tabindex="0">Contact</a>
+            </nav>
+        </section>
     
+        <!-- //MOBILE NAV -->
+        <section class="lg:hidden block mb-12">
+            <a href="index.html" class="w-full flex items-center mb-4" aria-label="link for homepage">
+                <img class="w-4 mx-auto m-2" src="./assets/icons/pp-logo.png" alt="pixel planet logo">
+            </a>
+            <nav>
+                <div class="wrapper">
+                    <ul class="flex px-2 text-center justify-around text-sm">
+                        <a href="#about" aria-label="about pixel planet">about pxlplnt</a>
+                        <a href="#meta" aria-label="meta pixels - our values">metapxls</a>
+                        <a href="pixelacademy.html" aria-label="pixel academy">pxl academy</a>
+                        <a class="focus:ring-blue-200" href="#contact" aria-label="go to contact section">Launch</a>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
     <main>
         <section class="block">
             <!-- <h1 class="mx-auto text-center py-32 mt-24">pixel academy</h1>
@@ -932,7 +930,9 @@
                 </div>
             </div>
         </section>
-        
+        <a class="z-50 fixed right-6 bottom-6" href="#top" aria-label="scroll to top">
+            <img class="w-8 bg-white rounded-full" src="./assets/icons/up.png" alt="scroll to top">
+        </a>
     </main>
 </body>
 </html>
