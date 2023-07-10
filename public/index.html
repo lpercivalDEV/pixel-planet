@@ -32,53 +32,53 @@
     <!-- STYLES -->
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
 
     <title>pixel planet</title>
 </head>
 <body class="overflow-x-hidden">
+    <!-- <a id="skip-link" href="#main-content" class="hidden">Skip to main content</a> -->
+    <!-- TOP OF PAGE - SCROLL TO TOP ARRIVES HERE  -->
     <span id="top" aria-disabled="true" aria-label="top of page"></span>
-    <a class="z-50 fixed right-6 bottom-6" href="#top" aria-label="scroll to top">
-        <img class="w-8 bg-white rounded-full" src="./assets/icons/up.png" alt="scroll to top">
-    </a>
-    <!-- NAV  -->
-    <header class="hidden lg:block bg-black">
-        <nav class="navbar px-6 py-2">
-            <a href="index.html">
-                <div class="logo">
-                    <img class="logo_img w-8" src="./assets/icons/pp-logo.png" alt="pixel planet logo">
-                </div>
-            </a>
-            <ul class="menu">
-                <li><a href="#about">about pxlplnt</a></li>
-                <li><a href="#meta">metapxls</a></li>
-                <li><a href="pixelacademy.html">pxl academy</a></li>
-            </ul>
-            <a class="btn" href="#contact">Launch</a>
-        </nav>
-    </header>
 
-    <!-- //MOBILE NAV -->
-    <header class="lg:hidden block mb-12">
-        <a href="index.html" class="w-full flex items-center mb-4">
-            <img class="w-4 mx-auto m-2" src="./assets/icons/pp-logo.png" alt="pixel planet logo">
-        </a>
-        <nav>
-            <!-- <input class="border border-cy" type="checkbox" id="active"> -->
-            <!-- <label for="active" class="menu-btn bg-cy"><i class="fas fa-bars"></i></label> -->
-            <div class="wrapper">
-                <ul class="flex px-2 text-center justify-around text-sm">
-                    <li><a href="#about">about pxlplnt</a></li>
-                    <li><a href="#meta">metapxls</a></li>
-                    <li><a href="pixelacademy.html">pxl academy</a></li>
-                    <a class="" href="#contact">Launch</a>
+    <!-- NAV  -->
+    <header>
+        <section class="hidden lg:block bg-black">
+            <nav class="navbar px-6 py-2" aria-label="navigation">
+                <ul class="menu">
+                    <a href="index.html" name="home" aria-label="home" tabindex="0">
+                        <div class="logo">
+                            <img class="logo_img w-8" src="./assets/icons/pp-logo.png" alt="pixel planet logo" aria-label="Pixel Planet logo">
+                        </div>
+                    </a>
+                    <a href="#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
+                    <a href="#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
+                    <a href="pixelacademy.html" aria-label="pixel academy" tabindex="0">pxl academy</a>
                 </ul>
-            </div>
-        </nav>
+                <a class="btn" href="#contact" aria-label="go to contact section" tabindex="0">Contact</a>
+            </nav>
+        </section>
+
+        <!-- //MOBILE NAV -->
+        <section class="lg:hidden block mb-12">
+            <a href="index.html" class="w-full flex items-center mb-4"  aria-label="link for homepage">
+                <img class="w-4 mx-auto m-2" src="./assets/icons/pp-logo.png" alt="pixel planet logo">
+            </a>
+            <nav>
+                <div class="wrapper">
+                    <ul class="flex px-2 text-center justify-around text-sm">
+                        <a href="#about" aria-label="about pixel planet">about pxlplnt</a>
+                        <a href="#meta" aria-label="meta pixels - our values">metapxls</a>
+                        <a href="pixelacademy.html" aria-label="pixel academy">pxl academy</a>
+                        <a class="focus:ring-blue-200" href="#contact" aria-label="go to contact section">Launch</a>
+                    </ul>
+                </div>
+            </nav>
+        </section>
     </header>
 
     <!-- MAIN CONTENT  -->
-    <main class="">
+    <main id="main-content">
         <!-- HERO  -->
         <section id="hero" class="mt-2">
             <section class="flex">
@@ -90,10 +90,10 @@
                 </div>
             </section>
     
-            <section id="hero-block" class="h-full w-full bg-transparent">
+            <section id="hero-block" class="h-full w-full bg-transparent active:bg-none focus:outline-none focus focus:ring-violet-300" aria-disabled="true" aria-hidden="true" tabindex="-1">
                 <!-- BG Earf Video -->
-                <section id="earf-block" class="flex justify-center lg:py-2 mb-2">
-                    <video autoplay muted loop id="earf" class="rounded-full mx-auto sm:w-screen lg:w-7/12 h-fit ">
+                <section id="earf-block" class="flex justify-center lg:py-2 mb-2" aria-disabled="true" aria-hidden="true">
+                    <video autoplay muted loop disablePictureInPicture controlsList="nodownload" id="earf" class="rounded-full mx-auto sm:w-screen lg:w-7/12 h-fit"  aria-disabled="true" aria-hidden="true" tabindex="-1">
                         <source src="./assets/earf_loop_bg.mp4" type="video/mp4">
                     </video>
                 </section>
@@ -106,22 +106,22 @@
                 <div class="flex flex-wrap w-full mx-auto text-center sm:flex-shrink-0">
                     <div class="p-4 mx-4 mx-auto">
                         <img class="w-20 h-auto mx-auto p-4" src="./assets/icons/minority_owned.png" alt="100% minority owned icon">
-                        <h2 class="title-font font-medium sm:text-4xl lg:text-5xl text-flame">100%</h2>
+                        <h2 class="title-font font-medium sm:text-4xl lg:text-5xl text-space">100%</h2>
                         <p class="leading-relaxed text-xl text-space">Minority Owned</p>
                     </div>
                     <div class="p-4 mx-4 mx-auto">
                         <img class="w-20 h-auto mx-auto p-4" src="./assets/icons/experience.png" alt="10+ Years Experience icon">
-                        <h2 class="title-font font-medium sm:text-4xl lg:text-5xl text-flame">10+ Years</h2>
+                        <h2 class="title-font font-medium sm:text-4xl lg:text-5xl text-space">10+ Years</h2>
                         <p class="leading-relaxed text-xl text-space">Experience</p>
                     </div>
                     <!-- <div class="p-4 mx-4 flex-col">
                         <img class="w-20 h-auto mx-auto p-4" src="./assets/icons/pixelated_people.png" alt="">
-                        <h2 class="title-font font-medium sm:text-4xl lg:text-5xl text-flame">#</h2>
+                        <h2 class="title-font font-medium sm:text-4xl lg:text-5xl text-space">#</h2>
                         <p class="leading-relaxed text-xl text-space">People Pixellated</p>
                     </div> -->
                     <div class="p-4 mx-4 mx-auto">
                         <img class="w-20 h-auto mx-auto p-4" src="./assets/icons/trees.png" alt="Number of Trees Planted icon">
-                        <h2 class="title-font font-medium sm:text-4xl lg:text-5xl text-flame">10</h2>
+                        <h2 class="title-font font-medium sm:text-4xl lg:text-5xl text-space">10</h2>
                         <p class="leading-relaxed text-xl text-space">Trees Planted</p>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
                             </div>
                             <div class="flex-grow">
                         
-                                <p class="leading-relaxed text-base">We believe in creating work that challenges us to be our best and to cater to our better human nature. We resist using <a href="https://en.wikipedia.org/wiki/Dark_pattern">Dark Patterns</a> in our work. Effective web design and development renders them unneccessary.</p>
+                                <p class="leading-relaxed text-base">We believe in creating work that challenges us to be our best and to cater to our better human nature. We resist using <a href="https://en.wikipedia.org/wiki/Dark_pattern"  aria-label="link to external Dark Patterns Wiki Page">Dark Patterns</a> in our work. Effective web design and development renders them unneccessary.</p>
                             </div>
                         </div>
                         <div class="flex flex-col mb-10 lg:items-start items-center">
@@ -196,7 +196,7 @@
                                 <div class="p-4 lg:w-1/2 md:w-full bg-black">
                                     <div class="flex rounded-lg outline-double outline-offset-2 outline-cy p-8 sm:flex-row flex-col">
                                         <div class="flex-grow">
-                                            <h2 class="text-flame text-center text-3xl title-font font-medium mb-3">Law of Equality</h2>
+                                            <h3 class="text-flame text-center text-3xl title-font font-medium mb-3">Law of Equality</h3>
                                             <p class="leading-relaxed text-base text-center">We are partners, not workers.</p>
                                         </div>
                                     </div>
@@ -204,7 +204,7 @@
                                 <div class="p-4 lg:w-1/2 md:w-full bg-black">
                                     <div class="flex rounded-lg outline-double outline-offset-2 outline-cy p-8 sm:flex-row flex-col">
                                         <div class="flex-grow">
-                                            <h2 class="text-flame text-center text-3xl title-font font-medium mb-3">Law of People</h2>
+                                            <h3 class="text-flame text-center text-3xl title-font font-medium mb-3">Law of People</h3>
                                             <p class="leading-relaxed text-base text-center">Treat others how you wish to be treated.</p>
                                         </div>
                                     </div>
@@ -212,7 +212,7 @@
                                 <div class="p-4 lg:w-1/2 md:w-full bg-black">
                                     <div class="flex rounded-lg outline-double outline-offset-2 outline-cy p-8 sm:flex-row flex-col">
                                         <div class="flex-grow">
-                                            <h2 class="text-flame text-center text-3xl title-font font-medium mb-3">Law of Transparency</h2>
+                                            <h3 class="text-flame text-center text-3xl title-font font-medium mb-3">Law of Transparency</h3>
                                             <p class="leading-relaxed text-base text-center">Speak truth, even if it leads to a loss.</p>
                                         </div>
                                     </div>
@@ -220,7 +220,7 @@
                                 <div class="p-4 lg:w-1/2 md:w-full bg-black">
                                     <div class="flex rounded-lg outline-double outline-offset-2 outline-cy p-8 sm:flex-row flex-col">
                                         <div class="flex-grow">
-                                            <h2 class="text-flame text-center text-3xl title-font font-medium mb-3">Law of Innovation</h2>
+                                            <h3 class="text-flame text-center text-3xl title-font font-medium mb-3">Law of Innovation</h3>
                                             <p class="leading-relaxed text-base text-center">Leap into the unknown. That is where the cutting edge lives.</p>
                                         </div>
                                     </div>
@@ -246,9 +246,9 @@
                 <div class="blobby6"></div>
                 <div class="blobby7"></div>
             </div> -->
-            <section class="text-space body-font">
+            <section class="text-black body-font">
                 <div class="container px-5 py-24 mx-auto">
-                    <h2 class="text-center text-flame mb-2">About Pixel Planet</h2>
+                    <h2 class="text-center text-space mb-2">About Pixel Planet</h2>
                     <div class="flex flex-wrap -m-4">
                         <div class="w-full mb-2 p-4">
                             <div class="h-full text-center">
@@ -262,7 +262,7 @@
                                 <p class="leading-loose text-center">We don't build websites. We build solutions. Partner with us today! We would love to help you find the best solution to your challenges.</p>
                             </div>
                             <!-- <span class="w-1/2 mx-auto">
-                                <a href="./blog_why_pp.html" class="btn text-space text-center">Learn why we started Pixel Planet</a>
+                                <a href="./blog_why_pp.html" class="btn text-space text-center"  aria-label="why we started pixel planet blog post">Learn why we started Pixel Planet</a>
                             </span> -->
                         </div>
                     </div>
@@ -273,7 +273,7 @@
         <!-- CONTACT  -->
         <section id="contact" class="container  mx-auto">        
             <section class="text-light body-font relative">
-                <h1 class="text-center mt-24">Contact Us</h1>
+                <h2 class="text-center mt-24">Contact Us</h2>
                 <div class="container px-5 py-24 mx-auto lg:flex">
                     <div class="flex flex-col text-center mb-12">
                         <img id="earf-mini" alt="rotating earth gif"
@@ -293,7 +293,7 @@
                                 <div class="relative">
                                     <label for="name" class="leading-7 text-sm text-light">Name</label>
                                     <input type="text" id="name" name="name"
-                                        class="w-full outline-double outline-offset-2 outline-cy bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-space py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                        class="w-full outline-double outline-offset-2 outline-cy bg-opacity-50 rounded border border-gray-300 text-base outline-none text-space py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                                 </div>
                             </div>
                             <div class="p-2 w-1/2">
@@ -307,7 +307,7 @@
                                 <div class="relative">
                                     <label for="message" class="leading-7 text-sm text-light">Message</label>
                                     <textarea id="message" name="message"
-                                        class="w-full outline-double outline-offset-2 outline-cy bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-space py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out cursor-text"></textarea>
+                                        class="w-full outline-double outline-offset-2 outline-cy bg-opacity-50 rounded border border-gray-300 h-32 text-base outline-none text-space py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out cursor-text"></textarea>
                                 </div>
                             </div>
                             <div data-netlify-recaptcha="true"></div>
@@ -317,18 +317,18 @@
                             </div>
                             <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
                                 <span class="inline-flex">
-                                    <a href="#" class="icon ml-4 text-light">
+                                    <a href="#" class="icon ml-4 text-light"  aria-label="link for youtube account">
                                         <img class="w-6 h-6" src="./assets/icons/utube.png" alt="youtube icon">
                                         </svg>
                                     </a>
-                                    <a class="ml-4 text-white" href="#">
+                                    <a class="icon2 hover:text-white ml-4 text-white" href="#"  aria-label="link to instagram account">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="0.7" class="w-6 h-6" viewBox="0 0 24 24" alt="instagram icon">
                                             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                                             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                                         </svg>
                                     </a>
-                                    <a href="mailto:pxlplanet@proton.me" class="icon ml-4 text-light">
+                                    <a href="mailto:pxlplanet@proton.me" class="icon ml-4 text-light"  aria-label="email link">
                                         <img class="w-6 h-6" src="./assets/icons/email.png" alt="email icon">
                                         </svg>
                                     </a>
@@ -339,6 +339,12 @@
                 </div>
             </section>
         </section>
+
+
+        <!-- SCROLL TO TOP BTN  -->
+        <a class="z-50 fixed right-6 bottom-6" href="#top" aria-label="scroll to top" tabindex="0">
+            <img class="w-8 bg-white rounded-full" src="./assets/icons/up.png" alt="scroll to top">
+        </a>
 
 
 
@@ -373,9 +379,9 @@
     </main>
     
     <!-- SCRIPTS  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://use.fontawesome.com/d1bb00f190.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- <script src="https://use.fontawesome.com/d1bb00f190.js"></script> -->
+    <!-- <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> -->
 
 </body>
 </html>

@@ -48,7 +48,7 @@ p {
 
 /* SITE WIDE BUTTONS/LINKS STYLES */
 button, .btn {
-    @apply outline-double outline-offset-2 outline-cy  py-2 px-2 rounded border-0 py-2 px-8 text-lg inline-flex items-center;
+    @apply outline-double outline-offset-2 outline-cy rounded border-0 py-2 px-8 text-lg inline-flex items-center;
 }
 
 button:hover, .btn:hover {
@@ -56,11 +56,15 @@ button:hover, .btn:hover {
 }
 
 a{
-    @apply text-cy cursor-pointer
+    @apply text-cy;
 }
 
 a:hover{
-    @apply text-flame
+    @apply text-flame;
+}
+
+button:active, button:focus, .btn:active, .btn:focus, a:active, a:focus, input:active, input:focus, textarea:active, textarea:focus {
+    @apply focus:ring-4 focus:ring-violet-300 outline-none;
 }
 
 .current-page {
@@ -69,7 +73,7 @@ a:hover{
 
 
 /* Button Animations  */
-.btn:hover, a:hover {
+.btn:hover, .icon:hover, .icon2:hover {
     cursor: pointer;
     animation: jelly 0.5s;
 }
@@ -95,12 +99,12 @@ a:hover{
 }
 
 /* SPAN ANIMATIONS  */
-span, .menu li a {
+span, .menu a {
     position: relative;
 }
 
 span::before,
-span::after, .menu li a::before, .menu li a::after{
+span::after, .menu a::before, .menu a::after{
     content: '';
     position: absolute;
     top: 0;
@@ -111,22 +115,22 @@ span::after, .menu li a::before, .menu li a::after{
     transition: transform 0.5s ease;
 }
 
-span::before, .menu li a::before {
+span::before, .menu a::before {
     left: -8px;
     transform-origin: center top;
 }
 
-span:hover::before, .menu li a:hover::before {
+span:hover::before, .menu a:hover::before {
     transform-origin: center bottom;
     transform: scaleY(1);
 }
 
-span::after, .menu li a::after{
+span::after, .menu a::after{
     right: -8px;
     transform-origin: center bottom;
 }
 
-span:hover::after, .menu li a:hover::after {
+span:hover::after, .menu a:hover::after {
     transform-origin: center top;
     transform: scaleY(1);
 }
@@ -216,6 +220,7 @@ main {
 
 #earf {
     filter: hue-rotate(2.8rad);
+    pointer-events: none;
 }
 
 
@@ -439,7 +444,7 @@ main {
 
 #contact .icon {
     /* filter: hue-rotate(8.9rad) invert(100%) saturate(98) opacity(0.7); */
-    filter: invert(1);
+    /* filter: invert(1); */
 }
 
 
