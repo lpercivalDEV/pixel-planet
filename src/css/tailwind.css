@@ -51,7 +51,7 @@ button, .btn {
     @apply outline-double outline-offset-2 outline-cy rounded border-0 py-2 px-8 text-lg inline-flex items-center;
 }
 
-button:hover, .btn:hover {
+button:hover, .btn:hover, button:focus, button:active, .btn:focus, .btn:active {
     @apply bg-cy text-space cursor-pointer;
 }
 
