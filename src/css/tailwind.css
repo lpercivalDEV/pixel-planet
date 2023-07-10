@@ -63,7 +63,7 @@ a:hover{
     @apply text-flame;
 }
 
-button:active, button:focus, .btn:active, .btn:focus, a:active, a:focus, input:active, input:focus, textarea:active, textarea:focus, button::-moz-focus-outer, .btn::-moz-focus-outer, a::-moz-focus-outer, input::-moz-focus-outer, textarea::-moz-focus-outer {
+button:active, button:focus, .btn:active, .btn:focus, a:active, a:focus, input:active, input:focus, textarea:active, textarea:focus, button::-moz-focus-outer, .btn::-moz-focus-outer, a::-moz-focus-outer, input::-moz-focus-outer, textarea::-moz-focus-outer{
     @apply focus:ring-4 focus:ring-violet-300 outline-none;
 }
 
