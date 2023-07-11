@@ -6,3 +6,5 @@ sources:
 <a target="_blank" href="https://icons8.com/icon/jiKYR2biJFHO/planet">Planet</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 <a target="_blank" href="https://icons8.com/icon/26124/slide-up">Up</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+<a target="_blank" href="https://icons8.com/icon/124218/email">Email</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
