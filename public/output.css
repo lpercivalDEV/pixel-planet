@@ -730,10 +730,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
-.bg-cy {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 238 255 / var(--tw-bg-opacity));
-}
 .bg-flame {
   --tw-bg-opacity: 1;
   background-color: rgb(255 156 14 / var(--tw-bg-opacity));
@@ -1183,7 +1179,6 @@ li {
     font-weight: 100;
     background-color: #000;
 }
-/* MOBILE NAV  */
 /* MAIN CONTENT  */
 main {
     overflow-x: hidden !important;
@@ -1377,83 +1372,22 @@ main {
 }
 /* ABOUT SECTION  */
 #about {
-    /* position: relative;
-    z-index: 20;
-    clear: both; */
     background-color: rgba(255, 248, 231);
-    /* background: linear-gradient(0deg, #fff, #F2F2E3, #FFF8E7,#454545); */
 }
 #earf-mini {
     filter: hue-rotate(6.7rad) saturate(1) invert(0.2) drop-shadow(0 0 0.75rem #00eeff);
 }
-#contact .icon {
-    /* filter: hue-rotate(8.9rad) invert(100%) saturate(98) opacity(0.7); */
-    /* filter: invert(1); */
-}
-/* 
-#orbit-lines, #orbit-lines2, #orbit-lines3, #orbit-lines4 {
-   position: absolute;
-   margin-top: -4rem;
-   overflow: hidden;
-   width: 100vw;
-}
-
-
-.lines {
-    animation: 3.6s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate orbit;
-    margin-top: 2rem;
-}
-
-.lines2 {
-    animation: 3.4s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate orbit;
-    margin-top: 2rem;
-}
-
-.lines3 {
-    animation: 3.2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate orbit;
-    margin-top: 2rem;
-}
-
-.lines4 {
-    animation: 3s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate orbit;
-    margin-top: 2rem;
-}
-
-@keyframes orbit {
-    from {
-        transform: translateY(10vh);
-    }
-
-    to {
-        transform: translateY(-100);
-    }
-} */
-/* 
-#cta {
-    position: relative;
-    z-index: 20;
-    clear: both;
-}
-
-
- */
 /* ACADEMY PAGE  */
 #academy {
     font-size: 24px;
         color: #FFF8E7;
         background-color: #000;
         background-image: none;
-        /* background: url("./assets/black_hole_gifs/bh_cyan_galaxy.gif"); */
-        /* background-size: contain;
-        background-repeat: no-repeat; */
-        /* background-color: #000; */
-        /* box-shadow: inset 0 0 0 100vh rgba(0, 0, 0, 0); */
  }
 #academy-hero {
     width: 100vw;
     height: 100vh;
     margin-top: 2rem;
-    /* background: rgba(255, 255, 255, 0.6); */
  }
 .hover\:bg-blue-600:hover {
   --tw-bg-opacity: 1;
