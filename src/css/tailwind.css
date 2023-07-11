@@ -281,17 +281,18 @@ main {
     filter: blur(40px);
 }
 
-/* 
+
 .blob-box-two {
-    min-height: 100vh;
+    height: 100vh;
     overflow: hidden;
     position: absolute;
     width: 100%;
     filter: blur(40px);
     display: grid;
     grid-auto-flow: column;
-
-} */
+    margin-top: -5rem;
+    z-index: -1;
+}
 
 .shape-blob,
 .blobby {
