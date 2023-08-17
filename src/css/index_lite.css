@@ -1,0 +1,150 @@
+/* LITE STYLES  */
+
+body {
+    background-color: #fff8e7;
+    color: #2e4052;
+}
+
+header {
+    background-color: #fff8e7;
+    width: 100vw;
+    height: 80px;
+}
+
+nav a {
+    margin-top: 0.7rem;
+    color: #ff0e71;
+}
+
+
+#hero_lite {
+    
+}
+
+.clouds { 
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+    background-image: linear-gradient(to bottom,
+                rgba(255,248,231, 0) 0%,
+                rgba(255,248,231, 0.2) 10%,
+                rgba(255,248,231, 0.7) 60%,
+                rgba(255,248,231, 1) 100%);
+
+    z-index: -2;
+    clear: both;
+}
+
+.cloud-container {
+    opacity: 0.4;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/public/assets/logos/pxl_banner.png');
+    background-size: stretch;
+    background-repeat: no-repeat;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+
+    z-index: -4;
+    clear: both;
+}
+
+
+    
+@-webkit-keyframes slidein {
+    from {
+        background-position: top;
+        /* background-size: 3000px; */
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+@keyframes slidein {
+    from {
+        background-position: top;
+        /* background-size: 3000px; */
+    }
+
+    to {
+        background-position: -100px 0px;
+        /* background-size: 2750px; */
+    }
+}
+
+
+
+
+/* BACKGROUND VIDEO - EARF  */
+#earf-lite {
+    filter: invert(1);
+    opacity: 0.4;
+    border: 4rem solid darkred;
+}
+
+#earf-block-lite {
+    pointer-events: none;
+        background-image: url("/public/assets/logos/pixel_planet_logo_round.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+
+/* HERO SECTION */
+.hero-text-lite h1 {
+    color: #00eeff;
+    background-color: #000;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
+}
+
+.hero-text-lite {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100vw;
+}
+
+.hero-text-lite #light-glide-lite {
+    position: absolute;
+    top: 150px;
+    height: 2px;
+    width: 70px;
+    background: linear-gradient(90deg, transparent, #00eeff);
+    animation: animate 8s infinite ease;
+    overflow: hidden !important;
+}
+
+@keyframes animate {
+    0% {
+        left: 0;
+        transform: translate(-100%);
+    }
+
+    100% {
+        left: 100%;
+        transform: translate(0%);
+        opacity: 0.5;
+    }
+}

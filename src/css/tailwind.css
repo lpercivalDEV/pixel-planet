@@ -56,7 +56,7 @@ button:hover, .btn:hover, button:focus, button:active, .btn:focus, .btn:active {
 }
 
 a{
-    @apply text-cy cursor-pointer;
+    @apply text-ultra cursor-pointer;
 }
 
 a:hover{
@@ -166,7 +166,7 @@ span:hover::after, .menu a:hover::after {
 
 /* SPECIFIC ELEMENT STYLES */
 
-body{
+.body_dark{
     font-size: 24px;
     color: #FFF8E7;
     background: url("./assets/icons/star_bg_min.jpg");
@@ -204,7 +204,7 @@ li {
     gap: 5rem;
     text-transform: uppercase;
     font-weight: 100;
-    background-color: #000;
+    /* background-color: #000; */
 }
 
 
@@ -432,7 +432,7 @@ main {
 }
 
 #earf-mini {
-    filter: hue-rotate(6.7rad) saturate(1) invert(0.2) drop-shadow(0 0 0.75rem #00eeff);
+    /* filter: hue-rotate(6.7rad) saturate(1) invert(0.2) drop-shadow(0 0 0.75rem #00eeff); */
 }
 
 
@@ -494,3 +494,4 @@ main {
     }
 
  }
+

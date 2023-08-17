@@ -437,11 +437,17 @@ video {
     max-width: 1536px;
   }
 }
+.pointer-events-none {
+  pointer-events: none;
+}
 .invisible {
   visibility: hidden;
 }
 .fixed {
   position: fixed;
+}
+.absolute {
+  position: absolute;
 }
 .relative {
   position: relative;
@@ -535,6 +541,9 @@ video {
 .mr-8 {
   margin-right: 2rem;
 }
+.mt-0 {
+  margin-top: 0px;
+}
 .mt-12 {
   margin-top: 3rem;
 }
@@ -547,14 +556,14 @@ video {
 .mt-3 {
   margin-top: 0.75rem;
 }
+.mt-32 {
+  margin-top: 8rem;
+}
 .mt-4 {
   margin-top: 1rem;
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.mt-32 {
-  margin-top: 8rem;
 }
 .block {
   display: block;
@@ -849,11 +858,11 @@ video {
 .pr-3 {
   padding-right: 0.75rem;
 }
-.pt-8 {
-  padding-top: 2rem;
-}
 .pt-12 {
   padding-top: 3rem;
+}
+.pt-8 {
+  padding-top: 2rem;
 }
 .text-center {
   text-align: center;
@@ -900,14 +909,14 @@ video {
 .font-bold {
   font-weight: 700;
 }
+.font-light {
+  font-weight: 300;
+}
 .font-medium {
   font-weight: 500;
 }
 .font-semibold {
   font-weight: 600;
-}
-.font-light {
-  font-weight: 300;
 }
 .leading-6 {
   line-height: 1.5rem;
@@ -1076,7 +1085,7 @@ button:hover, .btn:hover, button:focus, button:active, .btn:focus, .btn:active {
 a {
   cursor: pointer;
   --tw-text-opacity: 1;
-  color: rgb(0 238 255 / var(--tw-text-opacity));
+  color: rgb(82 72 156 / var(--tw-text-opacity));
 }
 a:hover {
   --tw-text-opacity: 1;
@@ -1176,7 +1185,7 @@ span:hover::after, .menu a:hover::after {
     }
 }
 /* SPECIFIC ELEMENT STYLES */
-body{
+.body_dark{
     font-size: 24px;
     color: #FFF8E7;
     background: url("./assets/icons/star_bg_min.jpg");
@@ -1208,7 +1217,7 @@ li {
     gap: 5rem;
     text-transform: uppercase;
     font-weight: 100;
-    background-color: #000;
+    /* background-color: #000; */
 }
 /* MAIN CONTENT  */
 main {
@@ -1406,7 +1415,7 @@ main {
     background-color: rgba(255, 248, 231);
 }
 #earf-mini {
-    filter: hue-rotate(6.7rad) saturate(1) invert(0.2) drop-shadow(0 0 0.75rem #00eeff);
+    /* filter: hue-rotate(6.7rad) saturate(1) invert(0.2) drop-shadow(0 0 0.75rem #00eeff); */
 }
 /* ACADEMY PAGE  */
 #academy {
@@ -1475,6 +1484,10 @@ main {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.hover\:text-ultra:hover {
+  --tw-text-opacity: 1;
+  color: rgb(82 72 156 / var(--tw-text-opacity));
 }
 .focus\:border-4:focus {
   border-width: 4px;
@@ -1743,3 +1756,4 @@ main {
     width: 25%;
   }
 }
+
