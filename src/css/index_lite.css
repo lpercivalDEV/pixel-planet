@@ -13,12 +13,41 @@ header {
 
 nav a {
     margin-top: 0.7rem;
-    color: #ff0e71;
+    color: #52489c;
 }
 
 
-#hero_lite {
-    
+#hero_lite #pxl-shadow {
+    font-family: 'Slot-Regular', sans-serif;
+    padding-top: 4.2rem;
+}
+
+/* #hero_lite #tech_shadow {
+    text-align: center;
+    padding-top: 16.8rem;
+} */
+
+#light-glide-lite {
+    position: absolute;
+    top: 420px;
+    height: 2px;
+    width: 70px;
+    background: linear-gradient(90deg, transparent, #52489c);
+    animation: animate 4s infinite ease;
+    overflow: hidden !important;
+}
+
+@keyframes animate {
+    0% {
+        left: 0;
+        transform: translate(-100%);
+    }
+
+    100% {
+        left: 100%;
+        transform: translate(0%);
+        opacity: 0.5;
+    }
 }
 
 .clouds { 
