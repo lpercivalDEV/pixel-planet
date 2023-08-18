@@ -176,6 +176,12 @@ span:hover::after, .menu a:hover::after {
     box-shadow: inset 0 0 0 100vh rgba(0, 0, 0, 0.7);
 }
 
+/* header {
+    background-color: #fff8e7;
+    width: 100vw;
+    height: 80px;
+} */
+
 /* Navbar  */
 .navbar {
     display: flex;
