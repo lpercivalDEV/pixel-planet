@@ -182,3 +182,8 @@ nav a {
 .icon {
     filter: hue-rotate(7.3rad);
 } */
+
+
+.logowall {
+    filter: brightness(0.1) !important;
+}
