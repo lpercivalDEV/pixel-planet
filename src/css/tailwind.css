@@ -43,7 +43,7 @@ h5 {
 }
 
 p {
-    @apply p-2 m-6;
+    @apply p-2 m-2;
 }
 
 /* SITE WIDE BUTTONS/LINKS STYLES */
@@ -297,7 +297,7 @@ main {
     display: grid;
     grid-auto-flow: column;
     margin-top: -5rem;
-    z-index: -1;
+    z-index: -2 !important;
 }
 
 .shape-blob,
@@ -313,6 +313,7 @@ main {
     position: relative;
     left: 75%;
     top: 40%;
+    z-index: -1;
 }
 
 .shape-blob.one,
@@ -434,7 +435,12 @@ main {
 
 /* ABOUT SECTION  */
 #about {
-    background-color: rgba(255, 248, 231);
+    /* background-color: rgba(255, 248, 231); */
+    background-image: linear-gradient(to bottom,
+                rgba(255, 248, 231, 1) 0%,
+                rgba(255, 248, 231, 0.7) 10%,
+                rgba(255, 248, 231, 0.2) 60%,
+                rgba(255, 248, 231, 0) 100%) !important;
 }
 
 #earf-mini {

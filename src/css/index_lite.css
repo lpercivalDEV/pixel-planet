@@ -74,9 +74,11 @@ nav a {
 }
 
 .cloud-container {
+    position: relative;
     opacity: 0.4;
     width: 100vw;
     height: 100vh;
+    max-height: 100vh;
     background-image: url('/public/assets/logos/pxl_banner.png');
     background-size: stretch;
     background-repeat: no-repeat;
@@ -129,15 +131,18 @@ nav a {
 #earf-lite {
     filter: invert(1);
     opacity: 0.4;
-    border: 4rem solid darkred;
 }
 
 #earf-block-lite {
     pointer-events: none;
-        background-image: url("/public/assets/logos/pixel_planet_logo_round.png");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+    background-image: url("/public/assets/logos/pixel_planet_logo_round.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#earf-block-lite img {
+        border: 2.4rem solid darkred;
 }
 
 
@@ -177,12 +182,54 @@ nav a {
         opacity: 0.5;
     }
 }
+
+/* #about {
+    background-image: linear-gradient(to bottom,
+                rgba(255, 255, 255, 1) 0%,
+                rgba(255, 255, 255, 0.7) 10%,
+                rgba(255, 255, 255, 0.2) 60%,
+                rgba(255, 255, 255, 0) 100%) !important;
+} */
+
+
+
 /* 
 
 .icon {
     filter: hue-rotate(7.3rad);
 } */
 
+
+/* #about {
+    -webkit-mask-image: -webkit-gradient(linear, left top,
+                left bottom, from(rgba(255, 255, 255, 1)), to(rgba(0, 0, 0, 0)));
+} */
+
+/* .panel-container {
+    max-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+#body_lite {
+   
+}
+
+.panel {
+    scroll-snap-align: start;
+    height: 100vh;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+} */
+
+/* 
+.panel-container {
+    overscroll-behavior: none;
+    width: 600%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+} */
 
 .logowall {
     filter: brightness(0.1) !important;
