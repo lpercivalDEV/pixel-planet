@@ -66,7 +66,7 @@ nav a {
     background-image: linear-gradient(to bottom,
                 rgba(255,248,231, 0) 0%,
                 rgba(255,248,231, 0.2) 10%,
-                rgba(255,248,231, 0.7) 60%,
+                rgba(255,248,231, 0.8) 60%,
                 rgba(255,248,231, 1) 100%);
 
     z-index: -2;
@@ -75,7 +75,7 @@ nav a {
 
 .cloud-container {
     position: relative;
-    opacity: 0.4;
+    opacity: 0.8;
     width: 100vw;
     height: 100vh;
     max-height: 100vh;
@@ -103,7 +103,7 @@ nav a {
 @-webkit-keyframes slidein {
     from {
         background-position: top;
-        /* background-size: 3000px; */
+        background-size: 3000px;
     }
 
     to {
@@ -120,7 +120,7 @@ nav a {
 
     to {
         background-position: -100px 0px;
-        /* background-size: 2750px; */
+        background-size: 2750spx;
     }
 }
 
