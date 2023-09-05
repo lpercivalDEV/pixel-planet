@@ -94,7 +94,7 @@ nav a {
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
 
-    z-index: -4;
+    /* z-index: -4; */
     clear: both;
 }
 
@@ -233,4 +233,34 @@ nav a {
 
 .logowall {
     filter: brightness(0.1) !important;
+}
+
+
+/* CASE STUDIES  */
+
+.pingpongdom {
+    background-color: white;
+}
+
+.pingpongmanyi {
+    background-color: #f2a7bc;
+}
+
+/* .pingponglrm {
+    background-color: #cfd2d3;
+} */
+
+.pingpongmeimei {
+    background-color: #fcbb00;
+}
+
+#astrounauts {
+    height: 100vh;
+    width: 100vw;
+}
+
+#astronauts #cafe {
+        /* filter: hue-rotate(7.8deg);  */
+        /* opacity: 0.7; */
+        /* filter: blur(1);
 }

@@ -29,60 +29,60 @@
 
 
 // Homepage Slide Effect 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-ScrollTrigger.defaults({
-  toggleActions: "restart pause resume pause",
-  scroller: ".container"
-});
+// ScrollTrigger.defaults({
+//   toggleActions: "restart pause resume pause",
+//   scroller: ".container"
+// });
 
-gsap.to(".panel", {
-  scrollTrigger: "#stats", 
-  duration: 2, 
-  rotation: 360
-});
+// gsap.to(".panel", {
+//   scrollTrigger: "#stats", 
+//   duration: 2, 
+//   rotation: 360
+// });
 
-gsap.to(".panel", {
-  scrollTrigger: {
-    trigger: "#about",
-    toggleActions: "restart pause reverse pause"
-  }, 
-  duration: 1, 
-  backgroundColor: "#FFA500", 
-  ease: "none"
-});
+// gsap.to(".panel", {
+//   scrollTrigger: {
+//     trigger: "#about",
+//     toggleActions: "restart pause reverse pause"
+//   }, 
+//   duration: 1, 
+//   backgroundColor: "#FFA500", 
+//   ease: "none"
+// });
 
-gsap.to("#meta", {
-  scrollTrigger: ".panel", 
-  scale: 2, 
-  repeat: -1, 
-  yoyo: true, 
-  ease: "power2"
-});
+// gsap.to("#meta", {
+//   scrollTrigger: ".panel", 
+//   scale: 2, 
+//   repeat: -1, 
+//   yoyo: true, 
+//   ease: "power2"
+// });
 
-gsap.to("#laws", {
-  scrollTrigger: ".panel", 
-  scale: 2, 
-  repeat: -1, 
-  yoyo: true, 
-  ease: "power2"
-});
+// gsap.to("#laws", {
+//   scrollTrigger: ".panel", 
+//   scale: 2, 
+//   repeat: -1, 
+//   yoyo: true, 
+//   ease: "power2"
+// });
 
-gsap.to("#logowall", {
-  scrollTrigger: ".panel", 
-  scale: 2, 
-  repeat: -1, 
-  yoyo: true, 
-  ease: "power2"
-});
+// gsap.to("#logowall", {
+//   scrollTrigger: ".panel", 
+//   scale: 2, 
+//   repeat: -1, 
+//   yoyo: true, 
+//   ease: "power2"
+// });
 
-gsap.to("#contact", {
-  scrollTrigger: ".panel", 
-  scale: 2, 
-  repeat: -1, 
-  yoyo: true, 
-  ease: "power2"
-});
+// gsap.to("#contact", {
+//   scrollTrigger: ".panel", 
+//   scale: 2, 
+//   repeat: -1, 
+//   yoyo: true, 
+//   ease: "power2"
+// });
 
 
 
@@ -129,3 +129,13 @@ gsap.to("#contact", {
 //     end: "+=3500",
 //   }
 // });
+
+
+
+/* CASE STUDIES  */
+
+/* TILT JS ELEMENTS  */
+
+$('.js-tilt').tilt({
+    scale: 1.2
+})
