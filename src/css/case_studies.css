@@ -1,3 +1,5 @@
+   /* ORBIT CAROUSEL  */
+   
    :root {
        --rotate-speed: 40;
        --count: 8;
@@ -236,13 +238,14 @@
 
     .orbit {
         background: linear-gradient(270deg, #b79cd4, #fba5b0, #ceded6, #bedbda);
-        background-size: 800% 800%;
-
-        -webkit-animation: AnimationName 33s ease infinite;
-        animation: AnimationName 33s ease infinite;
+        background-size: 100%;
+        -webkit-animation: cloudscape 33s ease infinite;
+        animation: cloudscape 33s ease infinite;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
-    @-webkit-keyframes AnimationName {
+    @-webkit-keyframes cloudscape {
         0% {
             background-position: 0% 50%
         }
@@ -256,7 +259,7 @@
         }
     }
 
-    @keyframes AnimationName {
+    @keyframes cloudscape {
         0% {
             background-position: 0% 50%
         }
@@ -269,3 +272,76 @@
             background-position: 0% 50%
         }
     }
+
+
+
+
+    /* SITE PREVIEW CAROUSEL  */
+    
+        #carousel {
+            width: 100vw;
+            /* margin: 0; */
+            padding: 0;
+        }
+        
+        .previews {
+            position: relative;
+            width: 90vw;
+            /* min-height: 300px; */
+            height: auto;
+            margin-top: 15vh;
+        }
+    
+        .previews > .pic {
+            position: absolute;
+            /* top: 0; */
+            /* left: calc(50% - 100px); */
+            left: 0;
+            opacity: 0;
+            animation: carouselSlide 11s infinite;
+        }
+    
+        .pic:nth-child(2) {
+            animation-delay: 2s;
+        }
+    
+       .pic:nth-child(3) {
+            animation-delay: 6s;
+        }
+    
+       .pic:nth-child(4) {
+            animation-delay: 10s;
+        }
+
+        /* 
+        img:nth-child(5) {
+            animation-delay: 8s;
+        } */
+
+
+        @keyframes carouselSlide {
+            0% {
+                transform: translateX(200px);
+                opacity: 0;
+            }
+
+            10% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            20% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            30% {
+                transform: translateX(-200px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(-200px);
+                opacity: 0;
+            }
+        }
