@@ -29,9 +29,19 @@ nav a {
 
 #light-glide-lite {
     position: absolute;
-    top: 420px;
+    top: 340px;
     height: 2px;
     width: 70px;
+    background: linear-gradient(90deg, transparent, #52489c);
+    animation: animate 4s infinite ease;
+    overflow: hidden !important;
+}
+
+#light-glide-lite-meta {
+    position: absolute;
+    top: 2900px;
+    height: 2px;
+    width: 150px;
     background: linear-gradient(90deg, transparent, #52489c);
     animation: animate 4s infinite ease;
     overflow: hidden !important;
@@ -231,6 +241,6 @@ nav a {
     flex-wrap: nowrap;
 } */
 
-.logowall {
+/* .logowall {
     filter: brightness(0.1) !important;
-}
+} */

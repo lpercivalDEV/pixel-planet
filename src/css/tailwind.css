@@ -207,7 +207,7 @@ li {
 
 .menu {
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
     text-transform: uppercase;
     font-weight: 100;
     /* background-color: #000; */

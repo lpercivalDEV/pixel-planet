@@ -43,12 +43,12 @@
     <header class="px-4">
         <section class="hidden lg:block bg-transparent">
             <nav class="navbar px-6 py-2" aria-label="navigation">
+                <a href="index.html" name="home" aria-label="home" tabindex="0">
+                    <div class="logo">
+                        <img class="logo_img w-12" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo" aria-label="Pixel Planet logo">
+                    </div>
+                </a>
                 <ul class="menu">
-                    <a href="index.html" name="home" aria-label="home" tabindex="0">
-                        <div class="logo">
-                            <img class="logo_img w-8" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo" aria-label="Pixel Planet logo">
-                        </div>
-                    </a>
                     <a href="#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
                     <a href="#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
                     <a href="pixelacademy.html" aria-label="pixel academy" tabindex="0">pxl academy</a>
@@ -85,8 +85,8 @@
 
         <!-- HERO  -->
         <section id="hero_lite" class="mt-2 sm:px-8">
-            <section class="flex mt-0">
-                <div class="lg:mt-44 xs:mt-18 sm:mt-18 mx-auto justify-center text-center text-space py-2 flex flex-col">
+            <section class="flex mt-0 content-center">
+                <div class="lg:mt-24  xs:mt-18 sm:mt-18 mx-auto justify-center text-center text-space py-2 flex flex-col">
                     <h1 class="sm:text-xl mb-24 sm:mt-8 sm:pt-6 md:text-6xl lg:text-8xl font-medium title-font">Pixel Planet
                     </h1>
                     <span id="pxl-shadow" class="absolute -z-10 sm:text-xl mb-24 sm:mt-8 sm:pt-6 md:text-6xl lg:text-8xl font-medium title-font text-ultra">Pixel Planet</span>
@@ -99,7 +99,7 @@
             <section id="hero-block-lite" class="h-full w-full bg-transparent active:bg-none focus:outline-none focus focus:ring-violet-300" aria-disabled="true" aria-hidden="true" tabindex="-1">
                 <!-- BG Earf Video -->
                 <section id="earf-block-lite" class="flex justify-center lg:py-2 mb-2" aria-disabled="true" aria-hidden="true">
-                    <img src="/public/assets/earf.gif" id="earf-lite" class="rounded-full mx-auto sm:w-screen lg:w-7/12 h-fit pointer-events-none" alt="rotating planet gif" aria-disabled="true" aria-hidden="true" tabindex="-1">
+                    <img src="/public/assets/earf.gif" id="earf-lite" class="rounded-full mx-auto sm:w-screen lg:w-5/12 h-fit pointer-events-none" alt="rotating planet gif" aria-disabled="true" aria-hidden="true" tabindex="-1">
                 </section>
             </section>
         </section>
@@ -143,11 +143,11 @@
                         <h2 class="text-center text-ultra mb-2">About Pixel Planet</h2>
                         <div class="flex flex-wrap -m-4 mb-12">
                             <div class="w-full mb-2 p-4">
-                                <div class="h-full text-center">
+                                <div class="h-full text-center md:px-24">
                                     <!-- <img id="earf-mini" alt="rotating earth gif"
                                                             class="w-60 h-60 mb-8 object-cover object-center rounded-full inline-block outline-double outline-offset-2 outline-cy"
                                                             src="./assets/earf.gif" alt="mini rotating earth gif"> -->
-                                    <p class="leading-loose text-center">
+                                    <p class="leading-loose text-justify">
                                         Pixel Planet is a dynamic design and web development agency based in Boston, MA. With a
                                         decade
                                         of experience under our belts in design and web development, we're confident we can give
@@ -161,14 +161,14 @@
                                         That something is Pixel Planet!
                                     </p>
             
-                                    <p class="leading-loose text-center">So, why should you choose to team up with us? Because we're
+                                    <p class="leading-loose text-justify">So, why should you choose to team up with us? Because we're
                                         not
                                         just after a project - we're after creating meaningful connections between you and your
                                         audience. Your challenges are our challenges, and we're stoked to work together in finding
                                         the
                                         perfect solution for you!</p>
             
-                                    <p class="leading-loose text-center">Ready to embark on this exciting journey with Pixel Planet?
+                                    <p class="leading-loose text-justify">Ready to embark on this exciting journey with Pixel Planet?
                                         We
                                         can't wait to meet you and dive into making your digital dreams a reality. Let's conquer the
                                         pixelated world together! 🚀💻</p>
@@ -190,7 +190,7 @@
                 </div>
             </div>
             <!-- BG SPACE SHAPES  -->
-            <div class="blob-box-two">
+            <!-- <div class="blob-box-two">
                 <div class="blobby1"></div>
                 <div class="blobby2"></div>
                 <div class="blobby3"></div>
@@ -198,62 +198,65 @@
                 <div class="blobby5"></div>
                 <div class="blobby6"></div>
                 <div class="blobby7"></div>
-            </div>
+            </div> -->
             </section>
-            <section id="meta" class="panel container mx-auto h-screen mt-24">
+            <section id="meta" class="panel container mx-auto mt-24">
                 <section class="text-space body-font">
                     <h2 class="text-6xl p-6 block text-center text-ultra">MetaPixels</h2>
-                    <div class="flex-row align-middle text-center">
-                        <!-- <span class="inline-flex align-middle mr-8 w-6 h-6 bg-ultra text-flame">
-                        </span> -->
-                        <h3 class="lg:text-5xl inline-flex align-middle text-space text-3xl title-font font-medium">Why Work With Us? We Humanize Tech.</h3>
-                        <p class="leading-relaxed text-base">We break down our process and technical expertise into language anyone can understand. We bring transparency and understanding to our web development process so you feel confident in working with us. We follow best practices and utilize human centered design to ensure effective solutions.</p>
+                    <section class="flex flex-col md:flex-row">
+                    <div class="flex align-middle md:w-5/12 mb-10 overflow-hidden md:pl-24">
+                        <img alt="feature" class="" src="./assets/icons/meta.svg" alt="laptop computer and phone image">
                     </div>
-                    <div class="px-5 py-8 mx-auto flex flex-wrap">
-                        <div class="flex align-middle lg:w-1/2 w-full mb-10 overflow-hidden">
-                            <img alt="feature" class="" src="./assets/icons/meta.svg" alt="laptop computer and phone image">
-                        </div>
-                        <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-                            <div class="flex flex-col mb-10 lg:items-start items-center">
+                    <div class="px-5 py-8 mx-auto flex flex-wrap md:w-7/12 md:pr-24">
+                        <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:pl-12 lg:text-left text-center">
+                            <div class="flex flex-col mb-4 lg:items-start items-center">
+                                <div class="flex-row align-middle text-center">
+                                    <!-- <span class="inline-flex align-middle mr-8 w-6 h-6 bg-ultra text-flame">
+                                    </span> -->
+                                    <h3 class="inline-flex align-middle text-space lg:text-4xl text-3xl title-font font-medium text-left">Why Work With Us? We Humanize Tech.</h3>
+                                    <p class="leading-relaxed text-base text-justify">We break down our process and technical expertise into language anyone can understand. We bring transparency and understanding to our web development process so you feel confident in working with us. We follow best practices and utilize human centered design to ensure effective solutions.</p>
+                                </div>
                                 <div class="flex-row align-middle">
                                     <!-- <span class="inline-flex align-middle mr-8 w-6 h-6  bg-ultra text-flame"> -->
                                     </span>
-                                    <h2 class="lg:text-5xl inline-flex align-middle text-space text-4xl title-font font-medium">Pixels for the People</h2>
+                                    <h3 class="inline-flex align-middle text-space lg:text-4xl text-3xl title-font font-medium text-left">Pixels for the People</h3>
                                 </div>
                                 <div class="flex-grow">
                             
-                                    <p class="leading-relaxed text-base">Technology should be a tool not a tyrant. We tame technology and work WITH you to create tailored digital solutions for your business challenges.</p>
+                                    <p class="leading-relaxed text-base text-justify">Technology should be a tool not a tyrant. We tame technology and work WITH you to create tailored digital solutions for your business challenges.</p>
                                 </div>
                             </div>
                             <div class="flex flex-col mb-10 lg:items-start items-center">
                                 <div class="flex-row align-middle">
                                     <!-- <span class="inline-flex align-middle mr-8 w-6 h-6  bg-ultra text-flame"> -->
                                     </span>
-                                    <h2 class="lg:text-5xl inline-flex align-middle text-space text-4xl title-font font-medium">Defy Dystopia</h2>
+                                    <h3 class="inline-flex align-middle text-space lg:text-4xl text-3xl title-font font-medium text-left">Defy Dystopia</h3>
                                 </div>
                                 <div class="flex-grow">
                             
-                                    <p class="leading-relaxed text-base">We believe in creating work that challenges us to be our best and to cater to our better human nature. We resist using <a href="https://en.wikipedia.org/wiki/Dark_pattern"  aria-label="link to external Dark Patterns Wiki Page">Dark Patterns</a> in our work. Effective web design and development renders them unneccessary.</p>
+                                    <p class="leading-relaxed text-base text-justify">We believe in creating work that challenges us to be our best and to cater to our better human nature. We resist using <a href="https://en.wikipedia.org/wiki/Dark_pattern"  aria-label="link to external Dark Patterns Wiki Page">Dark Patterns</a> in our work. Effective web design and development renders them unneccessary.</p>
                                 </div>
                             </div>
                             <div class="flex flex-col mb-10 lg:items-start items-center">
                                 <div class="flex-row align-middle">
                                     <!-- <span class="inline-flex align-middle mr-8 w-6 h-6  bg-ultra text-flame"> -->
                                     </span>
-                                    <h2 class="lg:text-5xl inline-flex align-middle text-space text-4xl title-font font-medium">Unify Understanding</h2>
+                                    <h3 class="inline-flex align-middle text-space lg:text-4xl text-3xl title-font font-medium text-left">Unify Understanding</h3>
                                 </div>
                                 <div class="flex-grow">
                             
-                                    <p class="leading-relaxed text-base">We build technical solutions to connect people to eachother in a digital world. We believe that creating understanding is what unifies people across the pixels of their screens and across the world.</p>
+                                    <p class="leading-relaxed text-base text-justify">We build technical solutions to connect people to eachother in a digital world. We believe that creating understanding is what unifies people across the pixels of their screens and across the world.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <span id="light-glide-lite-meta" class="overflow-hidden sm:mt-2"></span>
+                </section>
                 </section>
             </section>
-
+            
             <!-- LAWS  -->
-            <section id="laws" class="panel h-screen">
+            <section id="laws" class="panel">
                 <!-- BG SPACE SHAPES  -->
                 <div class="blob-box" aria-hidden="true">
                     <div class="shape-blob"></div>
@@ -264,9 +267,9 @@
                     <div class="shape-blob five"></div>
                     <div class="shape-blob six"></div>
                 </div>
-                <h2 class="p-6 block text-6xl text-center">LAWS</h2>
+                <h2 class="p-6 block text-6xl text-center text-ultra">LAWS</h2>
                 <section class="text-space body-font">
-                    <div class="container px-5 py-24 mx-auto">
+                    <div class="container px-12 md:px-24 py-24 mx-auto">
                         <div class="flex flex-wrap sm:flex-shrink-0 -m-4">
                             <div class="p-4 lg:w-1/2 md:w-full">
                                 <div class="flex rounded-lg outline-double outline-offset-2 outline-cy p-8 sm:flex-row flex-col">
@@ -311,63 +314,63 @@
             </section>
             
             <!-- LOGO WALL  -->
-            <div class="panel py-6 sm:py-8 lg:py-12 h-screen">
-                <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <div class="panel py-6 sm:py-8 lg:py-12">
+                <div class="mx-auto max-w-screen-2xl px-4 md:px-24">
                     <div class="mb-4 flex flex-col items-center md:mb-8 lg:flex-row lg:justify-between">
                         <span>
-                            <h2 class="mb-2 text-center text-2xl font-bold text-ultra lg:mb-0 lg:text-3xl">Trusted by the best</h2>
+                            <h2 class="mb-2 text-center text-2xl font-bold text-ultra lg:mb-0 lg:text-3xl">Stellar Approval</h2>
                             <h4 class="text-space">Recent Clients</h4>
                         </span>
                         
-                            <p class="max-w-md text-center text-gray-400 lg:text-right">We have helped small business, start ups, and creatives level up their online presence. Our clients are happy and thriving. We can help you too!</p>
+                            <!-- <p class="max-w-md text-center text-gray-400 lg:text-right">We have helped small business, start ups, and creatives level up their online presence. Our clients are happy and thriving. We can help you too!</p> -->
                     </div>
             
-                    <div class="grid grid-cols-2 gap-4 rounded-lg md:grid-cols-3 lg:gap-6">
+                    <div class="grid md:grid-cols-2 gap-4 rounded-lg md:grid-cols-3 lg:gap-6">
                         <!-- logo - start -->
-                        <div class="flex-col h-16 justify-center text-center rounded-lg bg-gray-100 p-4 sm:h-32">
-                            <img class="je inline w-16 h-16 p-4 grayscale" src="/public/assets/clients/jeservices.png" alt="JE Services logo">
+                        <div class="flex-col h-40 md:h-16 justify-center text-center rounded-lg bg-gray-100 p-4 sm:h-32 border-2">
+                            <img class="je inline w-20 h-auto p-4" src="/public/assets/clients/jeservices.png" alt="JE Services logo">
                             <h4 class="grayscale">J&E Services</h4>
                         </div>
                         <!-- logo - end -->
             
                         <!-- logo - start -->
-                        <div class="flex-col h-16 justify-center text-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
-                            <img class="logowall inline w-18 h-16 p-4 grayscale" src="/public/assets/clients/manyi.png" alt="Manyi Juices logo">
+                        <div class="flex-col h-40 justify-center text-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32 border-2">
+                            <img class="logowall inline w-28 h-auto p-4" src="/public/assets/clients/manyi.png" alt="Manyi Juices logo">
                             <h4 class="grayscale">Manyi Juices</h4>
                         
                         </div>
                         <!-- logo - end -->
             
                         <!-- logo - start -->
-                        <div class="flex-col h-16 justify-center text-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
-                            <img class="logowall inline w-18 h-16 p-4 grayscale" src="/public/assets/clients/dom.png" alt="DomEstate Capital logo">
+                        <div class="flex-col h-40 justify-center text-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32 border-2">
+                            <img class="logowall inline w-32 h-auto p-4 " src="/public/assets/clients/dom.png" alt="DomEstate Capital logo">
                             <h4 class="grayscale">DomEstate Capital</h4>
                         </div>
                         <!-- logo - end -->
             
                         <!-- logo - start -->
-                        <div class="flex-col h-16 justify-center text-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
-                            <img class="logowall inline w-16 h-16 p-4 grayscale" src="/public/assets/clients/skymaxx.png" alt="je services logo">
-                            <h4 class="grayscale">SkyMaxx Mas</h4>
+                        <div class="flex-col h-40 justify-center text-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32 border-2">
+                            <img class="logowall inline w-24 h-auto p-4" src="/public/assets/clients/skymaxx.png" alt="je services logo">
+                            <h4 class="grayscale">SkyMaxxMas</h4>
                         </div>
                         <!-- logo - end -->
             
                         <!-- logo - start -->
-                        <div class="flex-col h-16 justify-center text-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
-                            <img class="logowall inline w-28 h-16 p-4 grayscale" src="/public/assets/clients/meimei.png" alt="je services logo">
-                            <h4 class="grayscale">Mei Mei</h4>
+                        <div class="flex-col h-40 justify-center text-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32 border-2">
+                            <img class="logowall inline w-32 h-auto p-4" src="/public/assets/clients/meimei.png" alt="je services logo">
+                            <h4 class="grayscale">Mei Mei Dumplings</h4> 
                         </div>
                         <!-- logo - end -->
             
                         <!-- logo - start -->
-                        <div class="flex-col h-16 justify-center text-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
-                            <img class="logowall inline w-16 h-16 p-4" src="/public/assets/clients/lrm.png" alt="je services logo">
-                            <h4 class="grayscale">Liability Roadmap</h4>
+                        <div class="flex-col h-40 justify-center text-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32 border-2">
+                            <img class="logowall inline w-20 h-auto p-4" src="/public/assets/clients/lrm.png" alt="je services logo">
+                            <h4 class="grayscale"> The Liability Roadmap</h4>
                         </div>
                         <!-- logo - end -->
                     </div>
                 </div>
-                <div class="pt-6 sm:pt-8 lg:pt-12">
+                <div class="pt-6 sm:pt-8 lg:pt-12 px-12">
                     <!-- banner - start -->
                     <div class="mx-auto max-w-screen-2xl px-4 pb-4 md:px-8">
                         <div
@@ -402,8 +405,8 @@
             <!-- CONTACT  -->
             <section id="contact" class="container mx-auto mb-0">        
                 <section class="text-space body-font relative">
-                    <h2 class="text-center mt-24">Contact Us</h2>
-                    <div class="container px-5 py-24 mx-auto lg:flex">
+                    <h2 class="text-center mt-24 text-ultra">Contact Us</h2>
+                    <div class="container md:px-24 py-24 mx-auto lg:flex">
                         <div class="flex flex-col text-center mb-12">
                             <img id="earf-mini" alt="pixel planet logo"
                                 class="w-60 h-60 mb-8 object-cover object-center rounded-full inline-block outline-offset-2 outline-cy mx-auto"
@@ -412,20 +415,20 @@
                         </div>
                         <form class="lg:w-1/2 md:w-2/3 mx-auto" name="pxl_contact" method="POST" data-netlify="true"
                             netlify-honeypot="bot-field" data-netlify-recaptcha="true">
-                            <div class="flex flex-wrap -m-2">
+                            <div class="flex flex-wrap flex-col md:flex-row -m-2 px-4">
                                 <p class="hidden">
                                     <label>
                                         Don’t fill this out if you’re human: <input name="bot-field" />
                                     </label>
                                 </p>
-                                <div class="p-2 w-1/2">
+                                <div class="p-2 md:w-1/2">
                                     <div class="relative">
                                         <label for="name" class="leading-7 text-sm text-space">Name</label>
                                         <input required type="text" id="name" name="name"
                                             class="w-full outline-double outline-offset-2 outline-cy bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:border-4 focus:ring-4 focus:ring-blue-200 focus:outline-none text-space py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                                     </div>
                                 </div>
-                                <div class="p-2 w-1/2">
+                                <div class="p-2 md:w-1/2">
                                     <div class="relative">
                                         <label for="email" class="leading-7 text-sm text-space">Email</label>
                                         <input required type="email" id="email" name="email"
@@ -457,6 +460,14 @@
                                                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                                             </svg>
                                         </a>
+                                        <a class="icon hover:text-black ml-4 text-black" href="https://www.linkedin.com/company/pxl-planet"  >
+                                            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="0" class="w-6 h-6" viewBox="0 0 24 24">
+                                                <path stroke="none"
+                                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                                            </svg>
+                                        </a>
                                         <a href="mailto:pxlplanet@proton.me" class="invert icon ml-4 text-space"  aria-label="email link">
                                             <img class="w-6 h-6" src="./assets/icons/email.png" alt="email icon">
                                             </svg>
@@ -486,24 +497,13 @@
             <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2">© 2023
                 Pixel Planet
             </p>
-            <span
-                class="text-center lg:inline-flex lg:flex-row flex flex-col lg:w-1/4 w-1/2 sm:ml-auto sm:mt-0 justify-center items-center space-between m-4">
-                <a href="privacy_policy.html" class="mr-3 p-2">
-                    <li
-                        class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start font-medium text-space hover:text-flame text-xl">
-                        Privacy
-                        Policy</li>
-                </a>
-                <a href="https://www.linkedin.com/company/pxl-planet"
-                    class="text-gray-500 max-w-fit w-fit lg:inline-flex p-2">
-                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="0" class="w-6 h-6" viewBox="0 0 24 24">
-                        <path stroke="none"
-                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                    </svg>
-                </a>
-            </span>
+            <a href="privacy_policy.html" class="mr-3 p-2">
+                <li
+                    class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start font-medium text-space hover:text-flame text-sm">
+                    Privacy
+                    Policy</li>
+            </a>
+
         </div>
     </footer>
 
