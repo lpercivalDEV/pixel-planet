@@ -44,7 +44,7 @@
        width: 100%;
        /* max-width: 1024px; */
        max-height: 100vh;
-       height: 100vh;
+       height: 90vh;
        margin: auto;
        position: relative;
        /* aspect-ratio: 1 / 1; */
@@ -103,10 +103,10 @@
        animation: rotateCCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
    }
 
-   .carcard a {
+   /* .carcard a {
        text-decoration: none;
        color: unset;
-   }
+   } */
 
    .model-name {
        font-weight: 500;
@@ -175,7 +175,7 @@
        }
    }
 
-   @keyframes pulseGlow {
+   /* @keyframes pulseGlow {
        from {
            background-size: 60%;
        }
@@ -183,7 +183,7 @@
        to {
            background-size: 100%;
        }
-   }
+   } */
 
    .center-circle {
        position: absolute;
@@ -241,6 +241,7 @@
        width: 50%;
        background-position: 100% 100%;
        background-repeat: no-repeat;
+       background-color: #FFFFFF;
        /* background-image: url("./assets/clients/cases/liability_roadmap.png"); */
        /* -webkit-backdrop-filter: opacity(20%);
        backdrop-filter: opacity(20%); */
@@ -248,9 +249,9 @@
         max-height: 90vh;
    }
 
-   .mask p{
+   /* .mask p{
     animation: pulseGlow 5s linear infinite alternate;
-   }
+   } */
 
    .mask:after {
        content: "";
@@ -264,7 +265,7 @@
 
 
     .orbit {
-        background: linear-gradient(270deg, #b79cd4, #fba5b0, #ceded6, #bedbda);
+        /* background: linear-gradient(270deg, #b79cd4, #fba5b0, #ceded6, #bedbda); */
         background-size: 100%;
         -webkit-animation: cloudscape 33s ease infinite;
         animation: cloudscape 33s ease infinite;
@@ -554,7 +555,7 @@
 
 
  .lrmGrad {
-     background: linear-gradient(266deg, #ff9e17, #b8f1ef, #fff);
+     background: linear-gradient(266deg, #ff9e17, #fff);
      background-size: 600% 600%;
 
      -webkit-animation: lrm-grad 30s ease infinite;
