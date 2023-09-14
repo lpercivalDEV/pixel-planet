@@ -584,6 +584,9 @@ video {
 .mt-12 {
   margin-top: 3rem;
 }
+.mt-16 {
+  margin-top: 4rem;
+}
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -604,6 +607,9 @@ video {
 }
 .mt-96 {
   margin-top: 24rem;
+}
+.mb-16 {
+  margin-bottom: 4rem;
 }
 .block {
   display: block;
@@ -637,6 +643,9 @@ video {
 }
 .h-20 {
   height: 5rem;
+}
+.h-28 {
+  height: 7rem;
 }
 .h-32 {
   height: 8rem;
@@ -678,6 +687,18 @@ video {
 .h-screen {
   height: 100vh;
 }
+.h-1\/2 {
+  height: 50%;
+}
+.h-36 {
+  height: 9rem;
+}
+.h-52 {
+  height: 13rem;
+}
+.h-72 {
+  height: 18rem;
+}
 .min-h-fit {
   min-height: -moz-fit-content;
   min-height: fit-content;
@@ -717,6 +738,9 @@ video {
 }
 .w-40 {
   width: 10rem;
+}
+.w-44 {
+  width: 11rem;
 }
 .w-5 {
   width: 1.25rem;
@@ -782,9 +806,6 @@ video {
 }
 .cursor-text {
   cursor: text;
-}
-.cursor-pointer {
-  cursor: pointer;
 }
 .resize-none {
   resize: none;
@@ -924,6 +945,10 @@ video {
 .bg-light {
   --tw-bg-opacity: 1;
   background-color: rgb(255 248 231 / var(--tw-bg-opacity));
+}
+.bg-pink-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
 }
 .bg-space {
   --tw-bg-opacity: 1;
@@ -1087,6 +1112,9 @@ video {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.pb-20 {
+  padding-bottom: 5rem;
 }
 .text-left {
   text-align: left;
@@ -2020,6 +2048,9 @@ main {
   .md\:ml-0 {
     margin-left: 0px;
   }
+  .md\:hidden {
+    display: none;
+  }
   .md\:h-36 {
     height: 9rem;
   }
@@ -2118,6 +2149,9 @@ main {
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
+  .lg\:ml-4 {
+    margin-left: 1rem;
+  }
   .lg\:ml-auto {
     margin-left: auto;
   }
@@ -2129,6 +2163,12 @@ main {
   }
   .lg\:mt-44 {
     margin-top: 11rem;
+  }
+  .lg\:mt-8 {
+    margin-top: 2rem;
+  }
+  .lg\:mt-12 {
+    margin-top: 3rem;
   }
   .lg\:block {
     display: block;
@@ -2153,6 +2193,13 @@ main {
   }
   .lg\:h-auto {
     height: auto;
+  }
+  .lg\:h-screen {
+    height: 100vh;
+  }
+  .lg\:min-h-fit {
+    min-height: -moz-fit-content;
+    min-height: fit-content;
   }
   .lg\:w-1\/2 {
     width: 50%;
@@ -2297,6 +2344,9 @@ main {
 @media (min-width: 1280px) {
   .xl\:mr-3 {
     margin-right: 0.75rem;
+  }
+  .xl\:block {
+    display: block;
   }
   .xl\:h-6 {
     height: 1.5rem;

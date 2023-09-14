@@ -236,23 +236,6 @@ nav a {
 }
 
 
-/* CASE STUDIES  */
-
-.pingpongdom {
-    background-color: white;
-}
-
-.pingpongmanyi {
-    background-color: #f2a7bc;
-}
-
-/* .pingponglrm {
-    background-color: #cfd2d3;
-} */
-
-.pingpongmeimei {
-    background-color: #fcbb00;
-}
 
 #astrounauts {
     height: 100vh;
@@ -275,17 +258,6 @@ nav a {
     /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
-}
-
-.avatar3 {
-    /* margin: 0; */
-    /* justify-content: center; */
-    /* transform-origin: 0; */
-    border: 4px solid red;
-    position: relative;
-    margin-left: -8%;
-    /* transform: translateY(0px); */
-    animation: float2 6s ease-in-out infinite;
 }
 
 @keyframes float {
