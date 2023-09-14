@@ -1,3 +1,7 @@
+/* HERO ROCKET */
+
+
+
 /* CASE STUDIES  */
 
 .pingpongdom {
@@ -431,3 +435,171 @@
         background-position: 0% 50%
     }
 }
+
+
+/* DOMESTATE  */
+
+
+.domGrad {
+    background: linear-gradient(270deg, #4f79a4, #9ca7bc, #4075fc, #c9d0dd);
+    background-size: 800% 800%;
+
+    -webkit-animation: dom-grad 30s ease infinite;
+    -moz-animation: dom-grad 30s ease infinite;
+    animation: dom-grad 30s ease infinite;
+}
+
+@-webkit-keyframes dom-grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes dom-grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes dom-grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+
+
+/* MEI MEI  */
+
+.meimeiGrad {
+    background: linear-gradient(270deg, #fcbb00, #ffdd00, #ffffff);
+    background-size: 600% 600%;
+
+    -webkit-animation: meimei-grad 30s ease infinite;
+    -moz-animation: meimei-grad 30s ease infinite;
+    animation: meimei-grad 30s ease infinite;
+}
+
+@-webkit-keyframes meimei-grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes meimei-grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes meimei-grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+
+
+/* LRM  */
+
+
+ .lrmGrad {
+     background: linear-gradient(266deg, #ff9e17, #b8f1ef, #fff);
+     background-size: 600% 600%;
+
+     -webkit-animation: lrm-grad 30s ease infinite;
+     -moz-animation: lrm-grad 30s ease infinite;
+     animation: lrm-grad 30s ease infinite;
+ }
+
+ @-webkit-keyframes lrm-grad {
+     0% {
+         background-position: 0% 54%
+     }
+
+     50% {
+         background-position: 100% 47%
+     }
+
+     100% {
+         background-position: 0% 54%
+     }
+ }
+
+ @-moz-keyframes lrm-grad {
+     0% {
+         background-position: 0% 54%
+     }
+
+     50% {
+         background-position: 100% 47%
+     }
+
+     100% {
+         background-position: 0% 54%
+     }
+ }
+
+ @keyframes lrm-grad {
+     0% {
+         background-position: 0% 54%
+     }
+
+     50% {
+         background-position: 100% 47%
+     }
+
+     100% {
+         background-position: 0% 54%
+     }
+ }

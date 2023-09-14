@@ -82,7 +82,30 @@
 
         <div class="py-6 sm:py-8 lg:py-12 cloud-container">
             <div class="mx-auto px-4 md:px-8 clouds">
-                <h1 class="text-center m-6 p-6 text-ultra">Case Studies</h1>
+                <div class="avatar2">
+                    <img class="rotate-45 mx-auto h-48 py-12" src="/public/assets/icons/rocket.png" alt="rocket">
+                </div>
+
+                <img class="avatar2 absolute top-48 left-10 h-20" src="/public/assets/icons/astronaut.png" alt="astronaut">
+                <img class="avatar2 absolute top-48 right-10 h-20" src="/public/assets/icons/space_girl.png" alt="space girl">
+
+                <h1 class="text-center m-6 p-6 text-ultra mt-32 lg:mt-2">Case Studies</h1>
+                <!-- <div class="avatar2">
+                    <img class="absolute top-32 right-10 rotate-30  h-20" src="/public/assets/icons/floaty_boi.png" alt="floaty boi">
+                </div> -->
+
+                <div class="avatar2">
+                    <img class="absolute top-48 right-80 h-20" src="/public/assets/icons/kosmo_kitty.png" alt="kosmo kitty">
+                </div>
+
+                <div class="avatar2">
+                    <img class="rotate-45 absolute top-48 left-80 h-20" src="/public/assets/icons/space_dog.png" alt="space dog">
+                </div>
+
+                <div class="avatar2">
+                </div>
+
+
                 <!-- <div id="">
                     <div id="astronauts" class="w-screen h-screen object-none border-4 flex justify-center">
                       <img id="cafe" class="opacity-40 invert" src="./assets/pxl_planet_cafe.gif" alt="astronauts">
@@ -124,7 +147,7 @@
                         <div>
                             <a href="#manyi"
                                 class="avatar mx-auto group relative flex w-40 h-40 lg:h-60 lg:w-60 overflow-hidden rounded-full shadow-lg pingpongdom">
-                                <img src="/public/assets/clients/manyi.png" loading="lazy" alt="DomeEstate Capital"
+                                <img src="/public/assets/clients/manyi.png" loading="lazy" alt="Manyi Juices"
                                     class="p-12 absolute inset-0 h-full w-full object-contain object-center transition duration-200 group-hover:scale-110 pingpongmanyi" />
                     
                                 <div
@@ -142,7 +165,7 @@
                         <div>
                             <a href="#meimei"
                                 class="avatar mx-auto group relative flex w-40 h-40 lg:h-60 lg:w-60 overflow-hidden rounded-full shadow-lg ">
-                                <img src="/public/assets/clients/meimei3.jpg" loading="lazy" alt="DomeEstate Capital"
+                                <img src="/public/assets/clients/meimei3.jpg" loading="lazy" alt="Mei Mei Dumplings"
                                     class="p-12 absolute h-full w-full object-contain object-left-bottom transition duration-200 group-hover:scale-110 pingpongmeimei" />
                     
                                 <div
@@ -160,7 +183,7 @@
                         <div>
                             <a href="#lrm"
                                 class="avatar mx-auto group relative flex w-40 h-40 lg:h-60 lg:w-60 overflow-hidden rounded-full shadow-lg pingpongdom">
-                                <img src="/public/assets/clients/corpacc.png" loading="lazy" alt="DomeEstate Capital"
+                                <img src="/public/assets/clients/corpacc.png" loading="lazy" alt="Corporate Accountability"
                                     class="p-12 absolute inset-0 h-full w-full object-cover object-left-top transition duration-200 group-hover:scale-110 pingponglrm bg-white" />
                     
                                 <div
@@ -221,18 +244,23 @@
             </section>
         </section>
 
+
+
+
+
+
         <!-- Liability Roadmap  -->
-        <section id="lrm" class="text-gray-600 body-font relative mt-32 lg:mt-12 pt-12 mb-32">
-            <div class="rounded-lg h-96 px-8">
+        <section id="lrm" class="lrmGrad text-gray-600 body-font relative mt-32 lg:mt-12 pt-12 mb-32">
+            <div class="bg-white rounded-lg h-96 px-8">
                 <h2 class="absolute mt-4 text-space px-12">
-                    Liability Roadmap
+                    Corporate Accountability - LRM
                 </h2>
-                <img alt="liability roadmap header image" class="object-cover object-center h-full w-full rounded-lg"
-                    src="/public/assets/clients/cases/liability_roadmap.png">
+                <img alt="liability roadmap header image" class="avatar2 object-contain object-center h-96 w-full rounded-lg"
+                    src="/public/assets/clients/corpacc.png">
             </div>
 
             <!-- ORBIT CAROUSEL  -->
-            <section class="hidden xl:block bg-light">
+            <section class="hidden xl:block">
                 <section class="carcontainer px-20 mt-12">
                     <div class="orbit void hidden lg:block px-12 rounded-lg" id="void">
                         <div class="crop px-20">
@@ -319,7 +347,7 @@
             </section>
 
             <!-- SUMMARY & FEATURES   -->
-            <section class="px-8 lg:px-20 flex flex-col lg:grid lg:grid-cols-2 mx-auto lg:justify-center lg:self-center lg:text-center">
+            <section class="bg-light px-8 lg:px-20 flex flex-col lg:grid lg:grid-cols-2 mx-auto lg:justify-center lg:self-center lg:text-center">
                 <div class="lg:col-span-1 my-6 lg:mx-6">
                     <div class="text-lg">
                         <h3 class="text-ultra text-justify mb-4">Client Summary</h3>
@@ -348,47 +376,49 @@
                 </div>
             </section>
 
-            <!-- CHALLENGE  -->
-            <div class="px-8 lg:px-20">
-                <h3 class="text-ultra text-justify mb-4">The Challenge</h3>
-                <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
-                <p class="leading-relaxed text-lg mb-4">This project presented a unique challenge of juggling the needs, wants, and
-                    aesthetics of 4 climate action organizations distributed across the globe. This group requested a solution for
-                    their not so tech savvy partners to be able to update and maintain their roadmap and case studies. They needed a
-                    website that created impact while educating changemakers and the public on what actions need to be taken for
-                    climate justice.
-                </p>
-            
-                <!-- PROCESS  -->
-                <h3  class="text-ultra text-justify mb-4">Our Process</h3>
-                <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
-                <p class="leading-relaxed text-lg mb-4">This project, due to the globally distributed orgs, required us to be
-                    extremely flexible and attentive to the needs of the client. We conducted a thorough discovery process to
-                    understand the ultimate goal of these organizations, as well as checking in with milestone updates to ensure our
-                    decisions lined up with their vision. There were not only technical considerations but also cultural aspects
-                    that were necessary to uphold as the target audience had a global presence. By maintaining clear and open
-                    communication with our partners and being flexible with any required changes, we were able to create something
-                    that all 14 organizations were happy with in the end.</p>
-            </div>
-
-
-            <!-- SITE PREVIEW CAROUSEL  -->
-            <section id="carousel" class="mx-auto justify-center w-screen mb-16 pb-20">
-                <div class="previews mx-auto h-96 mb-32 lg:min-h-fit lg:h-screen">
-                    <h3 class="text-ultra text-justify mb-4">Site Previews</h3>
+            <section class="bg-light mx-auto lg:justify-center lg:self-center">
+                <!-- CHALLENGE  -->
+                <div class="px-8 lg:px-20">
+                    <h3 class="text-ultra text-justify mb-4">The Challenge</h3>
                     <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
-                    <img src="/public/assets/clients/cases/lrm_polluters.png" loading="lazy" alt="Liability Roadmap Home Page"
-                        class="pic object-contain object-center" />
-                    <img src="/public/assets/clients/cases/lrm_action.png" loading="lazy" alt="Liability Roadmap Climate Action"
-                        class="pic object-contain object-center" />
-                    <img src="/public/assets/clients/cases/lrm_orgs.png" loading="lazy" alt="Liability Roadmap organizations"
-                        class="pic object-contain object-center" />
-                    <!-- <img src="/public/assets/clients/cases/lrm_principles.png" loading="lazy" alt="Liability Roadmap organizations"
-                        class="pic object-contain object-center" /> -->
-                    <img src="/public/assets/clients/cases/lrm_contact.png" loading="lazy" alt="Liability Roadmap organizations"
-                        class="pic object-contain object-center" />
+                    <p class="leading-relaxed text-lg mb-4">This project presented a unique challenge of juggling the needs, wants, and
+                        aesthetics of 4 climate action organizations distributed across the globe. This group requested a solution for
+                        their not so tech savvy partners to be able to update and maintain their roadmap and case studies. They needed a
+                        website that created impact while educating changemakers and the public on what actions need to be taken for
+                        climate justice.
+                    </p>
+                
+                    <!-- PROCESS  -->
+                    <h3  class="text-ultra text-justify mb-4">Our Process</h3>
+                    <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
+                    <p class="leading-relaxed text-lg mb-4">This project, due to the globally distributed orgs, required us to be
+                        extremely flexible and attentive to the needs of the client. We conducted a thorough discovery process to
+                        understand the ultimate goal of these organizations, as well as checking in with milestone updates to ensure our
+                        decisions lined up with their vision. There were not only technical considerations but also cultural aspects
+                        that were necessary to uphold as the target audience had a global presence. By maintaining clear and open
+                        communication with our partners and being flexible with any required changes, we were able to create something
+                        that all 14 organizations were happy with in the end.</p>
                 </div>
-            </section>
+    
+    
+                <!-- SITE PREVIEW CAROUSEL  -->
+                <section id="carousel" class="mx-auto justify-center w-screen mb-16 pb-20">
+                    <div class="previews mx-auto h-96 mb-32 lg:min-h-fit lg:h-screen">
+                        <h3 class="text-ultra text-justify mb-4">Site Previews</h3>
+                        <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
+                        <img src="/public/assets/clients/cases/lrm_polluters.png" loading="lazy" alt="Liability Roadmap Home Page"
+                            class="pic object-contain object-center" />
+                        <img src="/public/assets/clients/cases/lrm_action.png" loading="lazy" alt="Liability Roadmap Climate Action"
+                            class="pic object-contain object-center" />
+                        <img src="/public/assets/clients/cases/lrm_orgs.png" loading="lazy" alt="Liability Roadmap organizations"
+                            class="pic object-contain object-center" />
+                        <!-- <img src="/public/assets/clients/cases/lrm_principles.png" loading="lazy" alt="Liability Roadmap organizations"
+                            class="pic object-contain object-center" /> -->
+                        <img src="/public/assets/clients/cases/lrm_contact.png" loading="lazy" alt="Liability Roadmap organizations"
+                            class="pic object-contain object-center" />
+                    </div>
+                </section>
+           
             
                     
             <!-- RESULTS  -->
@@ -398,8 +428,9 @@
                     <p class="leading-relaxed text-lg mb-4">METRICS METRICS METRICS</p>
                     <p class="leading-relaxed text-lg mb-4">METRICS METRICS METRICS</p>
                     <p class="leading-relaxed text-lg mb-4">METRICS METRICS METRICS</p>
-             </div>       
-        </section>           
+             </div>  
+        </section>
+    </section>           
                     
 
 
@@ -409,7 +440,7 @@
 
         <!-- MANYI  -->
         <section id="manyi" class="manyiGrad h-full text-gray-600 body-font relative mt-96 lg:mt-32 pt-12 mb-32">
-            <div class="bg-white rounded-lg h-96 px-8">
+            <div class="bg-white rounded-lg h-96 px-8 mb-12">
                 <h2 class="absolute mt-4 text-space px-12">
                     Manyi Juices
                 </h2>
@@ -521,7 +552,7 @@
                 </div>
             </section>
         
-        <section class="bg-light px-8 lg:px-20 mx-auto lg:justify-center lg:self-center lg:text-center">    
+        <section class="bg-light mx-auto lg:justify-center lg:self-center">    
             <!-- CHALLENGE  -->
             <div class="px-8 lg:px-20">
                 <h3 class="text-ultra text-justify mb-4">The Challenge</h3>
@@ -575,20 +606,21 @@
 
 
 
+
         <!-- DOMESTATE  -->
-        <section id="dom" class="bg-light text-gray-600 body-font relative mt-96 lg:mt-32 pt-12 mb-32">
-            <div class="rounded-lg h-96 px-8">
+        <section id="dom" class="domGrad text-gray-600 body-font relative mt-96 lg:mt-32 pt-12 mb-32">
+            <div class="bg-white rounded-lg h-96 px-8">
                 <h2 class="absolute mt-4 text-space px-12">
                     DomEstate Capital
                 </h2>
                 <img alt="domestate capital header image"
-                    class=" bg-white object-contain object-center h-full w-full mx-auto py-12 rounded-lg"
-                    src="/public/assets/clients/dom.png">
+                    class="avatar2 object-contain object-center h-full w-full mx-auto py-12 rounded-lg"
+                    src="/public/assets/clients/cases/dom_logo_big.png">
             </div>
         
             <!-- ORBIT CAROUSEL  -->
-            <section class="hidden xl:block bg-light">
-                <section class="carcontainer px-20 mt-12">
+            <section class="hidden xl:block">
+                <section class="carcontainer px-20 mt-12 py-12">
                     <div class="orbit void hidden lg:block px-12 rounded-lg" id="void">
                         <div class="crop px-20">
                             <ul id="card-list" class="carul" style="--count: 6;">
@@ -658,7 +690,7 @@
         
             <!-- SUMMARY & FEATURES   -->
             <section
-                class="px-8 lg:px-20 flex flex-col lg:grid lg:grid-cols-2 mx-auto lg:justify-center lg:self-center lg:text-center">
+                class="bg-light px-8 lg:px-20 flex flex-col lg:grid lg:grid-cols-2 mx-auto lg:justify-center lg:self-center lg:text-center">
                 <div class="lg:col-span-1 my-6 lg:mx-6">
                     <div class="text-lg">
                         <h3 class="text-ultra text-justify mb-4">Client Summary</h3>
@@ -684,70 +716,70 @@
                     </ul>
                 </div>
             </section>
-        
-            <!-- CHALLENGE  -->
-            <div class="px-8 lg:px-20">
-                <h3 class="text-ultra text-justify mb-4">The Challenge</h3>
-                <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
-                <p class="leading-relaxed text-lg mb-4">
-                    DomEstate Capital needed to create an online presence that would allow them to reach and connect with their target
-                    audience, educate new investors, and easily update their portfolio as they acquired additional properties.
-                </p>
-        
-                <!-- PROCESS  -->
-                <h3 class="text-ultra text-justify mb-4">Our Process</h3>
-                <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
-                <p class="leading-relaxed text-lg mb-4">By discussing priorities with our client we were able to uncover what aesthetic they wanted and what the flow should be
-                in order to usher users through relevant site info and ultimately reach out for a consultation. We needed to use
-                technology that our clients would find easy to update themselves and it needed to be tailored for their branding. Due to
-                these constraints, we settled on using a CMS and incorporated custom code to achieve their vision.</p>
-            </div>
-        
-        
-            <!-- SITE PREVIEW CAROUSEL  -->
-            <section id="carousel" class="mx-auto justify-center w-screen mb-16 pb-20">
-                <div class="previews mx-auto h-96 mb-32 lg:min-h-fit lg:h-screen">
-                    <h3 class="text-ultra text-justify mb-4">Site Previews</h3>
+            <section class="bg-light mx-auto lg:justify-center lg:self-center">
+                <!-- CHALLENGE  -->
+                <div class="px-8 lg:px-20">
+                    <h3 class="text-ultra text-justify mb-4">The Challenge</h3>
                     <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
-                    <img src="/public/assets/clients/cases/domestate.png" loading="lazy" alt="DomEstate HomePage Preview"
-                        class="pic object-contain object-center" />
-                    <img src="/public/assets/clients/cases/dom_portfolio.png" loading="lazy" alt="DomEstate Portfolio  Preview"
-                        class="pic object-contain object-center" />
-                    <img src="/public/assets/clients/cases/dom_glossary.png" loading="lazy" alt="DomEstate Glossary  Preview"
-                        class="pic object-contain object-center" />
-                    <img src="/public/assets/clients/cases/dom_invest.png" loading="lazy" alt="DomEstate Invest  Preview"
-                        class="pic object-contain object-center" />
+                    <p class="leading-relaxed text-lg mb-4">
+                        DomEstate Capital needed to create an online presence that would allow them to reach and connect with their target
+                        audience, educate new investors, and easily update their portfolio as they acquired additional properties.
+                    </p>
+            
+                    <!-- PROCESS  -->
+                    <h3 class="text-ultra text-justify mb-4">Our Process</h3>
+                    <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
+                    <p class="leading-relaxed text-lg mb-4">By discussing priorities with our client we were able to uncover what aesthetic they wanted and what the flow should be
+                    in order to usher users through relevant site info and ultimately reach out for a consultation. We needed to use
+                    technology that our clients would find easy to update themselves and it needed to be tailored for their branding. Due to
+                    these constraints, we settled on using a CMS and incorporated custom code to achieve their vision.</p>
+                </div>
+            
+            
+                <!-- SITE PREVIEW CAROUSEL  -->
+                <section id="carousel" class="mx-auto justify-center w-screen mb-16 pb-20">
+                    <div class="previews mx-auto h-96 mb-32 lg:min-h-fit lg:h-screen">
+                        <h3 class="text-ultra text-justify mb-4">Site Previews</h3>
+                        <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
+                        <img src="/public/assets/clients/cases/domestate.png" loading="lazy" alt="DomEstate HomePage Preview"
+                            class="pic object-contain object-center" />
+                        <img src="/public/assets/clients/cases/dom_portfolio.png" loading="lazy" alt="DomEstate Portfolio  Preview"
+                            class="pic object-contain object-center" />
+                        <img src="/public/assets/clients/cases/dom_glossary.png" loading="lazy" alt="DomEstate Glossary  Preview"
+                            class="pic object-contain object-center" />
+                        <img src="/public/assets/clients/cases/dom_invest.png" loading="lazy" alt="DomEstate Invest  Preview"
+                            class="pic object-contain object-center" />
+                    </div>
+                </section>
+            
+            
+                <!-- RESULTS  -->
+                <div class="px-8 lg:px-20">
+                    <h3 class="text-ultra text-justify mb-4">Results</h3>
+                    <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
+                    <p class="leading-relaxed text-lg mb-4">METRICS METRICS METRICS</p>
                 </div>
             </section>
-        
-        
-            <!-- RESULTS  -->
-            <div class="px-8 lg:px-20">
-                <h3 class="text-ultra text-justify mb-4">Results</h3>
-                <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
-                <p class="leading-relaxed text-lg mb-4">METRICS METRICS METRICS</p>
-            </div>
         </section>
 
 
-        
 
 
 
 
         <!-- MEI MEI  -->
-        <section id="meimei" class="bg-light text-gray-600 body-font relative mt-96 lg:mt-32 pt-12 mb-32">
-            <div class="rounded-lg h-96 px-8">
+        <section id="meimei" class="meimeiGrad text-gray-600 body-font relative mt-96 lg:mt-32 pt-12 mb-32">
+            <div class="pingpongmeimei rounded-lg h-96 px-8">
                 <h2 class="absolute mt-4 text-space px-12">
                     Mei Mei Dumplings
                 </h2>
                 <img alt="mei mei dumplings header image"
-                    class="pingpongmeimei object-contain object-center h-full w-full mx-auto py-12 rounded-lg"
+                    class="avatar2 object-contain object-center h-full w-full mx-auto py-12 rounded-lg"
                     src="/public/assets/clients/meimei3.jpg">
             </div>
         
             <!-- ORBIT CAROUSEL  -->
-            <section class="hidden xl:block bg-light">
+            <section class="hidden xl:block">
                 <section class="carcontainer px-20 mt-12">
                     <div class="orbit void hidden lg:block px-12 rounded-lg" id="void">
                         <div class="crop px-20">
@@ -812,7 +844,7 @@
         
             <!-- SUMMARY & FEATURES   -->
             <section
-                class="px-8 lg:px-20 flex flex-col lg:grid lg:grid-cols-2 mx-auto lg:justify-center lg:self-center lg:text-center">
+                class="bg-light px-8 lg:px-20 flex flex-col lg:grid lg:grid-cols-2 mx-auto lg:justify-center lg:self-center lg:text-center">
                 <div class="lg:col-span-1 my-6 lg:mx-6">
                     <div class="text-lg">
                         <h3 class="text-ultra text-justify mb-4">Client Summary</h3>
@@ -837,48 +869,50 @@
                     </ul>
                 </div>
             </section>
-        
-            <!-- CHALLENGE  -->
-            <div class="px-8 lg:px-20">
-                <h3 class="text-ultra text-justify mb-4">The Challenge</h3>
-                <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
-                <p class="leading-relaxed text-lg mb-4">Mei Mei needed to migrate their site to a new version due to a forced CMS update. They reached out to us to see if we
-                could migrate their content and make site adjustments in their two week timeline.
-                </p>
-        
-                <!-- PROCESS  -->
-                <h3 class="text-ultra text-justify mb-4">Our Process</h3>
-                <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
-                <p class="leading-relaxed text-lg mb-4">In order to accurately and safely migrate the site content, we conducted a site audit as part of our discovery process.
-                We then began systematically updating page by page until the entire site was on the updated CMS. After completing the
-                migration, we then checked in with our client to establish what site adjustments were needed.</p>
-            </div>
-        
-        
-            <!-- SITE PREVIEW CAROUSEL  -->
-            <section id="carousel" class="mx-auto justify-center w-screen mb-16 pb-20">
-                <div class="previews mx-auto h-96 mb-32 lg:min-h-fit lg:h-screen">
-                    <h3 class="text-ultra text-justify mb-4">Site Previews</h3>
+            
+            <section class="bg-light mx-auto lg:justify-center lg:self-center">
+                <!-- CHALLENGE  -->
+                <div class="px-8 lg:px-20">
+                    <h3 class="text-ultra text-justify mb-4">The Challenge</h3>
                     <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
-                    <img src="/public/assets/clients/cases/meimei.png" loading="lazy" alt="Mei Mei Home Preview"
-                        class="pic object-contain object-center" />
-                    <img src="/public/assets/clients/cases/meimei_about.png" loading="lazy" alt="Mei Mei About Preview"
-                        class="pic object-contain object-center" />
-                    <img src="/public/assets/clients/cases/meimei_locations.png" loading="lazy" alt="Mei Mei Locations  Preview"
-                        class="pic object-contain object-center" />
-                    <img src="/public/assets/clients/cases/meimei_shop.png" loading="lazy" alt="Mei Mei Shop Preview"
-                        class="pic object-contain object-center" />
+                    <p class="leading-relaxed text-lg mb-4">Mei Mei needed to migrate their site to a new version due to a forced CMS update. They reached out to us to see if we
+                    could migrate their content and make site adjustments in their two week timeline.
+                    </p>
+            
+                    <!-- PROCESS  -->
+                    <h3 class="text-ultra text-justify mb-4">Our Process</h3>
+                    <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
+                    <p class="leading-relaxed text-lg mb-4">In order to accurately and safely migrate the site content, we conducted a site audit as part of our discovery process.
+                    We then began systematically updating page by page until the entire site was on the updated CMS. After completing the
+                    migration, we then checked in with our client to establish what site adjustments were needed.</p>
+                </div>
+            
+            
+                <!-- SITE PREVIEW CAROUSEL  -->
+                <section id="carousel" class="mx-auto justify-center w-screen mb-16 pb-20">
+                    <div class="previews mx-auto h-96 mb-32 lg:min-h-fit lg:h-screen">
+                        <h3 class="text-ultra text-justify mb-4">Site Previews</h3>
+                        <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
+                        <img src="/public/assets/clients/cases/meimei.png" loading="lazy" alt="Mei Mei Home Preview"
+                            class="pic object-contain object-center" />
+                        <img src="/public/assets/clients/cases/meimei_about.png" loading="lazy" alt="Mei Mei About Preview"
+                            class="pic object-contain object-center" />
+                        <img src="/public/assets/clients/cases/meimei_locations.png" loading="lazy" alt="Mei Mei Locations  Preview"
+                            class="pic object-contain object-center" />
+                        <img src="/public/assets/clients/cases/meimei_shop.png" loading="lazy" alt="Mei Mei Shop Preview"
+                            class="pic object-contain object-center" />
+                    </div>
+                </section>
+            
+            
+                <!-- RESULTS  -->
+                <div class="px-8 lg:px-20">
+                    <h3 class="text-ultra text-justify mb-4">Results</h3>
+                    <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
+                    <p class="leading-relaxed text-lg mb-4">We were able to accurately complete the site migration and adjustments according to our client's two week time frame.
+                    The client is now able to make any necessary updates/changes to their site on their new updated CMS platform.</p>
                 </div>
             </section>
-        
-        
-            <!-- RESULTS  -->
-            <div class="px-8 lg:px-20">
-                <h3 class="text-ultra text-justify mb-4">Results</h3>
-                <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
-                <p class="leading-relaxed text-lg mb-4">We were able to accurately complete the site migration and adjustments according to our client's two week time frame.
-                The client is now able to make any necessary updates/changes to their site on their new updated CMS platform.</p>
-            </div>
         </section>
         
         
