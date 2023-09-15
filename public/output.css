@@ -763,6 +763,9 @@ video {
 .w-5 {
   width: 1.25rem;
 }
+.w-5\/12 {
+  width: 41.666667%;
+}
 .w-5\/6 {
   width: 83.333333%;
 }
@@ -771,6 +774,9 @@ video {
 }
 .w-60 {
   width: 15rem;
+}
+.w-7\/12 {
+  width: 58.333333%;
 }
 .w-8 {
   width: 2rem;
@@ -797,6 +803,7 @@ video {
 .w-80 {
   width: 20rem;
 }
+
 .max-w-fit {
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -1069,9 +1076,9 @@ video {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 .px-3 {
   padding-left: 0.75rem;
@@ -1141,6 +1148,12 @@ video {
 .pb-4 {
   padding-bottom: 1rem;
 }
+.pl-24 {
+  padding-left: 6rem;
+}
+.pr-24 {
+  padding-right: 6rem;
+}
 .pr-3 {
   padding-right: 0.75rem;
 }
@@ -1167,6 +1180,9 @@ video {
 }
 .text-center {
   text-align: center;
+}
+.text-justify {
+  text-align: justify;
 }
 .text-justify {
   text-align: justify;
@@ -1348,6 +1364,9 @@ video {
 }
 .opacity-50 {
   opacity: 0.5;
+}
+.opacity-80 {
+  opacity: 0.8;
 }
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -1601,7 +1620,7 @@ li {
 }
 .menu {
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
     text-transform: uppercase;
     font-weight: 100;
     /* background-color: #000; */
@@ -2105,6 +2124,9 @@ main {
   .md\:h-36 {
     height: 9rem;
   }
+  .md\:h-80 {
+    height: 20rem;
+  }
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -2117,8 +2139,17 @@ main {
   .md\:w-full {
     width: 100%;
   }
+  .md\:w-5\/12 {
+    width: 41.666667%;
+  }
+  .md\:w-7\/12 {
+    width: 58.333333%;
+  }
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .md\:flex-row {
     flex-direction: row;
@@ -2140,6 +2171,10 @@ main {
   .md\:border-r {
     border-right-width: 1px;
   }
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -2160,6 +2195,12 @@ main {
   }
   .md\:pr-12 {
     padding-right: 3rem;
+  }
+  .md\:pl-24 {
+    padding-left: 6rem;
+  }
+  .md\:pr-24 {
+    padding-right: 6rem;
   }
   .md\:text-left {
     text-align: left;
@@ -2289,6 +2330,13 @@ main {
   .lg\:w-20 {
     width: 5rem;
   }
+
+  .lg\:w-4\/6 {
+    width: 66.666667%;
+  }
+  .lg\:w-5\/12 {
+    width: 41.666667%;
+  }
   .lg\:w-60 {
     width: 15rem;
   }
@@ -2388,6 +2436,10 @@ main {
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
   .lg\:text-5xl {
     font-size: 3rem;
