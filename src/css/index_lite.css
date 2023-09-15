@@ -98,6 +98,31 @@ nav a {
     clear: both;
 }
 
+.cloud-container2 {
+    position: relative;
+    opacity: 0.8;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    background-image: url('/public/assets/logos/pxl_banner.png');
+    background-size: stretch;
+    background-repeat: no-repeat;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+
+    /* z-index: -4; */
+    clear: both;
+}
+
 
     
 @-webkit-keyframes slidein {
@@ -252,6 +277,12 @@ nav a {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
+}
+
+.avatar3 {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+    animation: float 4s ease-in-out infinite;
 }
 
 .avatar2 {
