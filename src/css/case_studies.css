@@ -1,4 +1,29 @@
-   /* ORBIT CAROUSEL  */
+/* HERO ROCKET */
+
+
+
+/* CASE STUDIES  */
+
+.pingpongdom {
+    background-color: white;
+}
+
+.pingpongmanyi {
+    background-color: #f2a7bc;
+}
+
+/* .pingponglrm {
+    background-color: #cfd2d3;
+} */
+
+.pingpongmeimei {
+    background-color: #fcbb00;
+}
+
+
+
+
+/* ORBIT CAROUSEL  */
    
    :root {
        --rotate-speed: 40;
@@ -19,7 +44,7 @@
        width: 100%;
        /* max-width: 1024px; */
        max-height: 100vh;
-       height: 100vh;
+       height: 90vh;
        margin: auto;
        position: relative;
        /* aspect-ratio: 1 / 1; */
@@ -78,10 +103,10 @@
        animation: rotateCCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
    }
 
-   .carcard a {
+   /* .carcard a {
        text-decoration: none;
        color: unset;
-   }
+   } */
 
    .model-name {
        font-weight: 500;
@@ -150,7 +175,7 @@
        }
    }
 
-   @keyframes pulseGlow {
+   /* @keyframes pulseGlow {
        from {
            background-size: 60%;
        }
@@ -158,7 +183,7 @@
        to {
            background-size: 100%;
        }
-   }
+   } */
 
    .center-circle {
        position: absolute;
@@ -205,6 +230,7 @@
 
    .crop {
        -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1));
+        max-height: 90vh;
    }
 
    .mask {
@@ -215,15 +241,17 @@
        width: 50%;
        background-position: 100% 100%;
        background-repeat: no-repeat;
+       background-color: #FFFFFF;
        /* background-image: url("./assets/clients/cases/liability_roadmap.png"); */
        /* -webkit-backdrop-filter: opacity(20%);
        backdrop-filter: opacity(20%); */
        /* background-image: radial-gradient(100% 50% at 100% 50%, rgba(60, 26, 229, 0.25) 0%, rgba(60, 26, 229, 0.247904) 11.79%, rgba(59, 26, 229, 0.241896) 21.38%, rgba(58, 26, 229, 0.2324) 29.12%, rgba(57, 26, 229, 0.219837) 35.34%, rgba(55, 26, 229, 0.20463) 40.37%, rgba(53, 26, 229, 0.1872) 44.56%, rgba(51, 26, 229, 0.16797) 48.24%, rgba(48, 26, 229, 0.147363) 51.76%, rgba(46, 26, 229, 0.1258) 55.44%, rgba(44, 26, 229, 0.103704) 59.63%, rgba(41, 26, 229, 0.0814963) 64.66%, rgba(39, 26, 229, 0.0596) 70.88%, rgba(36, 26, 229, 0.038437) 78.62%, rgba(34, 26, 229, 0.0184296) 88.21%, rgba(32, 26, 229, 0) 100%); */
+        max-height: 90vh;
    }
 
-   .mask section p{
+   /* .mask p{
     animation: pulseGlow 5s linear infinite alternate;
-   }
+   } */
 
    .mask:after {
        content: "";
@@ -237,12 +265,13 @@
 
 
     .orbit {
-        background: linear-gradient(270deg, #b79cd4, #fba5b0, #ceded6, #bedbda);
+        /* background: linear-gradient(270deg, #b79cd4, #fba5b0, #ceded6, #bedbda); */
         background-size: 100%;
         -webkit-animation: cloudscape 33s ease infinite;
         animation: cloudscape 33s ease infinite;
         padding-left: 2rem;
         padding-right: 2rem;
+        max-height: 90vh;
     }
 
     @-webkit-keyframes cloudscape {
@@ -298,25 +327,28 @@
             /* left: calc(50% - 100px); */
             left: 0;
             opacity: 0;
-            animation: carouselSlide 11s infinite;
+            animation: carouselSlide 20s infinite;
+            max-height: 80vh;
+            width: 85vw;
+            height: auto;
         }
     
         .pic:nth-child(2) {
-            animation-delay: 2s;
+            animation-delay: 4s;
         }
     
        .pic:nth-child(3) {
-            animation-delay: 6s;
+            animation-delay: 8s;
         }
     
        .pic:nth-child(4) {
-            animation-delay: 10s;
+            animation-delay: 12s;
         }
 
-        /* 
-        img:nth-child(5) {
-            animation-delay: 8s;
-        } */
+        
+        .pic:nth-child(5) {
+            animation-delay: 16s;
+        }
 
 
         @keyframes carouselSlide {
@@ -345,3 +377,230 @@
                 opacity: 0;
             }
         }
+
+
+
+
+
+/* ANIMATED CLIENT GRADIENTS  */
+
+
+/* MANYI  */
+.manyiGrad {
+    background: linear-gradient(270deg, #f2a7bc, #b83c5f, #f20246);
+    background-size: 600% 600%;
+
+    -webkit-animation: manyi-grad 30s ease infinite;
+    -moz-animation: manyi-grad 30s ease infinite;
+    animation: manyi-grad 30s ease infinite;
+}
+
+@-webkit-keyframes manyi-grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes manyi-grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes manyi-grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+/* DOMESTATE  */
+
+
+.domGrad {
+    background: linear-gradient(270deg, #4f79a4, #9ca7bc, #4075fc, #c9d0dd);
+    background-size: 800% 800%;
+
+    -webkit-animation: dom-grad 30s ease infinite;
+    -moz-animation: dom-grad 30s ease infinite;
+    animation: dom-grad 30s ease infinite;
+}
+
+@-webkit-keyframes dom-grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes dom-grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes dom-grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+
+
+/* MEI MEI  */
+
+.meimeiGrad {
+    background: linear-gradient(270deg, #fcbb00, #ffdd00, #ffffff);
+    background-size: 600% 600%;
+
+    -webkit-animation: meimei-grad 30s ease infinite;
+    -moz-animation: meimei-grad 30s ease infinite;
+    animation: meimei-grad 30s ease infinite;
+}
+
+@-webkit-keyframes meimei-grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes meimei-grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes meimei-grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+
+
+/* LRM  */
+
+
+ .lrmGrad {
+     background: linear-gradient(266deg, #ff9e17, #fff);
+     background-size: 600% 600%;
+
+     -webkit-animation: lrm-grad 30s ease infinite;
+     -moz-animation: lrm-grad 30s ease infinite;
+     animation: lrm-grad 30s ease infinite;
+ }
+
+ @-webkit-keyframes lrm-grad {
+     0% {
+         background-position: 0% 54%
+     }
+
+     50% {
+         background-position: 100% 47%
+     }
+
+     100% {
+         background-position: 0% 54%
+     }
+ }
+
+ @-moz-keyframes lrm-grad {
+     0% {
+         background-position: 0% 54%
+     }
+
+     50% {
+         background-position: 100% 47%
+     }
+
+     100% {
+         background-position: 0% 54%
+     }
+ }
+
+ @keyframes lrm-grad {
+     0% {
+         background-position: 0% 54%
+     }
+
+     50% {
+         background-position: 100% 47%
+     }
+
+     100% {
+         background-position: 0% 54%
+     }
+ }
