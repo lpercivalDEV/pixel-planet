@@ -82,14 +82,14 @@
                 </div>
                 <nav class="">
                     <input class="border border-slate-400" type="checkbox" id="active" onchange="validate(this)">
-                    <label for="active" class="menu-btn bg-black">
+                    <label for="active" class="menu-btn">
                     </label>
                     <div class="wrapper">
-                        <ul class="flex flex-col mx-auto px-2 w-2/3">
-                            <li class=""><a href="index.html#about" >About Pxl Planet</a></li>
-                            <li class=""><a href="index.html#meta" class="">MetaPxls</a></li>
-                            <li><a href="case_studies.html" class="">Case Studies</a></li>
-                            <li><a href="index.html#contact" class="">Contact</a></li>
+                        <ul class="flex flex-col mx-auto p-8 w-4/5 rounded-lg">
+                            <li class="py-4"><a href="index.html#about" >About Pxl Planet</a></li>
+                            <li class="py-4"><a href="index.html#meta" class="">MetaPxls</a></li>
+                            <li class="py-4"><a href="case_studies.html" class="">Case Studies</a></li>
+                            <li class="py-4"><a href="index.html#contact" class="">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -352,7 +352,7 @@
     <div class="particles">
         <!-- <div class="nav-container"> -->
             <!-- <img src="/public/assets/logos/pixel_planet_logo_round.png" alt=""> -->
-        </div>
+        <!-- </div> -->
         
         <canvas id="background"></canvas>
     </div>
@@ -362,9 +362,10 @@
         let background = document.getElementById("background");
         
         let validate = (input) => {
-            console.log("validate fn fired!");
+            // console.log("validate fn fired!");
             if(input.checked) {
                 background.style.display = "block";
+                document.body.style.overflowY = "hidden";
                 Particles.init({
                     // normal options
                     selector: '#background',
@@ -395,6 +396,7 @@
                     ] 
                 });
             }else{
+                document.body.style.overflowY = "scroll";
                 background.style.display = "none";
             }
             
