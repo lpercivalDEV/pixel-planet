@@ -17,3 +17,5 @@ sources:
 <a href="https://www.flaticon.com/free-icons/astronaut" title="astronaut icons">Astronaut icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/astronaut" title="astronaut icons">Astronaut icons created by Smashicons - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/astronaut" title="astronaut icons">Astronaut icons created by VectorPortal - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by Icon Hubs - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Darius Dan - Flaticon</a>
