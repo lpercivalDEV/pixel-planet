@@ -37,38 +37,35 @@
     <!-- TOP OF PAGE - SCROLL TO TOP ARRIVES HERE  -->
     <span id="top" aria-disabled="true" aria-label="top of page"></span>
 
-    <!-- NAV  -->
-    <header>
-        <section class="hidden lg:block bg-black">
+     <!-- NAV  -->
+     <header class="px-4">
+        <section class="hidden lg:block bg-transparent">
             <nav class="navbar px-6 py-2" aria-label="navigation">
+                <a href="index.html" name="home" aria-label="home" tabindex="0">
+                    <div class="logo">
+                        <img class="logo_img w-12" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo" aria-label="Pixel Planet logo">
+                    </div>
+                </a>
                 <ul class="menu">
-                    <a href="index.html" name="home" aria-label="home" tabindex="0">
-                        <div class="logo">
-                            <img class="logo_img w-8" src="./assets/logos/pixel_planet_logo_round.png"
-                                alt="pixel planet logo" aria-label="Pixel Planet logo">
-                        </div>
-                    </a>
-                    <a href="index.html/#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
-                    <a href="index.html/#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
-                    <a href="case_studies.html" aria-label="meta pixels - our values">case studies</a>
-                    <!-- <a href="pixelacademy.html" aria-label="pixel academy">pxl academy</a> -->
+                    <a href="#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
+                    <a href="#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
+                    <a href="case_studies.html" aria-label="pixel academy" tabindex="0">case studies</a>
                 </ul>
-                <a class="btn" href="#contact" aria-label="go to contact section" tabindex="0">Contact</a>
+                <a class="btn text-ultra" href="#contact" aria-label="go to contact section" tabindex="0">Contact</a>
             </nav>
         </section>
 
         <!-- //MOBILE NAV -->
         <section class="lg:hidden block mb-12">
-            <a href="index.html" class="w-full flex items-center mb-4" aria-label="link for homepage">
-                <img class="w-4 mx-auto m-2" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo">
+            <a href="index.html" class="w-full flex items-center mb-4"  aria-label="link for homepage">
+                <img class="w-12 ml-10 m-2" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo">
             </a>
             <nav>
-                <div class="wrapper">
+                <div class="wrapper hidden lg:block">
                     <ul class="flex px-2 text-center justify-around text-sm">
-                        <a href="index.html/#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
-                        <a href="index.html/#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
-                        <a href="case_studies.html" aria-label="meta pixels - our values">case studies</a>
-                        <!-- <a href="pixelacademy.html" aria-label="pixel academy">pxl academy</a> -->
+                        <a href="#about" aria-label="about pixel planet">about pxlplnt</a>
+                        <!-- <a href="#meta" aria-label="meta pixels - our values">metapxls</a> -->
+                        <a href="case_studies.html" aria-label="pixel academy">case studies</a>
                         <a class="focus:ring-blue-200" href="#contact" aria-label="go to contact section">Contact</a>
                     </ul>
                 </div>
@@ -120,39 +117,43 @@
             </div>
         </div>
 
+        <section class="flex flex-col md:flex-row">
+            <div class="px-5 py-8 mx-auto flex flex-wrap md:w-7/12 md:pr-24">
+                <div class="flex flex-col flex-wrap lg:py-6  lg:pl-12 lg:text-left text-center">
+                    <!-- PROCESS BLURB  -->
+                    <section class="py-12 mb-20 mx-auto flex flex-col justify-center">
+                        <p class="text-justify text-space md:text-xl p-0 m-0">Our human centered approach has enabled us to
+                            excel at finding <span class="pointer-events-none text-ultra font-bold">solutions</span> and focus on creating <span class="pointer-events-none text-ultra font-bold">impact</span> for our clients.</p>
 
-
-        <!-- PROCESS BLURB  -->
-        <section class="container mx-auto">
-            <section class="py-12 mb-20 mx-auto flex flex-col justify-center">
-                <p class="m-8 text-justify text-space md:text-3xl">Our human centered approach has enabled us to
-                    excel at finding <span class="pointer-events-none text-ultra font-bold">solutions</span> and focus on creating <span class="pointer-events-none text-ultra font-bold">impact</span> for our clients.</p>
-
-                <p class="m-8 text-justify text-space md:text-3xl">We are <span class="pointer-events-none text-ultra font-bold">tech agnostic</span> and this enables us to find the best fitting solution for the challenges our clients face.</p>
-                
-                <p class="m-8 text-justify text-space md:text-3xl">We take pride in the fact that we create
-                    <span class="pointer-events-none text-ultra font-bold">partnerships</span> by listening to our client's needs and
-                    ensuring the solutions we create are in line with our client's
-                    <span class="pointer-events-none text-ultra font-bold">vision</span>.
-                </p>
-
-                <h4 class="max-w-screen-md text-space font-sans lg:text-xl text-center my-12 mx-auto">Below you will find details about some of our more recent projects for local businesses and nonprofits.</h4>
-
-                <!-- <div class="text-4xl mx-auto text-center font-bold text-ultra avatar2">
-                    &#x2304;
-                </div> -->
-                <div class="text-4xl mx-auto text-center font-bold text-ultra avatar3">
-                    &#x2304;
+                        <p class="text-justify text-space md:text-xl p-0 m-0">We are <span class="pointer-events-none text-ultra font-bold">tech agnostic</span> and this enables us to find the best fitting solution for the challenges our clients face.</p>
+                        
+                        <p class="text-justify text-space md:text-xl p-0 m-0">We take pride in the fact that we create
+                            <span class="pointer-events-none text-ultra font-bold">partnerships</span> by listening to our client's needs and
+                            ensuring the solutions we create are in line with our client's
+                            <span class="pointer-events-none text-ultra font-bold">vision</span>.
+                        </p>
+                    </section>
                 </div>
-                <!-- <div class="text-4xl mx-auto text-center font-bold text-ultra avatar2">
-                    &#x2304;
-                </div> -->
-                <div class="text-4xl mx-auto text-center font-bold text-ultra avatar3">
-                    &#x2304;
-                </div>
-            </section>
+            </div>
+            <div class="flex align-middle w-4/5 md:m-auto md:w-5/12 mb-10 overflow-hidden md:pr-24">
+                <img alt="feature" class="" src="./assets/icons/meta.svg" alt="laptop computer and phone image">
+            </div>   
         </section>
-
+        <div>
+            <h4 class="max-w-screen-md text-space font-sans lg:text-xl text-center mb-12 mx-auto -mt-12">Below you will find details about some of our more recent projects for local businesses and nonprofits.</h4>
+       <!-- <div class="text-4xl mx-auto text-center font-bold text-ultra avatar2">
+                &#x2304;
+            </div> -->
+            <div class="text-2xl mx-auto text-center font-bold text-ultra avatar3 leading-3">
+                &#x2304;
+            </div>
+        <!-- <div class="text-4xl mx-auto text-center font-bold text-ultra avatar2">
+                &#x2304;
+            </div> -->
+            <div class="text-2xl mx-auto text-center font-bold text-ultra avatar3 leading-3">
+                &#x2304;
+            </div>
+        </div>
 
         <!-- LOGO PING PONG BALLS  -->
         <div class="cloud-container2 py-20 my-20">

@@ -3,6 +3,7 @@
 body {
     background-color: #fff8e7;
     color: #2e4052;
+    overflow-x: hidden;
 }
 
 header {
@@ -333,4 +334,11 @@ nav a {
         /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
         transform: translatey(20px);
     }
+}
+
+@media (max-width:1025px) {
+    #light-glide-lite{
+        display: none;
+    }
+    
 }
