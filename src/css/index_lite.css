@@ -10,7 +10,8 @@ body {
 }
 
 header {
-    background-color: #fff8e7;
+    background-color: rgba(255, 248, 231, 0.5);
+    /* background-color: #fff8e7; */
     width: 100vw;
     height: 80px;
 }
@@ -370,9 +371,11 @@ nav a {
   /* background: #000; */
   transition: all 0.1s ease-in-out;
   background-image: url("../../public/assets/icons/menu.png");
-  background-size: contain;
+  background-size: 80%;
   background-position: center;
-  background-color: #fff8e7;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 248, 231, 0.8);
+  border: 1px solid #2e4052;
 }
 #active:checked ~ .menu-btn{
   color: #fff;
@@ -380,9 +383,10 @@ nav a {
   /* filter: invert(100%); */
   /* -webkit-filter: invert(100%); */
     background-image: url("../../public/assets/icons/close.png");
-    background-size: contain;
+    background-size: 80%;
+    background-repeat: no-repeat;
     background-position: center;
-    background-color: #fff8e7;
+    /* background-color: #fff8e7; */
 }
 
 #active:checked ~ .menu-btn img:before{
@@ -391,9 +395,9 @@ nav a {
   /* filter: invert(100%); */
   /* -webkit-filter: invert(100%); */
     background-image: url("../../public/assets/icons/close.png");
-    background-size: contain;
+    background-size: 80%;
     background-position: center;
-    background-color: #fff8e7;
+    /* background-color: #fff8e7; */
 }
 .wrapper ul{
   position: absolute;
@@ -427,7 +431,7 @@ nav a {
   position: absolute;
   content: "";
   /* background: #fff; */
-  background: linear-gradient(45deg, #fff8e7, #52489c, #00eeff, #ff0e71, #ff9c0e);
+  background: linear-gradient(45deg, #fff8e7, #52489c, #00eeff);
   width: 104%;
   height: 110%;
   left: -2%;
@@ -435,7 +439,7 @@ nav a {
   border-radius: 50px;
   transform: scaleY(0);
   z-index: -1;
-  animation: rotate 1.5s linear infinite;
+  animation: rotate 4s radial infinite;
   transition: transform 0.1s ease;
 }
 .wrapper ul li a:hover:after{
@@ -489,7 +493,7 @@ body {
     left: 35%;
     margin: 0 auto;
     padding: 50px;
-    background-color: #fff;
+    /* background-color: #fff; */
     /* z-index: 1000000000; */
     /* box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02); */
 }
@@ -500,8 +504,8 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #2e4052;
+    background-color: #F49309;
     z-index: -1;
     display: none;
-        filter: blur(2px);
+    filter: blur(2px);
 }

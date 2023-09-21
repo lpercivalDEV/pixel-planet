@@ -38,7 +38,7 @@
     <span id="top" aria-disabled="true" aria-label="top of page"></span>
 
     <!-- NAV  -->
-    <header>
+    <header class="bg-transparent">
         <section class="hidden lg:block bg-black">
             <nav class="navbar px-6 py-2" aria-label="navigation">
                 <ul class="menu">
@@ -75,9 +75,11 @@
 
             <!-- //MOBILE NAV -->
             <header class="mobHeader lg:hidden block w-full z-50">
-                <div class="w-full flex items-center mb-4 py-6">
-                    <a href="index.html" class="mx-auto">
-                        <img class="w-4 mx-auto m-2" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo and home button">
+                <div class="w-full flex items-center mb-4 py-6 mx-auto">
+                    <a href="index.html" class="flex flex-row mx-auto">
+                        <span class="self-center px-4 pointer-events-none uppercase text-xs">pixel</span>
+                        <img class="w-12 mx-auto" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo and home button"> 
+                        <span class="self-center px-4 pointer-events-none uppercase text-xs">planet</span>
                     </a>
                 </div>
                 <nav class="">
@@ -97,11 +99,11 @@
     </header>
 
     <!-- MAIN CONTENT  -->
-    <main>
+    <main class="-mt-20">
         <!-- HERO  -->
 
         <div class="py-6 sm:py-8 lg:py-12 cloud-container">
-            <div class="mx-auto px-4 md:px-8 clouds">
+            <div class="mx-auto px-4 md:px-8 clouds mt-20">
 
                 <!-- ICONS  -->
                 <div class="avatar2">
