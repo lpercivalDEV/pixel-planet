@@ -532,6 +532,10 @@ video {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
 .-mb-1 {
   margin-bottom: -0.25rem;
 }
@@ -990,6 +994,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-ether {
+  --tw-bg-opacity: 1;
+  background-color: rgb(184 176 245 / var(--tw-bg-opacity));
 }
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
@@ -1922,6 +1930,10 @@ li {
 .active\:bg-indigo-800:active {
   --tw-bg-opacity: 1;
   background-color: rgb(55 48 163 / var(--tw-bg-opacity));
+}
+.active\:bg-cy:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 238 255 / var(--tw-bg-opacity));
 }
 .active\:bg-none:active {
   background-image: none;
