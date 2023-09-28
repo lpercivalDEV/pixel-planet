@@ -192,7 +192,7 @@ span:hover::after, .menu a:hover::after {
     width: 100vw;
     max-width: 100vw;
     height: 5rem;
-    overflow-x: hidden;
+    overflow: hidden;
     z-index: 100;
     background-color: #FFF8E7;
 }

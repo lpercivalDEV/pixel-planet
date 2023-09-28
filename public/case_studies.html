@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -33,7 +33,7 @@
     <title>Case Studies | Pixel Planet</title>
 </head>
 
-<body id="body_lite">
+<body id="body_lite" style="overflow-x: hidden;">
     <!-- TOP OF PAGE - SCROLL TO TOP ARRIVES HERE  -->
     <span id="top" aria-disabled="true" aria-label="top of page"></span>
 
@@ -47,11 +47,11 @@
                     </div>
                 </a>
                 <ul class="menu">
-                    <a href="#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
-                    <a href="#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
+                    <a href="index.html#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
+                    <a href="index.html#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
                     <a href="case_studies.html" aria-label="pixel academy" tabindex="0">case studies</a>
                 </ul>
-                <a class="btn text-ultra" href="#contact" aria-label="go to contact section" tabindex="0">Contact</a>
+                <a class="btn text-ultra" href="index.html#contact" aria-label="go to contact section" tabindex="0">Contact</a>
             </nav>
         </section>
 
@@ -81,15 +81,23 @@
                     </a>
                 </div>
                 <nav class="">
-                    <input class="border border-slate-400" type="checkbox" id="active" onchange="validate(this)">
-                    <label for="active" class="menu-btn">
+                    <input class="border border-slate-400" type="checkbox" id="active" onchange="validate(this)" tabindex="0" aria-label="mobile navigation button">
+                    <label for="active" class="menu-btn" tabindex="0" aria-label="mobile navigation button">
                     </label>
-                    <div class="wrapper">
+                    <div id="wrapperUl" class="wrapper mt-12">
                         <ul class="flex flex-col mx-auto p-8 w-4/5 rounded-lg">
-                            <li class="py-4"><a href="index.html#about" >About Pxl Planet</a></li>
-                            <li class="py-4"><a href="index.html#meta" class="">MetaPxls</a></li>
-                            <li class="py-4"><a href="case_studies.html" class="">Case Studies</a></li>
-                            <li class="py-4"><a href="index.html#contact" class="">Contact</a></li>
+                            <li class="py-4">
+                                <a href="index.html#about" tabindex="0" aria-label="mobile navigation button">About Pxl Planet</a>
+                            </li>
+                            <li class="py-4">
+                                <a href="index.html#meta" class="" tabindex="0" aria-label="mobile navigation button">MetaPxls</a>
+                            </li>
+                            <li class="py-4">
+                                <a href="case_studies.html" class="" tabindex="0" aria-label="mobile navigation button">Case Studies</a>
+                            </li>
+                            <li class="py-4">
+                                <a href="index.html#contact" class="" tabindex="0" aria-label="mobile navigation button">Contact</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -103,6 +111,11 @@
 
         <div class="py-6 sm:py-8 lg:py-12 cloud-container">
             <div class="mx-auto px-4 md:px-8 clouds mt-20 flex">
+
+
+
+                <!-- TITLE TEXT  -->
+                <h1 class="text-center text-8xl m-6 p-6 text-ultra mt-32 lg:mt-32">Case Studies</h1>
 
                 <!-- ICONS  -->
                 <!-- <div class="avatar2">
@@ -360,11 +373,15 @@
     <script>
         // let menu = document.getElementById("active"); 
         let background = document.getElementById("background");
+        // let linksUl = document.getElemesntById("wrapperUl");
+        let root = document.getElementsByTagName('html')[0];
         
         let validate = (input) => {
             // console.log("validate fn fired!");
             if(input.checked) {
+                root.style.overflowY = " hidden";
                 background.style.display = "block";
+                // linksUl.style.display = "block";
                 document.body.style.overflowY = "hidden";
                 Particles.init({
                     // normal options
@@ -396,11 +413,13 @@
                     ] 
                 });
             }else{
+                root.style.overflowY = " scroll";
                 document.body.style.overflowY = "scroll";
                 // background.style.visibility = "hidden";
                 // background.style.opacity = "0";
                 // background.style.transition = "display 0s, opacity 0.5s linear;";
                 background.style.display = "none";
+                // linksUl.style.display = "none";
             }
             
             // menu.addEventListener("change", validate());
