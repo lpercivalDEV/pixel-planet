@@ -650,6 +650,9 @@ video {
 .mt-96 {
   margin-top: 24rem;
 }
+.mt-10 {
+  margin-top: 2.5rem;
+}
 .block {
   display: block;
 }
@@ -726,6 +729,9 @@ video {
 .h-screen {
   height: 100vh;
 }
+.max-h-screen {
+  max-height: 100vh;
+}
 .w-1\/12 {
   width: 8.333333%;
 }
@@ -795,6 +801,12 @@ video {
 }
 .w-screen {
   width: 100vw;
+}
+.w-96 {
+  width: 24rem;
+}
+.w-2\/3 {
+  width: 66.666667%;
 }
 .max-w-fit {
   max-width: -moz-fit-content;
@@ -1280,6 +1292,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(0 238 255 / var(--tw-text-opacity));
 }
+.text-ether {
+  --tw-text-opacity: 1;
+  color: rgb(184 176 245 / var(--tw-text-opacity));
+}
 .text-flame {
   --tw-text-opacity: 1;
   color: rgb(255 156 14 / var(--tw-text-opacity));
@@ -1335,10 +1351,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-ether {
-  --tw-text-opacity: 1;
-  color: rgb(184 176 245 / var(--tw-text-opacity));
 }
 .opacity-40 {
   opacity: 0.4;
@@ -1588,7 +1600,7 @@ span:hover::after, .menu a:hover::after {
     width: 100vw;
     max-width: 100vw;
     height: 5rem;
-    overflow-x: hidden;
+    overflow: hidden;
     z-index: 100;
     background-color: #FFF8E7;
 }
@@ -2260,6 +2272,36 @@ li {
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .lg\:col-span-full {
+    grid-column: 1 / -1;
+  }
+  .lg\:col-start-2 {
+    grid-column-start: 2;
+  }
+  .lg\:col-start-1 {
+    grid-column-start: 1;
+  }
+  .lg\:row-auto {
+    grid-row: auto;
+  }
+  .lg\:row-span-full {
+    grid-row: 1 / -1;
+  }
+  .lg\:row-span-3 {
+    grid-row: span 3 / span 3;
+  }
+  .lg\:row-start-1 {
+    grid-row-start: 1;
+  }
+  .lg\:row-start-2 {
+    grid-row-start: 2;
+  }
+  .lg\:row-start-3 {
+    grid-row-start: 3;
+  }
   .lg\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -2304,6 +2346,9 @@ li {
   }
   .lg\:mt-44 {
     margin-top: 11rem;
+  }
+  .lg\:mt-4 {
+    margin-top: 1rem;
   }
   .lg\:block {
     display: block;
@@ -2381,6 +2426,9 @@ li {
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .lg\:grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -2435,6 +2483,14 @@ li {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .lg\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
   .lg\:pl-12 {
     padding-left: 3rem;
   }
@@ -2458,6 +2514,9 @@ li {
   }
   .lg\:text-justify {
     text-align: justify;
+  }
+  .lg\:align-middle {
+    vertical-align: middle;
   }
   .lg\:text-3xl {
     font-size: 1.875rem;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -33,7 +33,7 @@
     <title>Case Studies | Pixel Planet</title>
 </head>
 
-<body id="body_lite">
+<body id="body_lite" style="overflow-x: hidden;">
     <!-- TOP OF PAGE - SCROLL TO TOP ARRIVES HERE  -->
     <span id="top" aria-disabled="true" aria-label="top of page"></span>
 
@@ -47,11 +47,11 @@
                     </div>
                 </a>
                 <ul class="menu">
-                    <a href="#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
-                    <a href="#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
+                    <a href="index.html#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
+                    <a href="index.html#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
                     <a href="case_studies.html" aria-label="pixel academy" tabindex="0">case studies</a>
                 </ul>
-                <a class="btn text-ultra" href="#contact" aria-label="go to contact section" tabindex="0">Contact</a>
+                <a class="btn text-ultra" href="index.html#contact" aria-label="go to contact section" tabindex="0">Contact</a>
             </nav>
         </section>
 
@@ -81,15 +81,23 @@
                     </a>
                 </div>
                 <nav class="">
-                    <input class="border border-slate-400" type="checkbox" id="active" onchange="validate(this)">
-                    <label for="active" class="menu-btn">
+                    <input class="border border-slate-400" type="checkbox" id="active" onchange="validate(this)" tabindex="0" aria-label="mobile navigation button">
+                    <label for="active" class="menu-btn" tabindex="0" aria-label="mobile navigation button">
                     </label>
-                    <div class="wrapper">
+                    <div id="wrapperUl" class="wrapper mt-12">
                         <ul class="flex flex-col mx-auto p-8 w-4/5 rounded-lg">
-                            <li class="py-4"><a href="index.html#about" >About Pxl Planet</a></li>
-                            <li class="py-4"><a href="index.html#meta" class="">MetaPxls</a></li>
-                            <li class="py-4"><a href="case_studies.html" class="">Case Studies</a></li>
-                            <li class="py-4"><a href="index.html#contact" class="">Contact</a></li>
+                            <li class="py-4">
+                                <a href="index.html#about" tabindex="0" aria-label="mobile navigation button">About Pxl Planet</a>
+                            </li>
+                            <li class="py-4">
+                                <a href="index.html#meta" class="" tabindex="0" aria-label="mobile navigation button">MetaPxls</a>
+                            </li>
+                            <li class="py-4">
+                                <a href="case_studies.html" class="" tabindex="0" aria-label="mobile navigation button">Case Studies</a>
+                            </li>
+                            <li class="py-4">
+                                <a href="index.html#contact" class="" tabindex="0" aria-label="mobile navigation button">Contact</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -104,28 +112,31 @@
         <div class="py-6 sm:py-8 lg:py-12 cloud-container">
             <div class="mx-auto px-4 md:px-8 clouds mt-20">
 
+
+
+                <!-- TITLE TEXT  -->
+                <h1 class="text-center text-8xl m-6 p-6 text-ultra mt-32 lg:mt-32">Case Studies</h1>
+
                 <!-- ICONS  -->
                 <div class="avatar2">
                     <img class="rotate-45 mx-auto h-48 py-12" src="/public/assets/icons/rocket.png" alt="rocket">
                 </div>
-                <img class="avatar3 absolute top-48 left-10 h-20" src="/public/assets/icons/astronaut.png" alt="astronaut">
-                <img class="avatar2 absolute top-48 right-10 h-20" src="/public/assets/icons/space_girl.png" alt="space girl">
+                <!-- <img class="avatar3 absolute top-48 left-10 h-20" src="/public/assets/icons/astronaut.png" alt="astronaut">
+                <img class="avatar2 absolute top-48 right-10 h-20" src="/public/assets/icons/space_girl.png" alt="space girl"> -->
 
 
-                <!-- TITLE TEXT  -->
-                <h1 class="text-center text-8xl m-6 p-6 text-ultra mt-32 lg:mt-2">Case Studies</h1>
 
 
                 <!-- ICONS  -->
                 <!-- <div class="avatar2">
                     <img class="absolute top-32 right-10 rotate-30  h-20" src="/public/assets/icons/floaty_boi.png" alt="floaty boi">
                 </div> -->
-                <div class="avatar3">
+                <!-- <div class="avatar3">
                     <img class="absolute top-12 lg:top-48 lg:right-80 h-20" src="/public/assets/icons/kosmo_kitty.png" alt="kosmo kitty">
                 </div>
                 <div class="avatar2">
                     <img class="rotate-45 absolute top-12 lg:top-48 left-72 h-20" src="/public/assets/icons/space_dog.png" alt="space dog">
-                </div>
+                </div> -->
 
 
                 <!-- <div id="">
@@ -143,37 +154,38 @@
 
 
         <!-- PROCESS BLURB  -->
-        <section class="py-12 mb-20 mx-auto flex flex-col justify-center">
-            <p class="text-justify text-space md:text-xl p-0 m-0">Our human centered approach has enabled us to
-                        excel at finding <span class="pointer-events-none text-ultra font-bold">solutions</span> and focus on creating <span class="pointer-events-none text-ultra font-bold">impact</span> for our clients.</p>
+        <section class="container py-12 mt-12 lg:mt-4 mb-20 mx-auto flex flex-col lg:grid lg:grid-cols-2 lg:row-auto justify-center max-h-screen">
+            <h2 class="lg:col-span-1 lg:row-start-1 text-ultra mx-auto">Pixel Planet Process</h2>
+            <p class="lg:col-start-2 lg:py-8 text-justify text-space md:text-xl p-4 m-2">Our human centered approach has enabled us to excel at finding <span class="pointer-events-none text-ultra font-bold">solutions</span> and focus on creating <span class="pointer-events-none text-ultra font-bold">impact</span> for our clients.</p>
 
-            <p class="text-justify text-space md:text-xl p-0 m-0">We are <span class="pointer-events-none text-ultra font-bold">tech agnostic</span> and this enables us to find the best fitting solution for the challenges our clients face.</p>
+            <p class="lg:col-start-2 lg:py-8 text-justify text-space md:text-xl p-4 m-2">We are <span class="pointer-events-none text-ultra font-bold">technology agnostic</span> which enables us to find and utilize the best fitting tools for the challenges our clients face. Our skillset allows us to build the best solutions for clients whether entirely custom or tailored for CMS platforms.</p>
                     
-            <p class="text-justify text-space md:text-xl p-0 m-0">We take pride in the fact that we create
+            <p class="lg:col-start-2 lg:py-8 text-justify text-space md:text-xl p-4 m-2">We take pride in the fact that we create
                 <span class="pointer-events-none text-ultra font-bold">partnerships</span> by listening to our client's needs and ensuring the solutions we create are in line with our client's
                 <span class="pointer-events-none text-ultra font-bold">vision</span>.
             </p>
-        </section>
 
-        <div class="flex align-middle w-4/5 md:m-auto md:w-5/12 mb-10 overflow-hidden md:pr-24">
-            <img alt="feature" class="" src="./assets/icons/meta.svg" alt="laptop computer and phone image">
-        </div>   
+            <div class="lg:col-start-1 lg:w-full lg:row-start-2 flex align-middle w-96 mx-auto mb-10">
+                <img alt="feature" class="w-2/3 mx-auto mt-4" src="./assets/icons/meta.svg" alt="laptop computer and phone image">
+            </div>   
         </section>
-        <div>
-            <h4 class="max-w-screen-md text-space font-sans lg:text-xl text-center mb-12 mx-auto -mt-12">Below you will find details about some of our more recent projects for local businesses and nonprofits.</h4>
-       <!-- <div class="text-4xl mx-auto text-center font-bold text-ultra avatar2">
-                &#x2304;
-            </div> -->
+        <div class="px-2">
+            <h4 class="max-w-screen-md text-space font-sans lg:text-xl text-center mb-12 mx-auto -mt-12">Below you will find
+                details about some of our more recent projects for local businesses and nonprofits.</h4>
+            <!-- <div class="text-4xl mx-auto text-center font-bold text-ultra avatar2">
+                        &#x2304;
+                    </div> -->
             <div class="text-2xl mx-auto text-center font-bold text-ultra avatar3 leading-3">
                 &#x2304;
             </div>
-        <!-- <div class="text-4xl mx-auto text-center font-bold text-ultra avatar2">
-                &#x2304;
-            </div> -->
+            <!-- <div class="text-4xl mx-auto text-center font-bold text-ultra avatar2">
+                        &#x2304;
+                    </div> -->
             <div class="text-2xl mx-auto text-center font-bold text-ultra avatar3 leading-3">
                 &#x2304;
             </div>
         </div>
+        
 
         <!-- LOGO PING PONG BALLS  -->
         <div class=" py-20 my-20">
@@ -361,11 +373,15 @@
     <script>
         // let menu = document.getElementById("active"); 
         let background = document.getElementById("background");
+        // let linksUl = document.getElemesntById("wrapperUl");
+        let root = document.getElementsByTagName('html')[0];
         
         let validate = (input) => {
             // console.log("validate fn fired!");
             if(input.checked) {
+                root.style.overflowY = " hidden";
                 background.style.display = "block";
+                // linksUl.style.display = "block";
                 document.body.style.overflowY = "hidden";
                 Particles.init({
                     // normal options
@@ -397,11 +413,13 @@
                     ] 
                 });
             }else{
+                root.style.overflowY = " scroll";
                 document.body.style.overflowY = "scroll";
                 // background.style.visibility = "hidden";
                 // background.style.opacity = "0";
                 // background.style.transition = "display 0s, opacity 0.5s linear;";
                 background.style.display = "none";
+                // linksUl.style.display = "none";
             }
             
             // menu.addEventListener("change", validate());
