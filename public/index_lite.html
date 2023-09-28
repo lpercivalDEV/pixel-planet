@@ -87,17 +87,24 @@
         <section id="hero_lite" class="mt-2 sm:px-8">
             <section class="flex mt-0 content-center">
                 <div class="lg:mt-24  xs:mt-18 sm:mt-18 mx-auto justify-center text-center text-space py-2 flex flex-col">
-                    <h1 class="sm:text-xl  lg:mb-24 sm:mt-8 sm:pt-6 md:text-6xl lg:text-8xl font-medium title-font">Pixel Planet
+                    <h1 class="sm:text-xl  lg:mb-24 sm:mt-8 sm:pt-6 md:text-6xl lg:text-8xl font-medium title-font text-ultra">Pixel Planet
                     </h1>
                     <!-- <span id="pxl-shadow" class="absolute -z-10 sm:text-xl mb-24 sm:mt-8 sm:pt-6 md:text-6xl lg:text-8xl font-medium title-font text-ultra">Pixel Planet</span> -->
                     <span id="light-glide-lite" class="overflow-hidden sm:mt-2"></span>
-                    <span class="sm:text-sm p-4 lg:text-xl w-90 mx-auto text-ultra md:-mt-24">Technology that serves humanity</span>
+                    <span class="pointer-events-none sm:text-sm p-4 lg:text-xl w-90 mx-auto text-ultra md:-mt-24">Technology that serves humanity</span>
                     <!-- <span id="tech_shadow" class="absolute ml-7 -z-10 text-ultra sm:text-sm p-4 lg:text-xl w-90 md:-mt-24">Technology that serves humanity</span> -->
                 </div>
             </section>
-    
+
+            <!-- /*
+                w-2/5 lg:h-full lg:w-full bg-transparent active:bg-none focus:outline-none focus focus:ring-violet-300
+            */ -->
             <section id="hero-block-lite" class="h-full w-full bg-transparent active:bg-none focus:outline-none focus focus:ring-violet-300" aria-disabled="true" aria-hidden="true" tabindex="-1">
                 <!-- BG Earf Video -->
+
+                <!-- /*
+                    flex justify-center mx-auto w-1/2 md:w-2/5 lg:py-2 mb-2 my-12
+                */ -->
                 <section id="earf-block-lite" class="flex justify-center lg:py-2 mb-2" aria-disabled="true" aria-hidden="true">
                     <img src="/public/assets/earf.gif" id="earf-lite" class="rounded-full mx-auto sm:w-screen w-4/5 lg:w-5/12 h-fit pointer-events-none" alt="rotating planet gif" aria-disabled="true" aria-hidden="true" tabindex="-1">
                 </section>
@@ -210,7 +217,7 @@
                     <div class="px-5 py-8 mx-auto flex flex-wrap md:w-7/12 md:pr-24">
                         <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:pl-12 lg:text-left text-center">
                             <div class="flex flex-col mb-4 lg:items-start items-center">
-                                <div class="flex-row align-middle text-center">
+                                <div class="flex-row align-middle">
                                     <!-- <span class="inline-flex align-middle mr-8 w-6 h-6 bg-ultra text-flame">
                                     </span> -->
                                     <h3 class="inline-flex align-middle text-space lg:text-4xl text-3xl title-font font-medium md:text-left">Why Work With Us? We Humanize Tech.</h3>
@@ -254,6 +261,11 @@
                 </section>
                 </section>
             </section>
+
+
+            <!-- /*
+                lg:flex lg:flex-wrap sm:block sm:w-full -m-4
+            */ -->
             
             <!-- LAWS  -->
             <section id="laws" class="panel">
@@ -268,44 +280,73 @@
                     <div class="shape-blob six"></div>
                 </div>
                 <h2 class="p-6 block text-6xl text-center text-ultra">LAWS</h2>
-                <section class="text-space body-font">
+                <section class="lawsBlock text-space body-font">
                     <div class="container px-12 md:px-24 py-12 md:py-24 mx-auto">
-                        <div class="flex flex-wrap sm:flex-shrink-0 -m-4">
-                            <div class="p-4 lg:w-1/2 md:w-full">
-                                <div class="flex rounded-lg outline-double outline-offset-2 outline-cy p-8 sm:flex-row flex-col">
+                        <div class="flex flex-row flex-wrap -m-4">
+                            <div class="outerBlock p-4 lg:w-1/2 w-full">
+                                <div class="flex rounded-lg outline-double outline-offset-2 outline-cy hover:outline-ether hover:bg-ether p-8 sm:flex-row flex-col">
                                     <div class="flex-grow">
-                                        <h3 class="text-flame text-center text-3xl title-font font-medium mb-3">Law of Equality</h3>
-                                        <p class="leading-relaxed text-base text-center">We are partners, not workers.</p>
+                                        <h3 class="text-ultra text-center text-3xl title-font font-medium mb-3">Law of Equality</h3>
+                                        <p class="reveal leading-relaxed text-2xl text-center">We are partners, not workers or tyrants.</p>
                                     </div>
+                                    <!-- <div class="chevronDwn flex flex-col justify-center text-2xl mx-auto text-center font-bold text-ultra leading-3 py-4">
+                                        &#x2304;
+                                    </div>
+                                    <div class="hidden chevronUp flex flex-col justify-center text-2xl mx-auto text-center font-bold text-ultra leading-3 py-4">
+                                       &#x2303;
+                                    </div> -->
                                 </div>
                             </div>
-                            <div class="p-4 lg:w-1/2 md:w-full">
-                                <div class="flex rounded-lg outline-double outline-offset-2 outline-cy p-8 sm:flex-row flex-col">
+                            <div class="outerBlock p-4 lg:w-1/2 w-full">
+                                <div class="flex rounded-lg outline-double outline-offset-2 outline-cy hover:outline-ether hover:bg-ether p-8 sm:flex-row flex-col">
                                     <div class="flex-grow">
-                                        <h3 class="text-flame text-center text-3xl title-font font-medium mb-3">Law of People</h3>
-                                        <p class="leading-relaxed text-base text-center">Treat others how you wish to be treated.
+                                        <h3 class="text-ultra text-center text-3xl title-font font-medium mb-3">Law of People</h3>
+                                        <p class="reveal leading-relaxed text-2xl text-center">Treat others how you wish to be treated.
                                         </p>
                                     </div>
+                                    <!-- <div
+                                        class="chevronDwn flex flex-col justify-center text-2xl mx-auto text-center font-bold text-ultra leading-3 py-4">
+                                        &#x2304;
+                                    </div>
+                                    <div
+                                        class="hidden chevronUp flex flex-col justify-center text-2xl mx-auto text-center font-bold text-ultra leading-3 py-4">
+                                        &#x2303;
+                                    </div> -->
                                 </div>
                             </div>
-                            <div class="p-4 lg:w-1/2 md:w-full">
-                                <div class="flex rounded-lg outline-double outline-offset-2 outline-cy p-8 sm:flex-row flex-col">
+                            <div class="outerBlock p-4 lg:w-1/2 w-full">
+                                <div class="flex rounded-lg outline-double outline-offset-2 outline-cy hover:outline-ether hover:bg-ether p-8 sm:flex-row flex-col">
                                     <div class="flex-grow">
-                                        <h3 class="text-flame text-center text-3xl title-font font-medium mb-3">Law of Transparency
+                                        <h3 class="text-ultra text-center text-3xl title-font font-medium mb-3">Law of Transparency
                                         </h3>
-                                        <p class="leading-relaxed text-base text-center">Speak truth, even if it leads to a loss.
+                                        <p class="reveal leading-relaxed text-2xl text-center">Always speak the truth, even if it leads to a loss.
                                         </p>
                                     </div>
+                                    <!-- <div
+                                        class="chevronDwn flex flex-col justify-center text-2xl mx-auto text-center font-bold text-ultra avatar3 leading-3 py-4">
+                                        &#x2304;
+                                    </div>
+                                    <div
+                                        class="hidden chevronUp flex flex-col justify-center text-2xl mx-auto text-center font-bold text-ultra avatar3 leading-3 py-4">
+                                        &#x2303;
+                                    </div> -->
                                 </div>
                             </div>
-                            <div class="p-4 lg:w-1/2 md:w-full">
-                                <div class="flex rounded-lg outline-double outline-offset-2 outline-cy p-8 sm:flex-row flex-col">
+                            <div class="outerBlock p-4 lg:w-1/2 w-full">
+                                <div class="flex rounded-lg outline-double outline-offset-2 outline-cy hover:outline-ether hover:bg-ether p-8 sm:flex-row flex-col">
                                     <div class="flex-grow">
-                                        <h3 class="text-flame text-center text-3xl title-font font-medium mb-3">Law of Innovation
+                                        <h3 class="text-ultra text-center text-3xl title-font font-medium mb-3">Law of Innovation
                                         </h3>
-                                        <p class="leading-relaxed text-base text-center">Leap into the unknown. That is where the
-                                            cutting edge lives.</p>
+                                        <p class="reveal leading-relaxed text-2xl text-center">Leap into the unknown  where innoation lives.</p>
                                     </div>
+                                    <!-- <div
+                                        class="chevronDwn flex flex-col justify-center text-2xl mx-auto text-center font-bold text-ultra avatar3 leading-3 py-4">
+                                        &#x2304;
+                                    </div>
+                                    <div
+                                        class="hidden chevronUp flex flex-col justify-center text-2xl mx-auto text-center font-bold text-ultra avatar3 leading-3 py-4">
+                                        &#x2303;
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -375,13 +416,13 @@
                     <!-- banner - start -->
                     <div class="mx-auto max-w-screen-2xl px-4 pb-4 md:px-8">
                         <div
-                            class="relative flex flex-wrap rounded-lg bg-ultra px-4 py-3 shadow-lg sm:flex-nowrap sm:items-center sm:justify-center sm:gap-3 sm:pr-8 md:px-8">
+                            class="relative flex flex-wrap rounded-lg bg-ether px-4 py-3 shadow-lg sm:flex-nowrap sm:items-center sm:justify-center sm:gap-3 sm:pr-8 md:px-8">
                             <div
-                                class="order-1 mb-2 inline-block w-11/12 max-w-screen-sm text-sm text-white sm:order-none sm:mb-0 sm:w-auto md:text-base">
-                                To see more details on our services and most recent work, check out our Case Studies page!</div>
+                                class="order-1 mb-2 inline-block w-11/12 mx-6 max-w-screen-sm text-sm text-space sm:order-none sm:mb-0 sm:w-auto md:text-base">
+                                Learn more about our services and most recent work on our Case Studies page!</div>
                 
                             <a href="/public/case_studies.html"
-                                class="btn order-last inline-block w-full whitespace-nowrap rounded-lg  px-4 py-2 text-center text-xs font-semibold text-white outline-none ring-flame transition duration-100 hover:bg-cy focus-visible:ring active:bg-indigo-800 sm:order-none sm:w-auto md:text-sm">Case Studies</a>
+                                class="btn order-last inline-block w-full whitespace-nowrap rounded-lg  px-4 py-2 text-center text-xs font-semibold text-space outline-none ring-flame transition duration-100 hover:bg-cy focus-visible:ring active:bg-cy sm:order-none sm:w-auto md:text-sm">Case Studies</a>
                 
                             <!-- close button - start -->
                             <!-- <div
@@ -401,6 +442,16 @@
                     <!-- banner - end -->
                 </div>
             </div>
+
+
+            <!-- NEWSLETTER SIGN UP -->
+            <section class="py-12 text-center flex flex-col justify-center content-center mx-auto bg-space">
+                <h3 class="text-ether py-4">Stay up to date by subscribing to our newsletter or blog!</h3>
+                <iframe class="rounded-lg hidden md:flex" src="https://pixelplanet.substack.com/embed" width="580" height="420"
+                    style="margin-left:auto; margin-right:auto; border:0px;" frameborder="0" scrolling="no"></iframe>
+                <iframe class="rounded-lg block md:hidden" src="https://pixelplanet.substack.com/embed" width="380" height="320"
+                    style="margin-left:auto; margin-right:auto; border:0px;" frameborder="0" scrolling="no"></iframe>
+            </section>
         
 
             <!-- CONTACT  -->
@@ -482,6 +533,7 @@
             </section>
         </section>
         <!-- END OF PANEL SLIDES SECTION  -->
+
         
 
         <!-- SCROLL TO TOP BTN  -->
@@ -516,6 +568,6 @@
     <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script> -->
     <!-- <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
     <script src="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.js"></script> -->
-    <!-- <script src="/src/js/main.js"></script> -->
+    <script src="/src/js/main.js"></script>
 </body>
 </html>

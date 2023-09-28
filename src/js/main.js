@@ -136,6 +136,28 @@
 
 /* TILT JS ELEMENTS  */
 
-$('.js-tilt').tilt({
-    scale: 1.2
-})
+// $('.js-tilt').tilt({
+//     scale: 1.2
+// })
+
+
+
+
+// LAW SECTION HOVER REVEALS 
+
+let reveal = document.querySelectorAll(".reveal");
+let down = document.querySelectorAll(".chevronDwn");
+let up = document.querySelectorAll(".chevronUp");
+let outerBlock = document.querySelectorAll(".outerBlock");
+
+ for (let i = 0; i < outerBlock.length; i++) {
+     outerBlock[i].addEventListener("click", function() {
+       reveal[i].classList.toggle("shown");
+       up[i].classList.toggle("hidden");
+       down[i].classList.toggle("hidden");
+     });
+ }
+
+// for(let i = 0; i < outerBlock.length; i++) {
+    
+// };

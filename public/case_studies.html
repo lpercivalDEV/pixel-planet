@@ -38,10 +38,10 @@
     <span id="top" aria-disabled="true" aria-label="top of page"></span>
 
     <!-- NAV  -->
-    <header class="bg-transparent">
-        <section class="hidden lg:block bg-black">
+    <header class="mx-auto bg-light">
+        <section class="hidden lg:block">
             <nav class="navbar px-6 py-2" aria-label="navigation">
-                <a href="index_lite.html" name="home" aria-label="home" tabindex="0">
+                <a href="index.html" name="home" aria-label="home" tabindex="0">
                     <div class="logo">
                         <img class="logo_img w-12" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo" aria-label="Pixel Planet logo">
                     </div>
@@ -56,7 +56,7 @@
         </section>
 
         <!-- //MOBILE NAV -->
-        <section class="lg:hidden block mb-12">
+        <!-- <section class="lg:hidden block w-screen mx-auto"> -->
             <!-- <a href="index.html" class="w-full flex items-center mb-4" aria-label="link for homepage">
                 <img class="w-4 mx-auto m-2" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo">
             </a> -->
@@ -72,7 +72,7 @@
             </nav> -->
 
             <!-- //MOBILE NAV -->
-            <header class="mobHeader lg:hidden block w-full z-50">
+            <section class="navbar px-6 py-4 lg:hidden block w-full">
                 <div class="w-full flex items-center mb-4 py-6 mx-auto">
                     <a href="index.html" class="flex flex-row mx-auto">
                         <span class="self-center px-4 pointer-events-none uppercase text-xs">pixel</span>
@@ -93,11 +93,12 @@
                         </ul>
                     </div>
                 </nav>
-        </section>
-    </header>
+            </section>
+        <!-- </section> -->
+        </header>
 
     <!-- MAIN CONTENT  -->
-    <main class="-mt-20">
+    <main class="-mt-36 md:-mt-12">
         <!-- HERO  -->
 
         <div class="py-6 sm:py-8 lg:py-12 cloud-container">
@@ -141,12 +142,14 @@
         </div>
 
 
-
-
                     <!-- PROCESS BLURB  -->
                     <!-- <section class="py-12 mb-20 mx-auto flex flex-col justify-center">
                         <p class="text-justify text-space md:text-xl p-0 m-0">Our human centered approach has enabled us to
                             excel at finding <span class="pointer-events-none text-ultra font-bold">solutions</span> and focus on creating <span class="pointer-events-none text-ultra font-bold">impact</span> for our clients.</p>
+        <!-- PROCESS BLURB  -->
+        <section class="py-12 mb-20 mx-auto flex flex-col justify-center">
+            <p class="text-justify text-space md:text-xl p-0 m-0">Our human centered approach has enabled us to
+                        excel at finding <span class="pointer-events-none text-ultra font-bold">solutions</span> and focus on creating <span class="pointer-events-none text-ultra font-bold">impact</span> for our clients.</p>
 
                         <p class="text-justify text-space md:text-xl p-0 m-0">We are <span class="pointer-events-none text-ultra font-bold">tech agnostic</span> and this enables us to find the best fitting solution for the challenges our clients face.</p>
                         
@@ -392,6 +395,9 @@
                 });
             }else{
                 document.body.style.overflowY = "scroll";
+                // background.style.visibility = "hidden";
+                // background.style.opacity = "0";
+                // background.style.transition = "display 0s, opacity 0.5s linear;";
                 background.style.display = "none";
             }
             

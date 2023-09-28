@@ -11,6 +11,8 @@ module.exports = {
         'ultra': '#52489c',
         'space': '#2e4052',
         'light': '#FFF8E7',
+        'sunset': '#feb7c2',
+        'ether': '#b8b0f5',
       },
       spacing: {
         '8xl': '96rem',
