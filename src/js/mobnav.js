@@ -1,9 +1,21 @@
-// let menu = document.getElementById("active"); 
+        
         let background = document.getElementById("background");
         let particles = document.getElementsByClassName("particles")[0];
         let root = document.getElementsByTagName('html')[0];
         let ul = document.getElementsByTagName('ul')[1];
+        let input = document.getElementById("active");
         
+
+        let menuItems = document.querySelectorAll(".menu-item");
+
+        menuItems.forEach(i => {
+            i.addEventListener("click", function() {
+                input.checked = false;
+                validate(input);
+            })
+        });
+
+
         let validate = (input) => {
             // console.log("validate fn fired!");
             if(input.checked) {
@@ -45,14 +57,8 @@
             }else{
                 root.style.overflowY = " scroll";
                 document.body.style.overflowY = "scroll";
-                // background.style.visibility = "hidden";
-                // background.style.opacity = "0";
-                // background.style.transition = "display 0s, opacity 0.5s linear;";
                 background.style.display = "none";
                 particles.style.zIndex = "-1";
                 ul.style.backgroundColor = "rgba(0, 0, 0, 0)";
-                // linksUl.style.display = "none";
-            }
-            
-            // menu.addEventListener("change", validate());
+            }            
         }
