@@ -56,54 +56,37 @@
         </section>
 
         <!-- //MOBILE NAV -->
-        <!-- <section class="lg:hidden block w-screen mx-auto"> -->
-            <!-- <a href="index.html" class="w-full flex items-center mb-4" aria-label="link for homepage">
-                <img class="w-4 mx-auto m-2" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo">
-            </a> -->
-            <!-- <nav>
-                <div class="wrapper">
-                    <ul class="flex px-2 text-center justify-around text-sm">
-                        <a href="index.html/#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
-                        <a href="index.html/#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
-                        <a href="case_studies.html" aria-label="meta pixels - our values">case studies</a>
-                        <a class="focus:ring-blue-200" href="#contact" aria-label="go to contact section">Contact</a>
+        <section class="navbar px-6 py-4 lg:hidden block w-full">
+            <div class="w-full flex items-center py-6 mx-auto">
+                <a href="index.html" class="flex flex-row mx-auto">
+                    <span class="self-center px-4 pointer-events-none uppercase text-xs">pixel</span>
+                    <img class="w-12 mx-auto" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo and home button"> 
+                    <span class="self-center px-4 pointer-events-none uppercase text-xs">planet</span>
+                </a>
+            </div>
+            <nav class="">
+                <input class="border border-slate-400" type="checkbox" id="active" onchange="validate(this)" tabindex="0" aria-label="mobile navigation button">
+                <label for="active" class="menu-btn" tabindex="0" aria-label="mobile navigation button">
+                </label>
+                <div id="wrapperUl" class="wrapper mt-12">
+                    <ul class="flex flex-col mx-auto p-8 w-4/5 rounded-lg">
+                        <li class="py-4">
+                            <a href="index.html#about" tabindex="0" aria-label="mobile navigation button">About Pxl Planet</a>
+                        </li>
+                        <li class="py-4">
+                            <a href="index.html#meta" class="" tabindex="0" aria-label="mobile navigation button">MetaPxls</a>
+                        </li>
+                        <li class="py-4">
+                            <a href="case_studies.html" class="" tabindex="0" aria-label="mobile navigation button">Case Studies</a>
+                        </li>
+                        <li class="py-4">
+                            <a href="index.html#contact" class="" tabindex="0" aria-label="mobile navigation button">Contact</a>
+                        </li>
                     </ul>
                 </div>
-            </nav> -->
-
-            <!-- //MOBILE NAV -->
-            <section class="navbar px-6 py-4 lg:hidden block w-full">
-                <div class="w-full flex items-center mb-4 py-6 mx-auto">
-                    <a href="index.html" class="flex flex-row mx-auto">
-                        <span class="self-center px-4 pointer-events-none uppercase text-xs">pixel</span>
-                        <img class="w-12 mx-auto" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo and home button"> 
-                        <span class="self-center px-4 pointer-events-none uppercase text-xs">planet</span>
-                    </a>
-                </div>
-                <nav class="">
-                    <input class="border border-slate-400" type="checkbox" id="active" onchange="validate(this)" tabindex="0" aria-label="mobile navigation button">
-                    <label for="active" class="menu-btn" tabindex="0" aria-label="mobile navigation button">
-                    </label>
-                    <div id="wrapperUl" class="wrapper mt-12">
-                        <ul class="flex flex-col mx-auto p-8 w-4/5 rounded-lg">
-                            <li class="py-4">
-                                <a href="index.html#about" tabindex="0" aria-label="mobile navigation button">About Pxl Planet</a>
-                            </li>
-                            <li class="py-4">
-                                <a href="index.html#meta" class="" tabindex="0" aria-label="mobile navigation button">MetaPxls</a>
-                            </li>
-                            <li class="py-4">
-                                <a href="case_studies.html" class="" tabindex="0" aria-label="mobile navigation button">Case Studies</a>
-                            </li>
-                            <li class="py-4">
-                                <a href="index.html#contact" class="" tabindex="0" aria-label="mobile navigation button">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </section>
-        <!-- </section> -->
-        </header>
+            </nav>
+        </section>
+    </header>
 
     <!-- MAIN CONTENT  -->
     <main class="-mt-36 md:-mt-12">
@@ -337,10 +320,6 @@
 
         <!-- Particle Background  -->
         <div class="particles">
-            <!-- <div class="nav-container"> -->
-            <!-- <img src="/public/assets/logos/pixel_planet_logo_round.png" alt=""> -->
-            <!-- </div> -->
-        
             <canvas id="background"></canvas>
         </div>
     </main>
@@ -374,68 +353,15 @@
         
     
 
-    <script>
-        // let menu = document.getElementById("active"); 
-        let background = document.getElementById("background");
-        // let linksUl = document.getElemesntById("wrapperUl");
-        let root = document.getElementsByTagName('html')[0];
-        
-        let validate = (input) => {
-            // console.log("validate fn fired!");
-            if(input.checked) {
-                root.style.overflowY = " hidden";
-                background.style.display = "block";
-                // linksUl.style.display = "block";
-                document.body.style.overflowY = "hidden";
-                Particles.init({
-                    // normal options
-                    selector: '#background',
-                    maxParticles: 200,
-                    connectParticles: true,
-                    color: ["#00eeff", "#ff9c0e", "#ff0e71", "#52489c"],
-                    // options for breakpoints
-                    responsive: [
-                        {
-                            breakpoint: 768,
-                            options: {
-                                maxParticles: 100,
-                                color: ["#00eeff", "#ff9c0e", "#ff0e71", "#52489c"],
-                                connectParticles: true
-                            }
-                        }, {
-                            breakpoint: 425,
-                            options: {
-                                maxParticles: 80,
-                                connectParticles: true
-                            }
-                        }, {
-                            breakpoint: 320,
-                            options: {
-                                maxParticles: 40 // setting to 0 disables particles.js
-                            }
-                        }
-                    ] 
-                });
-            }else{
-                root.style.overflowY = " scroll";
-                document.body.style.overflowY = "scroll";
-                // background.style.visibility = "hidden";
-                // background.style.opacity = "0";
-                // background.style.transition = "display 0s, opacity 0.5s linear;";
-                background.style.display = "none";
-                // linksUl.style.display = "none";
-            }
-            
-            // menu.addEventListener("change", validate());
-        }
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://use.fontawesome.com/d1bb00f190.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://use.fontawesome.com/d1bb00f190.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="../src/js/mobnav.js"></script>
 
 </body>
 

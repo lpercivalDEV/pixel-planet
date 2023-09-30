@@ -463,7 +463,7 @@ nav a {
             list-style: none;
             /* background-color: #fff; */
             /* text-align: center; */
-            background-color: rgba(255, 248, 231, 0.2);
+            /* background-color: rgba(255, 248, 231, 0.2); */
         }
     
         .wrapper ul li {
@@ -592,4 +592,12 @@ nav a {
             z-index: 55;
             /* border: 4px solid lime; */
         }
+}
+
+
+
+/* SUBSTACK NEWSLETTER SIGN UP  */
+
+#substack1, #substack2 {
+    max-width: 90vw;
 }

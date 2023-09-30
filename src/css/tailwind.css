@@ -5,6 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    overflow-x: hidden;
+}
+
+
 /* SITE WIDE HEADINGS and TEXT */
 
 @font-face {
@@ -74,6 +79,11 @@ button:active, button:focus, .btn:active, .btn:focus, a:active, a:focus, input:a
 
 /* Button Animations  */
 .btn:hover, .icon:hover, .icon2:hover {
+    cursor: pointer;
+    animation: jelly 0.5s;
+}
+
+.btn2:hover {
     cursor: pointer;
     animation: jelly 0.5s;
 }
@@ -189,12 +199,15 @@ span:hover::after, .menu a:hover::after {
     justify-content: space-evenly;
     position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100vw;
     max-width: 100vw;
     height: 5rem;
     overflow: hidden;
     z-index: 100;
     background-color: #FFF8E7;
+
 }
 
 .logo {

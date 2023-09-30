@@ -516,10 +516,6 @@ video {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -583,9 +579,6 @@ video {
 .mb-8 {
   margin-bottom: 2rem;
 }
-.ml-10 {
-  margin-left: 2.5rem;
-}
 .ml-12 {
   margin-left: 3rem;
 }
@@ -640,11 +633,11 @@ video {
 .mt-4 {
   margin-top: 1rem;
 }
+.mt-6 {
+  margin-top: 1.5rem;
+}
 .mt-8 {
   margin-top: 2rem;
-}
-.mt-96 {
-  margin-top: 24rem;
 }
 .block {
   display: block;
@@ -722,9 +715,6 @@ video {
 .h-screen {
   height: 100vh;
 }
-.max-h-screen {
-  max-height: 100vh;
-}
 .w-1\/12 {
   width: 8.333333%;
 }
@@ -739,9 +729,6 @@ video {
 }
 .w-12 {
   width: 3rem;
-}
-.w-2\/3 {
-  width: 66.666667%;
 }
 .w-2\/5 {
   width: 40%;
@@ -784,9 +771,6 @@ video {
 }
 .w-8 {
   width: 2rem;
-}
-.w-96 {
-  width: 24rem;
 }
 .w-auto {
   width: auto;
@@ -972,10 +956,6 @@ video {
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-.bg-ether {
-  --tw-bg-opacity: 1;
-  background-color: rgb(184 176 245 / var(--tw-bg-opacity));
 }
 .bg-flame {
   --tw-bg-opacity: 1;
@@ -1404,6 +1384,9 @@ video {
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+html {
+    overflow-x: hidden;
+}
 /* SITE WIDE HEADINGS and TEXT */
 @font-face {
     font-family: 'Slot-Regular';
@@ -1494,6 +1477,10 @@ button:active:focus, button:focus:focus, .btn:active:focus, .btn:focus:focus, a:
 }
 /* Button Animations  */
 .btn:hover, .icon:hover, .icon2:hover {
+    cursor: pointer;
+    animation: jelly 0.5s;
+}
+.btn2:hover {
     cursor: pointer;
     animation: jelly 0.5s;
 }
@@ -1592,12 +1579,15 @@ span:hover::after, .menu a:hover::after {
     justify-content: space-evenly;
     position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100vw;
     max-width: 100vw;
     height: 5rem;
     overflow: hidden;
     z-index: 100;
     background-color: #FFF8E7;
+
 }
 .logo {
     cursor: pointer;
@@ -2278,21 +2268,6 @@ li {
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
-  .lg\:col-start-1 {
-    grid-column-start: 1;
-  }
-  .lg\:col-start-2 {
-    grid-column-start: 2;
-  }
-  .lg\:row-auto {
-    grid-row: auto;
-  }
-  .lg\:row-start-1 {
-    grid-row-start: 1;
-  }
-  .lg\:row-start-2 {
-    grid-row-start: 2;
-  }
   .lg\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -2323,9 +2298,6 @@ li {
   .lg\:mt-0 {
     margin-top: 0px;
   }
-  .lg\:mt-12 {
-    margin-top: 3rem;
-  }
   .lg\:mt-2 {
     margin-top: 0.5rem;
   }
@@ -2334,9 +2306,6 @@ li {
   }
   .lg\:mt-32 {
     margin-top: 8rem;
-  }
-  .lg\:mt-4 {
-    margin-top: 1rem;
   }
   .lg\:mt-44 {
     margin-top: 11rem;
@@ -2389,6 +2358,9 @@ li {
   }
   .lg\:w-1\/4 {
     width: 25%;
+  }
+  .lg\:w-11\/12 {
+    width: 91.666667%;
   }
   .lg\:w-2\/3 {
     width: 66.666667%;
@@ -2470,10 +2442,6 @@ li {
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-  .lg\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
   .lg\:pl-12 {
     padding-left: 3rem;
