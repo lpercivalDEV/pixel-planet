@@ -37,22 +37,20 @@
     <span id="top" aria-disabled="true" aria-label="top of page"></span>
 
     <!-- NAV  -->
-    <header>
-        <section class="hidden lg:block bg-black">
+    <header class="px-4">
+        <section class="hidden lg:block bg-transparent">
             <nav class="navbar px-6 py-2" aria-label="navigation">
+                <a href="index.html" name="home" aria-label="home" tabindex="0">
+                    <div class="logo">
+                        <img class="logo_img w-12" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo" aria-label="Pixel Planet logo">
+                    </div>
+                </a>
                 <ul class="menu">
-                    <a href="index.html" name="home" aria-label="home" tabindex="0">
-                        <div class="logo">
-                            <img class="logo_img w-8" src="./assets/logos/pixel_planet_logo_round.png"
-                                alt="pixel planet logo" aria-label="Pixel Planet logo">
-                        </div>
-                    </a>
-                    <a href="index.html/#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
-                    <a href="index.html/#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
-                    <a href="case_studies.html" aria-label="meta pixels - our values">case studies</a>
-                    <!-- <a href="pixelacademy.html" aria-label="pixel academy">pxl academy</a> -->
+                    <a href="#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
+                    <a href="#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
+                    <a href="case_studies.html" aria-label="pixel academy" tabindex="0">case studies</a>
                 </ul>
-                <a class="btn" href="#contact" aria-label="go to contact section" tabindex="0">Contact</a>
+                <a class="btn text-ultra" href="#contact" aria-label="go to contact section" tabindex="0">Contact</a>
             </nav>
         </section>
 
@@ -199,7 +197,7 @@
                     Mei Mei Dumplings
                 </h2>
                 <img alt="mei mei dumplings header image"
-                    class="object-contain object-center h-full w-full mx-auto py-12 rounded-lg"
+                    class="object-contain object-center h-full w-full mx-auto py-20 rounded-lg"
                     src="/public/assets/clients/meimei3.jpg">
             </div>
         
@@ -251,8 +249,8 @@
                         </div>
                         <div class="mask rounded-lg">
                             <section
-                                class="lg:p-12 lg:ml-4 flex-col xl:text-justify lg:text-left h-full py-12 w-4/5 xl:w-3/4 mx-auto">
-                                <h3 class="text-ultra text-justify mb-4">Client Summary</h3>
+                                class="lg:p-12 flex-col xl:text-justify lg:text-left h-full py-12 w-full mx-auto bg-[url(/public/assets/meimeibg.jpg)] bg-left bg-cover">
+                                <!-- <h3 class="text-ultra text-justify mb-4">Client Summary</h3>
                                 <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
                                 <p class="leading-snug lg:leading-relaxed text-sm lg:text-lg xl:text-xl">Mei Mei is a local
                                     women owned and operated dumpling paradise in Boston. They not only provide delicious
@@ -260,11 +258,11 @@
                                     locals, but also at farmers markets across Massachusetts and Rhode Island. They offer
                                     dumpling making and other cooking
                                     courses both virtually and in person as well.
-                                </p>
+                                </p> -->
                             </section>
                         </div>
                         <div class="center-circle">
-                            <img class="h-28 w-44 mx-auto mt-16" src="/public/assets/clients/meimei2.png" alt="mei mei logo">
+                            <img class="h-28 mx-auto mt-16" src="/public/assets/clients/meimei2.png" alt="mei mei logo">
                         </div>
                     </div>
                 </section>
@@ -272,7 +270,7 @@
         
             <!-- SUMMARY & FEATURES   -->
             <section
-                class="rounded-lg bg-light px-8 lg:px-20 flex flex-col lg:grid lg:grid-cols-2 mx-auto lg:justify-center lg:self-center lg:text-center">
+                class="rounded-lg bg-light px-8 lg:px-20 flex flex-col lg:grid lg:grid-cols-2 mx-auto lg:justify-center lg:self-center lg:text-center mb-8">
                 <h2 class="lg:hidden mt-4 text-space px-4 py-12 text-5xl text-center">
                     Mei Mei Dumplings
                 </h2>
@@ -306,7 +304,7 @@
             <section class="rounded-lg bg-light mx-auto lg:justify-center lg:self-center">
                 <!-- CHALLENGE  -->
                 <div class="px-8 lg:px-20">
-                    <h3 class="text-ultra text-justify mb-4">The Challenge</h3>
+                    <h3 class="text-ultra text-justify mb-4 pt-6">The Challenge</h3>
                     <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
                     <p class="leading-relaxed text-lg mb-4">Mei Mei needed to migrate their site to a new version due to a
                         forced CMS update. They reached out to us to see if we

@@ -38,22 +38,20 @@
     <span id="top" aria-disabled="true" aria-label="top of page"></span>
 
     <!-- NAV  -->
-    <header>
-        <section class="hidden lg:block bg-black">
+    <header class="px-4">
+        <section class="hidden lg:block bg-transparent">
             <nav class="navbar px-6 py-2" aria-label="navigation">
+                <a href="index.html" name="home" aria-label="home" tabindex="0">
+                    <div class="logo">
+                        <img class="logo_img w-12" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo" aria-label="Pixel Planet logo">
+                    </div>
+                </a>
                 <ul class="menu">
-                    <a href="index.html" name="home" aria-label="home" tabindex="0">
-                        <div class="logo">
-                            <img class="logo_img w-8" src="./assets/logos/pixel_planet_logo_round.png"
-                                alt="pixel planet logo" aria-label="Pixel Planet logo">
-                        </div>
-                    </a>
-                    <a href="index.html/#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
-                    <a href="index.html/#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
-                    <a href="case_studies.html" aria-label="meta pixels - our values">case studies</a>
-                    <!-- <a href="pixelacademy.html" aria-label="pixel academy">pxl academy</a> -->
+                    <a href="#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
+                    <a href="#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
+                    <a href="case_studies.html" aria-label="pixel academy" tabindex="0">case studies</a>
                 </ul>
-                <a class="btn" href="#contact" aria-label="go to contact section" tabindex="0">Contact</a>
+                <a class="btn text-ultra" href="#contact" aria-label="go to contact section" tabindex="0">Contact</a>
             </nav>
         </section>
 
@@ -169,8 +167,8 @@
                             <div class="second-circle"></div>
                         </div>
                         <div class="mask">
-                            <section class="lg:p-12 flex-col xl:text-justify lg:text-left h-full py-12 w-4/5 xl:w-3/4 mx-auto">
-                                <h3 class="text-ultra text-justify mb-4">Client Summary</h3>
+                            <section class="lg:p-12 flex-col xl:text-justify lg:text-left h-full py-12 w-full mx-auto bg-[url(/public/assets/factory.jpg)] bg-center bg-cover">
+                                <!-- <h3 class="text-ultra text-justify mb-4">Client Summary</h3>
                                 <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
                                 <p class="leading-snug lg:leading-relaxed text-sm lg:text-lg xl:text-xl">
                                     Corporate Accountability is a 501 (c)(3) organization that aims to hold corporations
@@ -190,7 +188,7 @@
                                     as the public
                                     about
                                     the impact of corporate polluters in order to bring them to justice.
-                                </p>
+                                </p> -->
                             </section>
                         </div>
                         <div class="center-circle">
@@ -203,7 +201,7 @@
         
             <!-- SUMMARY & FEATURES   -->
             <section
-                class="rounded-lg bg-light px-8 lg:px-20 flex flex-col lg:grid lg:grid-cols-2 mx-auto lg:justify-center lg:self-center lg:text-center">
+                class="rounded-lg bg-light px-8 lg:px-20 flex flex-col lg:grid lg:grid-cols-2 mx-auto lg:justify-center lg:self-center lg:text-center mb-8">
                 <h2 class="lg:hidden mt-4 text-space px-4 py-12 text-5xl text-center">
                     Liability Roadmap
                 </h2>
@@ -242,7 +240,7 @@
             <section class="rounded-lg bg-light mx-auto lg:justify-center lg:self-center">
                 <!-- CHALLENGE  -->
                 <div class="px-8 lg:px-20">
-                    <h3 class="text-ultra text-justify mb-4">The Challenge</h3>
+                    <h3 class="text-ultra text-justify mb-4 pt-6">The Challenge</h3>
                     <div class="w-12 h-1 bg-ultra rounded mt-2 mb-4"></div>
                     <p class="leading-relaxed text-lg mb-4">This project presented a unique challenge of juggling the needs,
                         wants, and
