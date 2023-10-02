@@ -13,6 +13,7 @@ module.exports = {
         'light': '#FFF8E7',
         'sunset': '#feb7c2',
         'ether': '#b8b0f5',
+        'fog': '#bcbcbc',
       },
       spacing: {
         '8xl': '96rem',
