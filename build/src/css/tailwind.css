@@ -39,12 +39,9 @@ h3 {
 }
 
 h4 {
-    @apply text-xl font-medium;
+    @apply text-xl font-medium text-fog;
 }
 
-.title_gray {
-    color: #bcbcbc !important;
-}
 
 h5 {
     @apply text-lg font-medium;

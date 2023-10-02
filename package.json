@@ -4,8 +4,8 @@
   "description": "pixel planet - pixels for the people",
   "main": "index.js",
   "scripts": {
-    "watch": "postcss ./src/css/tailwind.css -o ./public/output.css --watch",
-    "sass": "node-sass -w ./src/scss/ -o css/ --recursive"
+    "watch": "postcss build/src/css/tailwind.css -o build/public/output.css --watch",
+    "sass": "node-sass -w build/src/scss/ -o css/ --recursive"
   },
   "keywords": [
     "pixel planet",
