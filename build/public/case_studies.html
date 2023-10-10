@@ -25,9 +25,16 @@
     <meta property="og:url" content="https://pixelpla.net/">
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="/src/css/index_lite.css">
-    <link rel="stylesheet" href="/src/css/case_studies.css">
+    <link rel="stylesheet" href="/build/src/css/index_lite.css">
+    <link rel="stylesheet" href="/build/src/css/case_studies.css">
     <link rel="stylesheet" href="./output.css">
+
+    
+    <!-- FAVICONS  -->
+    <link rel="shortcut icon" href="./assets/favicons/favicon.ico" type="image/ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
     
 
     <title>Case Studies | Pixel Planet</title>
@@ -35,7 +42,7 @@
 
 <body id="body_lite" style="overflow-x: hidden;">
     <!-- TOP OF PAGE - SCROLL TO TOP ARRIVES HERE  -->
-    <span id="top" aria-disabled="true" aria-label="top of page"></span>
+    <span id="top"></span>
 
     <!-- NAV  -->
     <header class="mx-auto bg-light">
@@ -43,7 +50,8 @@
             <nav class="navbar px-6 py-2" aria-label="navigation">
                 <a href="index.html" name="home" aria-label="home" tabindex="0">
                     <div class="logo">
-                        <img class="logo_img w-12" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo" aria-label="Pixel Planet logo">
+                        <img class="logo_img w-12" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo"
+                            aria-label="Pixel Planet logo">
                     </div>
                 </a>
                 <ul class="menu">
@@ -51,7 +59,8 @@
                     <a href="index.html#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
                     <a href="case_studies.html" aria-label="pixel academy" tabindex="0">case studies</a>
                 </ul>
-                <a class="btn text-ultra" href="index.html#contact" aria-label="go to contact section" tabindex="0">Contact</a>
+                <a class="btn text-ultra" href="index.html#contact" aria-label="go to contact section"
+                    tabindex="0">Contact</a>
             </nav>
         </section>
 
@@ -191,8 +200,8 @@
                     <ul class="mx-auto py-6 grid gap-12 gap-x-12 md:grid-cols-2 grid-rows-2">
                         <li class="rounded-full">
                             <div>
-                                <a href="/public/dom.html" class="mx-auto group relative flex w-40 h-40 lg:h-60 lg:w-60 overflow-hidden rounded-full shadow-lg pingpongdom">
-                                    <img src="/public/assets/clients/dom.png" loading="lazy" alt="DomeEstate Capital"
+                                <a href="dom.html" class="mx-auto group relative flex w-40 h-40 lg:h-60 lg:w-60 overflow-hidden rounded-full shadow-lg pingpongdom">
+                                    <img src="/build/public/assets/clients/dom.png" loading="lazy" alt="DomeEstate Capital"
                                         class="p-12 absolute inset-0 h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
                                 
                                     <div
@@ -207,9 +216,9 @@
                         </li>
                         <li class="rounded-full">
                             <div>
-                                <a href="/public/manyi.html"
+                                <a href="/build/public/manyi.html"
                                     class="mx-auto group relative flex w-40 h-40 lg:h-60 lg:w-60 overflow-hidden rounded-full shadow-lg pingpongdom">
-                                    <img src="/public/assets/clients/manyi.png" loading="lazy" alt="Manyi Juices"
+                                    <img src="/build/public/assets/clients/manyi.png" loading="lazy" alt="Manyi Juices"
                                         class="p-12 absolute inset-0 h-full w-full object-contain object-center transition duration-200 group-hover:scale-110 pingpongmanyi" />
                         
                                     <div
@@ -225,9 +234,9 @@
                         </li>
                         <li class="rounded-full">
                             <div>
-                                <a href="/public/meimei.html"
+                                <a href="/build/public/meimei.html"
                                     class="mx-auto group relative flex w-40 h-40 lg:h-60 lg:w-60 overflow-hidden rounded-full shadow-lg ">
-                                    <img src="/public/assets/clients/meimei3.jpg" loading="lazy" alt="Mei Mei Dumplings"
+                                    <img src="/build/public/assets/clients/meimei3.jpg" loading="lazy" alt="Mei Mei Dumplings"
                                         class="p-12 absolute h-full w-full object-contain object-left-bottom transition duration-200 group-hover:scale-110 pingpongmeimei" />
                         
                                     <div
@@ -243,9 +252,9 @@
                         </li>
                         <li class="rounded-full">
                             <div>
-                                <a href="/public/lrm.html"
+                                <a href="/build/public/lrm.html"
                                     class="mx-auto group relative flex w-40 h-40 lg:h-60 lg:w-60 overflow-hidden rounded-full shadow-lg pingpongdom">
-                                    <img src="/public/assets/clients/corpacc.png" loading="lazy" alt="Corporate Accountability"
+                                    <img src="/build/public/assets/clients/corpacc.png" loading="lazy" alt="Corporate Accountability"
                                         class="p-12 absolute inset-0 h-full w-full object-cover object-left-top transition duration-200 group-hover:scale-110 pingponglrm bg-white" />
                         
                                     <div

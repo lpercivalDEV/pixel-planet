@@ -55,8 +55,8 @@ export class Card1 {
     // Define properties related to the DOM elements and their styles.
     DOM = {
         el: null,        // Main card element
-        img: null,          // Image within the card
-        img2: null,       // Image within the card of COMING SOON elements
+        img: null,        // Image within the card
+        img2: null,       // Image within the card for COMING SOON elements
         boxes: null      // Array of card boxes within the card
     };
     cardBoxesArr = [];   // Array to hold instances of CardBox associated with this card.
@@ -68,8 +68,6 @@ export class Card1 {
     constructor(DOM_el) {
         this.DOM.el = DOM_el;
         this.DOM.img = this.DOM.el.querySelector('.card__img');
-
-        // DESATURATED COMING SOON ELEMENTS 
         this.DOM.img2 = this.DOM.el.querySelector('.card__img2');
 
         this.boxes = [...this.DOM.el.querySelectorAll('.card__box')];
@@ -128,8 +126,7 @@ export class Card1 {
             scale: 0.85,
             filter: 'saturate(200%) brightness(70%)'
         }, 'start')
-
-        // DESATURATED COMING SOON IMAGE 
+        //COMING SOON DESATURATED ELEMENTS
         .fromTo(this.DOM.img2, {
             filter: 'saturate(100%) brightness(100%)',
         }, {
@@ -214,6 +211,8 @@ export class Card1 {
             scale: 1,
             filter: 'saturate(100%) brightness(100%)'
         }, 'start')
+
+        // DESATURATED COMING SOON ELEMENTS 
         .to(this.DOM.img2, {
             scale: 1,
             filter: 'saturate(20%) brightness(100%)'

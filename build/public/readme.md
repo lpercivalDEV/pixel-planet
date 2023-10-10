@@ -20,3 +20,7 @@ sources:
 <a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by Icon Hubs - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Darius Dan - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Fuzzee - Flaticon</a>
+
+
+<a target="_blank" href="https://icons8.com/icon/48136/approval">Certified</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/6tr7WM2nToHO/teamwork">Teamwork</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

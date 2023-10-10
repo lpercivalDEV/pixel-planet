@@ -25,19 +25,33 @@
     <meta property="og:description" content="Pixel Planet is a web development studio with over 10 years of technical experience in web development and design. We use our expertise to design and build unique forward thinking digital solutions for clients.">
     <meta property="og:url" content="https://pixelpla.net/">
 
-
     
     <!-- STYLES -->
-    <link rel="stylesheet" href="/src/css/index_lite.css">
+    <link rel="stylesheet" href="/build/src/css/index_lite.css">
     <link rel="stylesheet" href="./output.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+    <!-- <link rel="stylesheet" defer href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css"> -->
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    
+
+    <!-- FAVICONS  -->
+    <link rel="shortcut icon" href="./assets/favicons/favicon.ico" type="image/ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
+
+    <!-- FONTS  -->
+    <link rel="preconnect" defer href="https://fonts.googleapis.com">
+    <link rel="preconnect" defer href="https://fonts.gstatic.com" crossorigin>
+    <link defer
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
 
     <title>Pixel Planet</title>
 </head>
 <body id="body_lite" class="overflow-x-hidden">
     <!-- TOP OF PAGE - SCROLL TO TOP ARRIVES HERE  -->
-    <span id="top" aria-label="top of page"></span>
+    <span id="top"></span>
 
     <!-- NAV  -->
     <header class="px-4">
@@ -45,7 +59,7 @@
             <nav class="navbar px-6 py-2" aria-label="navigation">
                 <a href="index.html" name="home" aria-label="home" tabindex="0">
                     <div class="logo">
-                        <img class="logo_img w-12" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo" aria-label="Pixel Planet logo">
+                        <img class="logo_img w-12" src="./assets/logos/pixel_planet_logo_round.avif" alt="pixel planet logo" aria-label="Pixel Planet logo" width="200" height="200">
                     </div>
                 </a>
                 <ul class="menu">
@@ -62,8 +76,8 @@
             <div class="w-full flex items-center py-6 mx-auto">
                 <a href="index.html" class="flex flex-row mx-auto" tabindex="0" aria-label="home">
                     <span class="self-center px-4 pointer-events-none uppercase text-xs">pixel</span>
-                    <img class="w-12 mx-auto" src="./assets/logos/pixel_planet_logo_round.png"
-                        alt="pixel planet logo and home button">
+                    <img class="w-12 mx-auto" src="./assets/logos/pixel_planet_logo_round.avif"
+                        alt="pixel planet logo and home button" width="200" height="200">
                     <span class="self-center px-4 pointer-events-none uppercase text-xs">planet</span>
                 </a>
             </div>
@@ -75,17 +89,20 @@
                 <div id="wrapperUl" class="wrapper mt-12">
                     <ul class="flex flex-col mx-auto p-8 w-4/5 rounded-lg">
                         <li class="menu-item py-4">
-                            <a href="#about" tabindex="0" aria-label="mobile navigation button">About Pxl Planet</a>
+                            <a href="index.html" tabindex="0" aria-label="mobile navigation - Home">Home</a>
                         </li>
                         <li class="menu-item py-4">
-                            <a href="#meta" class="" tabindex="0" aria-label="mobile navigation button">MetaPxls</a>
+                            <a href="#about" tabindex="0" aria-label="mobile navigation - About Pixel Planet">About Pxl Planet</a>
                         </li>
                         <li class="menu-item py-4">
-                            <a href="case_studies.html" class="" tabindex="0" aria-label="mobile navigation button">Case
+                            <a href="#meta" class="" tabindex="0" aria-label="mobile navigation - MetaPxls">MetaPxls</a>
+                        </li>
+                        <li class="menu-item py-4">
+                            <a href="case_studies.html" class="" tabindex="0" aria-label="mobile navigation - Case Studies">Case
                                 Studies</a>
                         </li>
                         <li class="menu-item py-4">
-                            <a href="#contact" class="" tabindex="0" aria-label="mobile navigation button">Contact</a>
+                            <a href="#contact" class="" tabindex="0" aria-label="mobile navigation - Contact Button">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -96,7 +113,7 @@
     <!-- MAIN CONTENT  -->
     <main id="main_content_lite" class="">
         <!-- ANIMATED CLOUD BG -->
-        <div class="cloud-container absolute">
+        <div class="cloud-container absolute" loading="lazy">
             <div class="clouds">
             </div>
         </div>
@@ -124,7 +141,9 @@
                     flex justify-center mx-auto w-1/2 md:w-2/5 lg:py-2 mb-2 my-12
                 */ -->
                 <section id="earf-block-lite" class="flex justify-center lg:py-2 mb-2" aria-disabled="true" aria-hidden="true">
-                    <img src="/public/assets/earf.gif" id="earf-lite" class="rounded-full mx-auto sm:w-screen w-4/5 lg:w-5/12 h-fit pointer-events-none" alt="rotating planet gif" aria-disabled="true" aria-hidden="true" tabindex="-1">
+                    <!-- <img src="/build/public/assets/earf.gif" id="earf-lite" class="rounded-full mx-auto sm:w-screen w-4/5 lg:w-5/12 h-fit pointer-events-none" alt="rotating planet gif" aria-disabled="true" aria-hidden="true" tabindex="-1"> -->
+
+                    <video id="earf-lite" class="rounded-full mx-auto sm:w-screen w-4/5 lg:w-5/12 h-fit pointer-events-none" muted autoplay  loading="lazy" loop src="/build/public/assets/earf.mp4" defer aria-disabled="true"></video>
                 </section>
             </section>
         </section>
@@ -137,7 +156,7 @@
                 <div class="container mx-auto flex justify-between lg:p-2 px-2">
                     <div class="flex flex-wrap w-full mx-auto text-center sm:flex-shrink-0">
                         <div class="pp-0 lg:p-4  mx-4 mx-auto sm:h-1/3">
-                            <img class="h-20 lg:h-auto lg:w-20 mx-auto p-4 icon" src="./assets/icons/minority_owned.png" alt="100% minority owned icon">
+                            <img class="h-20 lg:h-auto lg:w-20 mx-auto p-4 icon" src="./assets/icons/minority.png" alt="100% minority owned icon">
                             <h2 class="title-font font-medium text-3xl lg:text-5xl text-space">100%</h2>
                             <p class="leading-relaxed text-xl text-space -mt-2 lg:mt-0">Minority Owned</p>
                         </div>
@@ -151,7 +170,7 @@
                             <h2 class="title-font font-medium text-3xl lg:text-5xl text-space">#</h2>
                             <p class="leading-relaxed text-xl text-space -mt-2 lg:mt-0">People Pixellated</p>
                         </div> -->
-                        <div class="p-0 lg:p-4  mx-4 mx-auto sm:h-1/3">
+                        <div class="p-0 lg:p-4 mx-4 mx-auto sm:h-1/3">
                             <img class="h-14 lg:h-auto lg:w-20 mx-auto p-0 lg:p-4 icon" src="./assets/icons/trees.png" alt="Number of Trees Planted icon">
                             <h2 class="title-font font-medium text-3xl lg:text-5xl text-space">10</h2>
                             <p class="leading-relaxed text-xl text-space -mt-2 lg:mt-0">Trees Planted</p>
@@ -210,7 +229,7 @@
 
             <!-- META PXLS-->
             <!-- ANIMATED CLOUD BG -->
-            <div class="cloud-container absolute">
+            <div class="cloud-container absolute" loading="lazy">
                 <div class="clouds">
                 </div>
             </div>
@@ -230,7 +249,7 @@
                     <h2 class="text-6xl p-6 block text-center text-ultra">MetaPixels</h2>
                     <section class="flex flex-col md:flex-row items-center">
                     <div class="flex align-middle w-4/5 md:m-auto md:w-5/12 mb-10 overflow-hidden md:pl-24">
-                        <img alt="feature" class="" src="./assets/icons/meta.svg" alt="laptop computer and phone image">
+                        <img alt="feature" class="" src="./assets/icons/meta.svg" alt="laptop computer and phone image" width="600" height="400">
                     </div>
                     <div class="px-5 py-8 mx-auto flex flex-wrap md:w-7/12 md:pr-24">
                         <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:pl-12 lg:text-left text-center">
@@ -388,44 +407,44 @@
                     <div class="grid md:grid-cols-2 gap-4 rounded-lg md:grid-cols-3 lg:gap-6">
                         <!-- logo - start -->
                         <div class="flex-col h-40 justify-center text-center rounded-lg bg-gray-100 p-4 sm:h-32 border-2">
-                            <img class="je inline w-20 h-auto p-4" src="/public/assets/clients/jeservices.png" alt="JE Services logo">
-                            <h4 class="">J&E Services</h4>
+                            <img class="je inline w-20 h-auto p-4" src="/build/public/assets/clients/jeservices.png" alt="JE Services logo"  loading="lazy" width="200" height="200">
+                            <span class="pointer-events-none text-space block">J&E Services</span>
                         </div>
                         <!-- logo - end -->
             
                         <!-- logo - start -->
                         <div class="flex-col h-40 justify-center text-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32 border-2">
-                            <img class="logowall inline w-28 h-auto p-4" src="/public/assets/clients/manyi.png" alt="Manyi Juices logo">
-                            <h4 class="">Manyi Juices</h4>
+                            <img class="logowall inline w-28 h-auto p-4" src="/build/public/assets/clients/manyi.png" alt="Manyi Juices logo" width="600" height="400">
+                            <span class="pointer-events-none text-space block">Manyi Juices</span>
                         
                         </div>
                         <!-- logo - end -->
             
                         <!-- logo - start -->
                         <div class="flex-col h-40 justify-center text-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32 border-2">
-                            <img class="logowall inline w-32 h-auto p-4 md:p-0" src="/public/assets/clients/dom.png" alt="DomEstate Capital logo">
-                            <h4 class="">DomEstate Capital</h4>
+                            <img class="logowall inline w-32 h-auto p-4 md:p-0" src="/build/public/assets/clients/dom.png" alt="DomEstate Capital logo"  loading="lazy" width="600" height="400">
+                            <span class="pointer-events-none text-space block">DomEstate Capital</span>
                         </div>
                         <!-- logo - end -->
             
                         <!-- logo - start -->
                         <div class="flex-col h-40 justify-center text-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32 border-2">
-                            <img class="logowall inline w-24 h-auto p-4" src="/public/assets/clients/skymaxx.png" alt="je services logo">
-                            <h4 class="">SkyMaxxMas</h4>
+                            <img class="logowall inline w-24 h-auto p-4" src="/build/public/assets/clients/skymaxx.png" alt="je services logo"  loading="lazy" width="200" height="200">
+                            <span class="pointer-events-none text-space block">SkyMaxxMas</span>
                         </div>
                         <!-- logo - end -->
             
                         <!-- logo - start -->
                         <div class="flex-col h-40 justify-center text-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32 border-2">
-                            <img class="logowall inline w-32 md:w-40 h-auto p-4" src="/public/assets/clients/meimei.png" alt="je services logo">
-                            <h4 class="">Mei Mei Dumplings</h4> 
+                            <img class="logowall inline w-32 md:w-40 h-auto p-4" src="/build/public/assets/clients/meimei.png" alt="je services logo" width="200" height="200">
+                            <span class="pointer-events-none text-space block">Mei Mei Dumplings</span> 
                         </div>
                         <!-- logo - end -->
             
                         <!-- logo - start -->
                         <div class="flex-col h-40 justify-center text-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32 border-2">
-                            <img class="logowall inline w-20 h-auto p-4" src="/public/assets/clients/lrm.png" alt="je services logo">
-                            <h4 class=""> The Liability Roadmap</h4>
+                            <img class="logowall inline w-20 h-auto p-4" src="/build/public/assets/clients/lrm.png" alt="je services logo" width="200" height="200">
+                            <span class="pointer-events-none text-space block"> The Liability Roadmap</span>
                         </div>
                         <!-- logo - end -->
                     </div>
@@ -462,13 +481,15 @@
             </div>
 
 
-            <!-- NEWSLETTER SIGN UP -->
-            <section class="py-12 text-center flex flex-col justify-center content-center mx-auto bg-space">
-                <h3 class="text-ether py-4">Stay up to date by subscribing to our newsletter or blog!</h3>
-                <iframe id="substack1" class="rounded-lg hidden md:flex" src="https://pixelplanet.substack.com/embed" width="580" height="420"
-                    style="margin-left:auto; margin-right:auto; border:0px;" frameborder="0" scrolling="no"></iframe>
+            <!-- BLOG -->
+            <section id="blog-block" class="py-12 text-center flex flex-col justify-center content-center mx-auto bg-space bg-[url(/build/public/assets/icons/star_bg_min.jpg)] bg-cover">
+                <h3 class="text-ether py-4 font-bold">Explore our world!</h3>
+                <p class="p-4 leading-relaxed text-sunset text-2xl">Visit our blog for news and interesting articles on technology</p>
+                <a class="btn w-1/5 mx-auto bg-ether justify-center text-space" href="/build/public/blog.html">Pixel Planet Blog</a>
+                <!-- <iframe id="substack1" class="rounded-lg hidden md:flex" src="https://pixelplanet.substack.com/embed" width="580" height="420"
+                    style="margin-left:auto; margin-right:auto; border:0px;" frameborder="0" scrolling="no" title="substack newsletter section"></iframe>
                 <iframe id="substack2" class="rounded-lg block md:hidden" src="https://pixelplanet.substack.com/embed" width="380" height="320"
-                    style="margin-left:auto; margin-right:auto; border:0px;" frameborder="0" scrolling="no"></iframe>
+                    style="margin-left:auto; margin-right:auto; border:0px;" frameborder="0" scrolling="no" title="substack newsletter section"></iframe> -->
             </section>
         
 
@@ -480,7 +501,7 @@
                         <div class="flex flex-col text-center mb-12">
                             <img id="earf-mini" alt="pixel planet logo"
                                 class="avatar2 w-60 h-60 mb-8 object-cover object-center rounded-full inline-block outline-offset-2 outline-cy mx-auto"
-                                src="/public/assets/logos/pixel_planet_logo_round.png" alt="mini rotating earth gif">
+                                src="/build/public/assets/logos/pixel_planet_logo_round.avif" alt="mini rotating earth gif" width="200" height="200">
                             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Need a website, or design? Send us a message and we'll get back to you asap.</p>
                         </div>
                         <form class="lg:w-1/2 md:w-2/3 mx-auto" name="pxl_contact" method="POST" data-netlify="true"
@@ -515,7 +536,7 @@
                                 <div data-netlify-recaptcha="true"></div>
                                 <div class="p-2 w-full">
                                     <button type="submit"
-                                        class="btn flex mx-auto text-ultra  border-0 py-2 px-8  rounded text-lg">Launch</button>
+                                        class="btn flex mx-auto text-ultra  border-0 py-2 px-8  rounded text-lg" aria-label="submit contact info button">Launch</button>
                                 </div>
                                 <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
                                     <span class="inline-flex align-top">
@@ -530,7 +551,7 @@
                                                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                                             </svg>
                                         </a>
-                                        <a class="icon hover:text-black ml-4 text-black" href="https://www.linkedin.com/company/pxl-planet"  >
+                                        <a class="icon hover:text-black ml-4 text-black" href="https://www.linkedin.com/company/pxl-planet" aria-label="link to linkedin company page">
                                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                                 stroke-width="0" class="w-6 h-6" viewBox="0 0 24 24">
                                                 <path stroke="none"
@@ -556,7 +577,7 @@
 
         <!-- SCROLL TO TOP BTN  -->
         <a class="z-50 fixed right-6 bottom-6" href="#top" aria-label="scroll to top" tabindex="0">
-            <img class="w-8 bg-white rounded-full" src="./assets/icons/up.png" alt="scroll to top">
+            <img class="w-8 bg-white rounded-full" src="./assets/icons/up.png" alt="scroll to top" width="200" height="200">
         </a>
 
         <!-- Particle Background  -->
@@ -565,39 +586,37 @@
         </div>
     </main>
     <footer class="text-gray-600 body-font">
-        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-col md:flex-row ">
-            <div class="flex title-font font-medium items-center md:justify-start justify-center text-cy">
-                <img class="logo w-10" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo">
+        <div class="container px-5 py-8 mx-auto flex items-center flex-col lg:flex-row ">
+            <div class="flex title-font font-medium items-center md:justify-start justify-center text-ultra">
+                <img class="logo w-10" src="./assets/logos/pixel_planet_logo_round.avif" alt="pixel planet logo" width="200" height="200">
                 <h2 class="ml-3 text-xl md:text-2xl">Pixel Planet</h2>
             </div>
-            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2">© 2023
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 lg:border-l-2 lg:border-gray-200 lg:py-2">© 2023
                 Pixel Planet
             </p>
             <a href="privacy_policy.html" class="mr-3 p-2">
-                <li
-                    class="inline-flex sm:ml-auto sm:mt-0 justify-center sm:justify-start font-medium text-space hover:text-flame text-sm">
+                <span
+                    class="pointer-events-none sm:ml-auto sm:mt-0 justify-center sm:justify-start font-medium text-space hover:text-flame text-sm">
                     Privacy
-                    Policy</li>
+                    Policy</span>
             </a>
-
+            <a class="mr-3 p-2" href="case_studies.html">
+                <span class="pointer-events-none sm:ml-auto sm:mt-0 justify-center sm:justify-start font-medium text-space hover:text-flame text-sm">Case Studies</span>
+            </a>
+            <a class="mr-3 p-2" href="blog.html">
+                <span class="pointer-events-none sm:ml-auto sm:mt-0 justify-center sm:justify-start font-medium text-space hover:text-flame text-sm">Blog</span>
+            </a>
         </div>
     </footer>
 
     <!-- SCRIPTS  -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <!-- <script src="https://use.fontawesome.com/d1bb00f190.js"></script> -->
-    <!-- <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> -->
-    
-    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script> -->
-    <!-- <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
-    <script src="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.js"></script> -->
-    <script src="/src/js/main.js"></script>
-    <script src="https://use.fontawesome.com/d1bb00f190.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-    <script src="../src/js/mobnav.js" defer></script>
+    <script src="/build/src/js/main.js"></script>
+    <!-- <script src="https://use.fontawesome.com/d1bb00f190.js" defer></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script> -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.0.js" defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js" defer></script>
+    <script src="/build/src/js/mobnav.js"></script>
     
 </body>
 </html>

@@ -2,7 +2,7 @@
   "name": "pixelplanet",
   "version": "1.0.0",
   "description": "pixel planet - pixels for the people",
-  "main": "index.js",
+  "main": "/build/public/index.html",
   "scripts": {
     "watch": "postcss ./src/css/tailwind.css -o ./public/output.css --watch",
     "sass": "node-sass -w ./src/scss/ -o css/ --recursive"

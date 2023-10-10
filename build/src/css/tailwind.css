@@ -12,16 +12,19 @@ html {
 
 /* SITE WIDE HEADINGS and TEXT */
 
-@font-face {
+/* @font-face {
     font-family: 'Slot-Regular';
     font-style: normal;
     font-weight: normal;
     src: local('Slot-Regular'), url('../fonts/Slot_Font/Slot-Regular.otf') format('opentype');
+} */
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Slot-Regular', sans-serif;
+    /* font-family: 'Slot-Regular', sans-serif; */
     font-size: 48px;
 }
 
@@ -208,6 +211,36 @@ span:hover::after, .menu a:hover::after {
     z-index: 100;
     background-color: #FFF8E7;
 
+}
+
+.navbar-dark, #navbar-dark {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    max-width: 100vw;
+    height: 5rem;
+    overflow: hidden;
+    z-index: 100;
+    background-color: #000;
+}
+
+.navbar-dark ul a {
+    color: #b8b0f5;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.navbar-dark ul a:visited {
+    color: #52489c;
+}
+
+.navbar-dark .btn {
+    text-decoration: none;
 }
 
 .logo {
@@ -503,7 +536,7 @@ li {
  }
 
  .glossaryHero {
-    background-image: url("../../public/assets/icons/star_bg_min.jpg");
+    background-image: url("/build/public/assets/icons/star_bg_min.jpg");
     background-position: right;
     background-size: 60% 100%;
     background-repeat: no-repeat;
@@ -515,7 +548,7 @@ li {
     }
     
     .glossaryHero {
-        background-image: url("../../public/assets/icons/star_bg_min.jpg");
+        background-image: url("/build/public/assets/icons/star_bg_min.jpg");
             background-position: center;
             background-size: 100% 100%;
             background-repeat: no-repeat;
@@ -523,3 +556,5 @@ li {
 
  }
 
+
+ 

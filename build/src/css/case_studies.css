@@ -21,6 +21,30 @@
 }
 
 
+#domBG {
+    background: url("/build/public/assets/capital.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#manyiBG {
+    background: url("/build/public/assets/manyi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#meimeiBG {
+    background: url("/build/public/assets/meimeibg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#lrmBG {
+    background: url("/build/public/assets/factory.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 
 /* ORBIT CAROUSEL  */

@@ -24,38 +24,46 @@
     <meta property="og:url" content="https://pixelpla.net/">
     
     <!-- STYLES -->
-    <link rel="stylesheet" href="./output.css">
-    <link rel="stylesheet" href="/src/css/index_lite.css">
-    <link rel="stylesheet" href="/src/css/case_studies.css">
-    <!-- <link rel="stylesheet" href="../src/css/blog.css"> -->
+    <link rel="stylesheet" type="text/css" href="./output.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/index_lite.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../src/css/case_studies.css"> -->
+    <link rel="stylesheet" type="text/css" href="../src/css/blog_main.css">
+
+    <!-- FAVICONS  -->
+    <link rel="shortcut icon" href="./assets/favicons/favicon.ico" type="image/ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
+
     
     <title>Blog | Pixel Planet</title>
 </head>
 <body>
     <!-- TOP OF PAGE - SCROLL TO TOP ARRIVES HERE  -->
-    <span id="top" aria-disabled="true" aria-label="top of page"></span>
+    <span id="top"></span>
     
     <!-- NAV  -->
-    <header>
-        <section class="hidden lg:block bg-black">
-            <nav class="navbar px-6 py-2" aria-label="navigation">
+    <header class="mx-auto bg-light">
+        <section class="hidden lg:block">
+            <nav class="navbar-dark px-6 py-2" aria-label="navigation">
+                <a href="index.html" name="home" aria-label="home" tabindex="0">
+                    <div class="logo">
+                        <img class="logo_img w-12" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo"
+                            aria-label="Pixel Planet logo">
+                    </div>
+                </a>
                 <ul class="menu">
-                    <a href="index.html" name="home" aria-label="home" tabindex="0">
-                        <div class="logo">
-                            <img class="logo_img w-8" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo"
-                                aria-label="Pixel Planet logo">
-                        </div>
-                    </a>
-                    <a href="#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
-                    <a href="#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
-                    <a href="pixelacademy.html" aria-label="case studies" tabindex="0">pxl academy</a>
+                    <a href="index.html#about" aria-label="about pixel planet" tabindex="0">about pxlplnt</a>
+                    <a href="index.html#meta" aria-label="meta pixels - our values" tabindex="0">metapxls</a>
+                    <a href="case_studies.html" aria-label="pixel academy" tabindex="0">case studies</a>
                 </ul>
-                <a class="btn" href="#contact" aria-label="go to contact section" tabindex="0">Contact</a>
+                <a class="btn text-ultra" href="index.html#contact" aria-label="go to contact section"
+                    tabindex="0">Contact</a>
             </nav>
         </section>
     
         <!-- //MOBILE NAV -->
-        <section class="navbar px-6 py-4 lg:hidden block w-full">
+        <section class="navbar-dark px-6 py-4 lg:hidden block w-full">
             <div class="w-full flex items-center py-6 mx-auto">
                 <a href="index.html" class="flex flex-row mx-auto">
                     <span class="self-center px-4 pointer-events-none uppercase text-xs">pixel</span>
@@ -72,17 +80,20 @@
                 <div id="wrapperUl" class="wrapper mt-12">
                     <ul class="flex flex-col mx-auto p-8 w-4/5 rounded-lg">
                         <li class="menu-item py-4">
-                            <a href="index.html#about" tabindex="0" aria-label="mobile navigation button">About Pxl Planet</a>
+                            <a href="index.html#about" tabindex="0" aria-label="mobile navigation button">About Pxl
+                                Planet</a>
                         </li>
                         <li class="menu-item py-4">
-                            <a href="index.html#meta" class="" tabindex="0" aria-label="mobile navigation button">MetaPxls</a>
+                            <a href="index.html#meta" class="" tabindex="0"
+                                aria-label="mobile navigation button">MetaPxls</a>
                         </li>
                         <li class="menu-item py-4">
                             <a href="case_studies.html" class="" tabindex="0" aria-label="mobile navigation button">Case
                                 Studies</a>
                         </li>
                         <li class="menu-item py-4">
-                            <a href="index.html#contact" class="" tabindex="0" aria-label="mobile navigation button">Contact</a>
+                            <a href="index.html#contact" class="" tabindex="0"
+                                aria-label="mobile navigation button">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -90,146 +101,151 @@
         </section>
     </header>
 
-    <main>
-        <!-- <section class="hero flex justify-center">
-            <h1 class="mx-auto text-center py-12 mt-24">blog</h1>
-        </section> -->
-        
-        <!-- COMING SOON PLACEHOLDER  -->
-        <section class="launching-soon block bg-black h-screen w-screen py-32">
-            <h1 class="text-center bg-black p-4">LAUNCHING SOON - Stay tuned <span>
-                    <img class="anim-logo inline-block m-2 w-10" src="./assets/icons/pp-logo.png" alt="">
-                </span></h1>
+    <main class="">
 
+        <h1 class="text-ether text-center p-6">Pixel Planet Blog</h1>
 
+        <!-- BLOG ITEMS  -->            
+        <section class="blog-post-container mx-auto rounded-lg mt-16 border-2 border-cy">
+            <h2 class="text-light">ORIGINS</h2>
+            <span class="pointer-events-none p-4 leading-relaxed text-light"> <span class="pointer-events-none text-flame text-2xl">|</span> News and info all about pixel planet <span class="pointer-events-none text-flame text-2xl">|</span> </span>
 
+            <section class="flex flex-row rounded-lg justify-center">
 
+                <!-- grid containing card sets -->
+                <div class="grid pt-12 justify-center" data-effect="hover-1">
 
-        <!-- <dialog id="popupvideo" class="bg-space p-12 rounded-lg text-light">
-            <h1 class="p-6">I'm a pop up modal! Weeeeeeee1</h1>
-            <button onclick="popupvideo.close()">Close Pop Up</button>
-        </dialog> -->
-
-        <!-- BLOG ITEMS  -->
-        <!-- <section class="text-light body-font">
-            <div class="container px-5 py-24 mx-auto">
-                <div class="flex flex-wrap -m-4">
-                    <div class="p-4 md:w-1/3">
-                        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400"
-                                alt="blog">
-                            <div class="p-6">
-                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">ORIGINS</h1>
-                                <h3 class="leading-relaxed mb-3">Why Pixel Planet?</h3>
-                                <p class="leading-relaxed mb-3">Learn more about why we started pixel planet and what we are about.</p>
-                                <div class="flex items-center flex-wrap ">
-                                    <button onclick="popupvideo.showModal()"
-                                        class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Pop
-                                        Up Video</button>
-                                    <a href="blog_why_pp.html" class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Read More
-                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a> 
-                                     <span
-                                        class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                            <circle cx="12" cy="12" r="3"></circle>
-                                        </svg>1.2K
-                                    </span>
-                                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                            <path
-                                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                                            </path>
-                                        </svg>6
-                                    </span>
-                                </div>
+                    <!-- card container -->
+                    <a href="/build/public/blog_posts/rebranding.html" aria-label="blog post link">
+                        <div class="card text-light">
+                            <!-- card image -->
+                            <div id="blog_planet1" class="card__img"
+                                style="background-image: url(/build/public/assets/logos/pixel_planet_logo_round.png)"></div>
+                            <!-- number and tag box -->
+                            <div class="card__box card__box--c">
+                                <span class="card__box-number pointer-events-none">01</span>
+                                <span class="card__box-tags pointer-events-none">[ 10-1-2023 ]</span>
+                                <span class="card__box-tags pointer-events-none">#pxl #news</span>
+                            </div>
+                            <!-- location box -->
+                            <div class="card__box card__box--d">
+                                <span class="card__box-title pointer-events-none">Rebrand <br>Announcement</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="p-4 md:w-1/3">
-                        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401"
-                                alt="blog">
-                            <div class="p-6">
-                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">TODAY</h1>
-                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-                                    microdosing tousled waistcoat.</p>
-                                <div class="flex items-center flex-wrap">
-                                    <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
-                                    <span
-                                        class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                            <circle cx="12" cy="12" r="3"></circle>
-                                        </svg>1.2K
-                                    </span>
-                                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                            <path
-                                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                                            </path>
-                                        </svg>6
-                                    </span>
-                                </div>
+                    </a>
+            
+                    <!-- card container -->
+                    <a id="soon1" href="#soon1" aria-label="coming soon blog post - not active link" aria aria-details="This blog post is not live yet. But will become an active link once published.">
+                        <div class="card text-light w-90">
+                            <div id="blog_planet2" class="card__img2 w-full grayscale" style="background-image: url(/build/public/blog_media/onda7.png)">
+                            </div>
+                            <div class="card__box card__box--b">
+                                <span class="card__box-number">02</span>
+                                <span class="card__box-tags">#pxl #origins</span>
+                            </div>
+                            <div class="card__box card__box--c">
+                                <span class="card__box-title">COMING SOON: <br> Why Pixel Planet?</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="p-4 md:w-1/3">
-                        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402"
-                                alt="blog">
-                            <div class="p-6">
-                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">THE FUTURE</h1>
-                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-                                    microdosing tousled waistcoat.</p>
-                                <div class="flex items-center flex-wrap ">
-                                    <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
-                                    <span
-                                        class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                            <circle cx="12" cy="12" r="3"></circle>
-                                        </svg>1.2K
-                                    </span>
-                                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                            <path
-                                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                                            </path>
-                                        </svg>6
-                                    </span>
-                                </div>
+                    </a>
+            
+                    <!-- card container -->
+                    <a id="soon2" href="#soon2" aria-label="coming soon blog post - not active link" aria aria-details="This blog post is not live yet. But will become an active link once published.">
+                        <div class="card text-light w-90 justify-center">
+                            <div id="blog_planet3" class="card__img2 grayscale" style="background-image: url(/build/public/blog_media/onda7.png)"></div>
+                            <div class="card__box card__box--d">
+                                <span class="card__box-number">03</span>
+                                <span class="card__box-tags">#pxl #origins</span>
+                            </div>
+                            <div class="card__box card__box--c">
+                                <span class="card__box-title">COMING SOON: <br> MetaPxls - <br> Our Values</span>
                             </div>
                         </div>
-                    </div>
+                    </a>
+            
                 </div>
-            </section> -->
+            </section>
+        </section>
+
+
+        <!-- HORIZONS  -->
+        <section class="blog-post-container2 mx-auto rounded-lg mt-16 border-2 border-sunset">
+            <h2 class="text-light">HORIZONS</h2>
+            <span class="pointer-events-none p-4 leading-relaxed text-light"> <span
+                    class="pointer-events-none text-flame text-2xl">|</span> News and articles about tools, technology, and the future <span
+                    class="pointer-events-none text-flame text-2xl">|</span> </span>
+        
+            <section class="flex flex-row rounded-lg justify-center">
+        
+                <!-- grid containing card sets -->
+                <div id="soon3" class="grid pt-12 justify-center" data-effect="hover-1">
+        
+                    <!-- card container -->
+                    <a href="#soon3" aria-label="coming soon blog post - not active link" aria
+                        aria-details="This blog post is not live yet. But will become an active link once published.">
+                        <div class="card text-light">
+                            <!-- card image -->
+                            <div class="card__img2 grayscale"
+                                style="background-image: url(/build/public/blog_media/onda7.png)"></div>
+                            <!-- number and tag box -->
+                            <div class="card__box card__box--c">
+                                <span class="card__box-number pointer-events-none">04</span>
+                                <span class="card__box-tags pointer-events-none">#pxl #tech</span>
+                            </div>
+                            <!-- location box -->
+                            <div class="card__box card__box--d">
+                                <span class="card__box-title pointer-events-none">COMING SOON: <br> Privacy Matters</span>
+                            </div>
+                        </div>
+                    </a>
+        
+                    <!-- card container -->
+                    <a href="#soon3" aria-label="coming soon blog post - not active link" aria
+                        aria-details="This blog post is not live yet. But will become an active link once published.">
+                        <div class="card text-light w-90">
+                            <div class="card__img2 w-full grayscale"
+                                style="background-image: url(/build/public/blog_media/onda7.png)">
+                            </div>
+                            <div class="card__box card__box--b">
+                                <span class="card__box-number">05</span>
+                                <span class="card__box-tags">#pxl #tech</span>
+                            </div>
+                            <div class="card__box card__box--c">
+                                <span class="card__box-title">COMING SOON: <br> Tech Advice for Biz Owners</span>
+                            </div>
+                        </div>
+                    </a>
+        
+                    <!-- card container -->
+                    <a href="#soon3" aria-label="coming soon blog post - not active link" aria
+                        aria-details="This blog post is not live yet. But will become an active link once published.">
+                        <div class="card text-light w-90 justify-center">
+                            <div class="card__img2 grayscale"
+                                style="background-image: url(/build/public/blog_media/onda7.png)"></div>
+                            <div class="card__box card__box--d">
+                                <span class="card__box-number">06</span>
+                                <span class="card__box-tags">#pxl #origins</span>
+                            </div>
+                            <div class="card__box card__box--c">
+                                <span class="card__box-title">COMING SOON: <br> Tech Tools - <br> LVL UP</span>
+                            </div>
+                        </div>
+                    </a>
+        
+                </div>
+            </section>
+        </section>
+        
+            <!-- <div class="grid" data-effect="hover-2">
+                
+            </div>
+            <div class="grid" data-effect="hover-3">
+                
+            </div> -->
+
+
+
+
 
             <a class="z-50 fixed right-6 bottom-6" href="#top" aria-label="scroll to top">
                 <img class="w-8 bg-white rounded-full" src="./assets/icons/up.png" alt="scroll to top">
@@ -240,32 +256,30 @@
             </div>
     </main>
     <footer class="text-gray-600 body-font">
-        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-            <div class="flex title-font font-medium items-center md:justify-start justify-center text-cy">
-                <img class="logo w-10" src="./assets/logos/pixel_planet_logo_round.png" alt="pixel planet logo">
-                <h2 class="ml-3 text-2xl">Pixel Planet</h2>
+        <div class="container px-5 py-8 mx-auto flex items-center flex-col lg:flex-row ">
+            <div class="flex title-font font-medium items-center md:justify-start justify-center text-ultra">
+                <img class="logo w-10" src="./assets/logos/pixel_planet_logo_round.avif" alt="pixel planet logo" width="200"
+                    height="200">
+                <h2 class="ml-3 text-xl md:text-2xl">Pixel Planet</h2>
             </div>
-            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2">© 2023
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 lg:border-l-2 lg:border-gray-200 lg:py-2">© 2023
                 Pixel Planet
             </p>
-            <span
-                class="text-center lg:inline-flex lg:flex-row flex flex-col lg:w-1/4 w-1/2 sm:ml-auto sm:mt-0 justify-center items-center space-between m-4">
-                <a href="privacy_policy.html" class="mr-3 p-2">
-                    <li
-                        class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start font-medium text-space hover:text-flame text-xl">
-                        Privacy
-                        Policy</li>
-                </a>
-                <a href="https://www.linkedin.com/company/pxl-planet"
-                    class="text-gray-500 max-w-fit w-fit lg:inline-flex p-2">
-                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="0" class="w-6 h-6" viewBox="0 0 24 24">
-                        <path stroke="none"
-                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                    </svg>
-                </a>
-            </span>
+            <a href="privacy_policy.html" class="mr-3 p-2">
+                <span
+                    class="pointer-events-none sm:ml-auto sm:mt-0 justify-center sm:justify-start font-medium text-space hover:text-flame text-sm">
+                    Privacy
+                    Policy</span>
+            </a>
+            <a class="mr-3 p-2" href="case_studies.html">
+                <span
+                    class="pointer-events-none sm:ml-auto sm:mt-0 justify-center sm:justify-start font-medium text-space hover:text-flame text-sm">Case
+                    Studies</span>
+            </a>
+            <a class="mr-3 p-2" href="blog.html">
+                <span
+                    class="pointer-events-none sm:ml-auto sm:mt-0 justify-center sm:justify-start font-medium text-space hover:text-flame text-sm">Blog</span>
+            </a>
         </div>
     </footer>
 
@@ -276,6 +290,11 @@
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     <script src="../src/js/mobnav.js"></script>
+    <script src="../src/js/gsap.min.js"></script>
+    <script src="../src/js/splitting.min.js"></script>
+    <script type="module" src="../src/js/index.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/compass-mixins@0.12.12/+esm"></script> -->
+    <script src="../src/js/blog.js"></script>
     
 </body>
 </html>

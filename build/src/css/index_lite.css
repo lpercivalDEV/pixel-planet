@@ -96,7 +96,7 @@ nav a {
     width: 100vw;
     height: 100vh;
     max-height: 100vh;
-    background-image: url('/public/assets/logos/pxl_banner.png');
+    background-image: url('/build/public/assets/logos/pxl_banner.avif');
     background-size: stretch;
     background-repeat: no-repeat;
     -webkit-animation: slidein 100s;
@@ -121,7 +121,7 @@ nav a {
     width: 100vw;
     height: 100vh;
     max-height: 100vh;
-    background-image: url('/public/assets/logos/pxl_banner.png');
+    background-image: url('/build/public/assets/logos/pxl_banner.avif');
     background-size: stretch;
     background-repeat: no-repeat;
     -webkit-animation: slidein 100s;
@@ -173,11 +173,15 @@ nav a {
 #earf-lite {
     filter: invert(1);
     opacity: 0.4;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+
 }
 
 #earf-block-lite {
     pointer-events: none;
-    background-image: url("/public/assets/logos/pixel_planet_logo_round.png");
+    background-image: url("/build/public/assets/logos/pixel_planet_logo_round.avif");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -325,16 +329,22 @@ nav a {
     animation: float 6s ease-in-out infinite;
 }
 
+
+.avatar2 {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+}
+
 .avatar3 {
     /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
     transform: translatey(0px);
     animation: float 4s ease-in-out infinite;
 }
 
-.avatar2 {
-    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
-    transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
+.avatar4 {
+    transform: translateY(0px);
+    animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -424,7 +434,7 @@ nav a {
             cursor: pointer;
             /* background: #000; */
             transition: all 0.1s ease-in-out;
-            background-image: url("../../public/assets/icons/menu.png");
+            background-image: url("/build/public/assets/icons/menu.png");
             background-size: 70%;
             background-position: center;
             background-repeat: no-repeat;
@@ -437,7 +447,7 @@ nav a {
             /* background-image: url("../../public/assets/icons/close.png"); */
             /* filter: invert(100%); */
             /* -webkit-filter: invert(100%); */
-            background-image: url("../../public/assets/icons/close.png");
+            background-image: url("/build/public/assets/icons/close.png");
             background-size: 45%;
             background-repeat: no-repeat;
             background-position: center;
@@ -449,7 +459,7 @@ nav a {
             /* background-image: url("../../public/assets/icons/menu.png"); */
             /* filter: invert(100%); */
             /* -webkit-filter: invert(100%); */
-            background-image: url("../../public/assets/icons/close.png");
+            background-image: url("/build/public/assets/icons/close.png");
             background-size: 80%;
             background-position: center;
             /* background-color: #fff8e7; */
@@ -596,8 +606,8 @@ nav a {
 
 
 
-/* SUBSTACK NEWSLETTER SIGN UP  */
 
-#substack1, #substack2 {
-    max-width: 90vw;
+/* BLOG BLOCK  */
+#blog-block {
+    opacity: 0.93;
 }
