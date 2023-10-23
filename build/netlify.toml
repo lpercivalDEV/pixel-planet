@@ -1,4 +1,8 @@
-
+[[redirects]]
+  from = "/"
+  to = "/public/index.html"
+  status = 301
+  force = false
 
 
   [[redirects]]
